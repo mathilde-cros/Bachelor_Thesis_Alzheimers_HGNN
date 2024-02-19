@@ -5,7 +5,8 @@ In this repository, you will find the entirety of my code contribution for my Ba
 You will find:
 - A "time_series" folder, where you will find the time_series data for each patient. Each .csv file represents 1 patient, and each line is a brain region. This data was generated using the brain atlas and fMRI images from the Alzheimer's Disease Neuroimaging Initiative (ADNI). The ADNI data were downloaded from the ADNI database (adni.loni.usc.edu). This was done previously to my work.
 - A "corr_matrices" folder, in which subfolders of correlation matrices can be found, depending on the correlation computation used (Pearson, Spearman Rank, Kendall Rank, Partial). Similarly as in the "time_series" folder, each .csv file represents 1 patient, and each line/column of the matrix is a brain region.
-- A Diagnostic_label.csv file, where the diagnostic of each patient is listed. Each line is a patient's diagnostic. This is the variable that we want to predict using our graph and hypergraph neural networks. This data was also acquired previously to my work. The different diagnostic labels that can be associated to a patient are:
+- A patient_info.csv file, where the Subject ID, Sex, Research Group, Age, Modality and Description features for each patient can be found.
+- A diagnostic_label.csv file, where the diagnostic of each patient is listed. Each line is a patient's diagnostic. This is the variable that we want to predict using our graph and hypergraph neural networks. This data was also acquired previously to my work. The different diagnostic labels that can be associated to a patient are:
     - CN: Cognitively Normal
     - SMC: Subjective Memory Complaint
     - MCI: Mild Cognitive Impairment; that can also be subdivided into:
