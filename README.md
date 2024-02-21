@@ -53,3 +53,12 @@ The only differences between this notebook and "Graph_Building.ipynb" are:
 - The find_motif_discord function, which finds the motif and discord in the matrix profile.
 - The process function also has slight modifications to adjust for the incorporation of time series features.
 - All the generated graphs are saved in the "Raw_to_Graph_MatrixProfile" folder, named in the same way as in the Raw_to_Graph folder (see section above).
+
+## In the GCN.ipynb file
+This notebook file focuses on
+
+## In the MPNN.ipynb file
+This notebook file focuses on
+
+## In the GAT.ipynb file
+This notebook file focuses on
