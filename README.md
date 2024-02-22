@@ -29,6 +29,8 @@ This notebook is useful for:
 - Dataframe Creation: constructing a dataframe containing the headers 'Patient_id', 'Age', 'Sex', 'Time_series', 'Corr_matrix_pearson', 'Corr_matrix_spearman', 'Corr_matrix_kendall', 'Corr_matrix_partial', 'Diagnostic_label'. This is built combining the information from the patient_info.csv file (the Research Group was renamed Diagnostic_label for simplicity), the correlation matrices computed (for each method) and the time series data acquired.
 - Data Exploration: display of basic features and distributions (diagnostic, age and sex) of the dataframe and an example time series data for the first patient is shown.
 
+UPDATE README
+
 ## In the Graph_Building.ipynb file
 This notebook file focuses on transforming the preprocessed neuroimaging data from the Alzheimer's Disease Neuroimaging Initiative (ADNI) dataset (from notebook "Corr_and_df.ipynb") into graphs, suitable for training Graph Neural Networks (GNNs). The notebook includes code for converting correlation matrices into graphs, extracting relevant features, and organizing the data for training.
 Before running the notebook, make sure that 'os', 'numpy', 'pandas', 'torch', 'torch_geometric' and 'networkx' are installed.
