@@ -503,19 +503,24 @@ train_losses, train_accuracies, valid_losses, valid_accuracies = train(model, op
 from sklearn.model_selection import ParameterGrid
 
 param_grid = {
-    'learning_rate': [0.1, 0.01, 0.001, 0.0001, 0.00001, 0.000001],
-    'hidden_channels': [128, 64, 32],
-    'num_layers': [3, 2, 1],
-    'dropout_rate': [0.3, 0.2, 0.1, 0.0]
+    'learning_rate': [0.000001, 0.00001, 0.0001, 0.001, 0.01, 0.1],
+    'hidden_channels': [32, 64, 128],
+    'num_layers': [1, 2, 3],
+    'dropout_rate': [0.0, 0.1, 0.2, 0.3]
 }
 
 # Create combinations of hyperparameters
 param_combinations = ParameterGrid(param_grid)
+n_epochs = 800
 # Train using each combination
 for params in param_combinations:
-    parameters = [params['learning_rate'], params['hidden_channels'], params['num_layers'], params['dropout_rate']]
-    model = GCN(in_channels=nbr_features, hidden_channels=parameters[1], out_channels=nbr_classes, num_layers=parameters[2], dropout=parameters[3], nbr_classes=nbr_classes)
-    optimizer = torch.optim.Adam(model.parameters(), lr=parameters[0])
-    criterion = torch.nn.CrossEntropyLoss()
-    train_losses, train_accuracies, valid_losses, valid_accuracies = train(model, optimizer, criterion, train_loader, valid_loader, parameters, n_epochs=800)
+    filename = f'GCN_Models/lr{params["learning_rate"]}_hc{params["hidden_channels"]}_nl{params["num_layers"]}_d{params["dropout_rate"]}_epochs{n_epochs}.png'
+    if os.path.exists(filename):
+        pass
+    else:
+        parameters = [params['learning_rate'], params['hidden_channels'], params['num_layers'], params['dropout_rate']]
+        model = GCN(in_channels=nbr_features, hidden_channels=parameters[1], out_channels=nbr_classes, num_layers=parameters[2], dropout=parameters[3], nbr_classes=nbr_classes)
+        optimizer = torch.optim.Adam(model.parameters(), lr=parameters[0])
+        criterion = torch.nn.CrossEntropyLoss()
+        train_losses, train_accuracies, valid_losses, valid_accuracies = train(model, optimizer, criterion, train_loader, valid_loader, parameters, n_epochs=800)
 

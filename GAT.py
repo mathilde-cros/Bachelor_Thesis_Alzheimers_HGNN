@@ -447,23 +447,23 @@ def train(model, optimizer, criterion, train_loader, valid_loader, parameters, t
 # In[8]:
 
 
-# # Defining the model, optimizer and loss function
-# lr=0.00001
-# hidden_channels=32
-# dropout=0.2
-# num_layers=3
-# heads=2
-# parameters = [lr, hidden_channels, num_layers, dropout, heads]
+# Defining the model, optimizer and loss function
+lr=0.00001
+hidden_channels=32
+dropout=0.2
+num_layers=3
+heads=2
+parameters = [lr, hidden_channels, num_layers, dropout, heads]
 
-# model = GAT(in_channels=nbr_features, hidden_channels=parameters[1], out_channels=nbr_classes, num_layers=parameters[2], dropout=parameters[3], heads=parameters[4], nbr_classes=nbr_classes)
-# optimizer = torch.optim.Adam(model.parameters(), lr=parameters[0])
-# criterion = torch.nn.CrossEntropyLoss()
+model = GAT(in_channels=nbr_features, hidden_channels=parameters[1], out_channels=nbr_classes, num_layers=parameters[2], dropout=parameters[3], heads=parameters[4], nbr_classes=nbr_classes)
+optimizer = torch.optim.Adam(model.parameters(), lr=parameters[0])
+criterion = torch.nn.CrossEntropyLoss()
 
-# # Printing the model architecture
-# print(model)
+# Printing the model architecture
+print(model)
 
-# # Running the training
-# train_losses, train_accuracies, valid_losses, valid_accuracies = train(model, optimizer, criterion, train_loader, valid_loader, parameters, n_epochs=1000)
+# Running the training
+train_losses, train_accuracies, valid_losses, valid_accuracies = train(model, optimizer, criterion, train_loader, valid_loader, parameters, n_epochs=1000)
 
 
 # In[11]:
@@ -473,21 +473,26 @@ def train(model, optimizer, criterion, train_loader, valid_loader, parameters, t
 from sklearn.model_selection import ParameterGrid
 
 param_grid = {
-    'learning_rate': [0.1, 0.01, 0.001, 0.0001, 0.00001, 0.000001],
-    'hidden_channels': [128, 64, 32],
-    'num_layers': [3, 2, 1],
-    'dropout_rate': [0.3, 0.2, 0.1, 0.0],
-    'heads': [5, 4, 3, 2]
+    'learning_rate': [0.000001, 0.00001, 0.0001, 0.001, 0.01, 0.1],
+    'hidden_channels': [32, 64, 128],
+    'num_layers': [1, 2, 3],
+    'dropout_rate': [0.0, 0.1, 0.2, 0.3],
+    'heads': [2, 3, 4, 5]
 }
 
 
 # Create combinations of hyperparameters
 param_combinations = ParameterGrid(param_grid)
+n_epochs = 500
 # Train using each combination
 for params in param_combinations:
-    parameters = [params['learning_rate'], params['hidden_channels'], params['num_layers'], params['dropout_rate'], params['heads']]
-    model = GAT(in_channels=nbr_features, hidden_channels=parameters[1], out_channels=nbr_classes, num_layers=parameters[2], dropout=parameters[3], heads=parameters[4], nbr_classes=nbr_classes)
-    optimizer = torch.optim.Adam(model.parameters(), lr=parameters[0])
-    criterion = torch.nn.CrossEntropyLoss()
-    train_losses, train_accuracies, valid_losses, valid_accuracies = train(model, optimizer, criterion, train_loader, valid_loader, parameters, n_epochs=500)
+    filename = f'GAT_Models/lr{params["learning_rate"]}_hc{params["hidden_channels"]}_nl{params["num_layers"]}_d{params["dropout_rate"]}_epochs{n_epochs}_heads{params["heads"]}.png'
+    if os.path.exists(filename):
+        pass
+    else:
+        parameters = [params['learning_rate'], params['hidden_channels'], params['num_layers'], params['dropout_rate'], params['heads']]
+        model = GAT(in_channels=nbr_features, hidden_channels=parameters[1], out_channels=nbr_classes, num_layers=parameters[2], dropout=parameters[3], heads=parameters[4], nbr_classes=nbr_classes)
+        optimizer = torch.optim.Adam(model.parameters(), lr=parameters[0])
+        criterion = torch.nn.CrossEntropyLoss()
+        train_losses, train_accuracies, valid_losses, valid_accuracies = train(model, optimizer, criterion, train_loader, valid_loader, parameters, n_epochs=n_epochs)
 
