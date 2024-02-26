@@ -8,6 +8,7 @@ import os
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+import pickle as pkl
 
 import torch
 import torch.nn.functional as F
@@ -31,16 +32,21 @@ class GAT(torch.nn.Module):
         self.convs.append(GATConv(in_channels, hidden_channels, heads=heads))
         for _ in range(num_layers - 1):
             self.convs.append(GATConv(hidden_channels * heads, hidden_channels, heads=heads))
+        # self.double_mlp = torch.nn.Sequential(torch.nn.Linear(hidden_channels * heads, hidden_channels), torch.nn.ReLU(), torch.nn.Linear(hidden_channels, hidden_channels))
         self.mlp = torch.nn.Sequential(torch.nn.Linear(hidden_channels * heads, hidden_channels), torch.nn.ReLU(), torch.nn.Linear(hidden_channels, out_channels))
         self.dropout = dropout
 
     def forward(self, x, edge_index, batch):
+        # xs = []
         for conv in self.convs:
             x = conv(x, edge_index)
             x = F.elu(x)  # Using ELU activation for GAT
             if self.dropout > 0:
                 x = F.dropout(x, p=self.dropout, training=self.training)
+                # xs.append(x)
         x = global_mean_pool(x, batch)
+        # x = torch.cat(xs, dim=1)
+        # x = self.double_mlp(x)
         x = self.mlp(x)
         return x
 
@@ -104,49 +110,6 @@ def dict_to_array(dict):
 def normalize_array(array):
     norm_array = (array - np.mean(array)) / np.std(array)
     return norm_array
-
-# Functions to implement the matrix profile algorithm using STUMPY++. 
-## This is commented out as my local kernel dies when running this cell because of memory issues with matrix profiling. I acquired the data by running it on colab and saving it in the repo here. Only uncomment if needed.
-
-# # Computing the matrix profile using STUMPY++
-# def compute_matrix_profile(time_series, m=3):
-#     # Here the m parameter is the window size, i.e. the length of the subsequence to compute the matrix profile for. 
-#     # Are we looking for short-lived neural activations (then small m), or are we interested in detecting longer-term changes or anomalies in brain activity (large m).
-#     matrix_profile, idx = stump(time_series, m)
-#     return matrix_profile, idx
-
-# # Finding the motif and discord in the matrix profile
-# def find_motif_discord(matrix_profile, idx):
-#     motif_idx = np.argmin(matrix_profile)
-#     discord_idx = np.argmax(matrix_profile)
-#     motif = idx[motif_idx]
-#     discord = idx[discord_idx]
-#     return motif, discord
-
-# # Function to compute the matrix profile, motifs and discords for a correlation matrix
-# def matrix_profile(corr_matrix):
-#     matrix_profiles = []
-#     motifs = []
-#     discords = []
-#     for row in corr_matrix:
-#         mp, idx = compute_matrix_profile(row)
-#         matrix_profiles.append(mp)
-#         motif, discord = find_motif_discord(mp, idx)
-#         motifs.append(motif)
-#         discords.append(discord)
-#     motifs_array = np.array(motifs)
-#     discords_array = np.array(discords)
-#     return matrix_profiles, motifs_array, discords_array
-
-# # Computing the matrix profiles for all the correlation matrices we have and saving them in a folder
-# for method in methods:
-#     method_dir = f'ADNI_full/corr_matrices/corr_matrix_{method}/'
-#     for file in os.listdir(method_dir):
-#         corr_matrix = np.loadtxt(method_dir + file, delimiter=',')
-#         matrix_profiles, motifs, discords = matrix_profile(corr_matrix)
-#         np.savetxt(f'ADNI_full/matrix_profiles/matrix_profile_{method}/{file}', matrix_profiles, delimiter=',')
-#         np.savetxt(f'ADNI_full/motifs/motifs_{method}/{file}', motifs, delimiter=',')
-#         np.savetxt(f'ADNI_full/discords/discords_{method}/{file}', discords, delimiter=',')
 
 # Defining a class to preprocess raw data into a format suitable for training Graph Neural Networks (GNNs).
 ## With the possibility of assigning weight to edges, adding the age feature, sex feature, and matrixe profiling.
@@ -223,40 +186,43 @@ class Raw_to_Graph(InMemoryDataset):
             cluster_coeff_array_norm = normalize_array(cluster_coeff_array)
 
             # Initializing an array for the graph features
-            x_array = [degree_array_norm, between_central_array_norm, local_eff_array_norm, cluster_coeff_array_norm, ratio_local_global_array_norm]
-            
+            x_array = np.stack([degree_array_norm, between_central_array_norm, local_eff_array_norm, cluster_coeff_array_norm, ratio_local_global_array_norm], axis=-1)
+            x_array = x_array.astype(np.float32)
+            # pdb.set_trace()
+
             if self.age:
                 # Extracting the age feature of the patient
                 patient_age = ages[patient_idx]
                 age_norm = (patient_age - min_age) / (max_age - min_age)
                 # Making the age array the same size as the other arrays
                 age_array = np.full((nbr_ROIs,), age_norm)
-                x_array.append(age_array)
+                x_array = np.concatenate((x_array, age_array), axis=-1)
             if self.sex:
                 # Extracting the sex feature of the patient
                 patient_sex = int(sex[patient_idx])
                 # Making the sex array the same size as the other arrays
                 sex_array = np.full((nbr_ROIs,), patient_sex)
-                x_array.append(sex_array)
+                x_array = np.concatenate((x_array, sex_array), axis=-1)
 
             if self.matrixprofile:
-                motifs_array = np.loadtxt(f'ADNI_full/motifs/motifs_{method}/{patient_matrix}', delimiter=',')
-                discords_array = np.loadtxt(f'ADNI_full/discords/discords_{method}/{patient_matrix}', delimiter=',')
-                x_array.append(motifs_array)
-                x_array.append(discords_array)
+                path = f'ADNI_full/matrix_profiles/matrix_profile_{method}/{patient_matrix}'
+                with open(path, "rb") as fl:
+                  patient_dict = pkl.load(fl)
+                # combine dimensions
+                features = np.array(patient_dict['mp']).reshape(len(patient_dict['mp']),-1)
+                features = features.astype(np.float32)
+                x_array = np.concatenate((x_array, features), axis=-1)
+
 
             # Concatenate the degree, participation coefficient, betweenness centrality, local efficiency, and ratio of local to global efficiency arrays to form a single feature vector
-            x_conc = torch.tensor(np.concatenate(x_array), dtype=torch.float)
-            # Determining the number of features concatenated to reshape with the correct dimensions
-            nbr_features = len(x_array)
-            x = torch.reshape(x_conc, (nbr_features, nbr_ROIs)).T
+            x = torch.tensor(x_array, dtype=torch.float)
 
-            # Create a Pytorch Geometric Data object from the NetworkX 
+            # Create a Pytorch Geometric Data object from the NetworkX
             graph_data = from_networkx(NetworkX_graph)
             ## The feature matrix of the graph is the degree, betweenness centrality, local efficiency, clustering coefficient and ratio of local to global efficiency of each node
             graph_data.x = x
             ## The target/output variable that we want to predict is the diagnostic label of the patient
-            graph_data.y = diagnostic_label[patient_idx]
+            graph_data.y = float(diagnostic_label[patient_idx])
             graphs.append(graph_data)
 
         data, slices = self.collate(graphs)
@@ -293,8 +259,8 @@ threshold = 0.4
 weight = False
 age = False
 sex = False
-matrixprofile = False
-nbr_features = 5 + int(age) + int(sex) + int(matrixprofile)
+matrixprofile = True
+in_channels = 5 + int(age) + int(sex) + int(matrixprofile)
 method = 'pearson'
 
 root = f'Raw_to_graph/ADNI_T_{threshold}_M_{method}_W{weight}_A{age}_S{sex}_MP{matrixprofile}'
@@ -358,7 +324,7 @@ def train(model, optimizer, criterion, train_loader, valid_loader, parameters, t
         train_accuracy = 0
         for data in train_loader:
             # Converting each element of data.y to a float
-            target = torch.tensor([float(y) for y in data.y], dtype=torch.long)
+            target = torch.tensor(data.y, dtype=torch.long)
             optimizer.zero_grad()
             out = model(data.x, data.edge_index, data.batch)
             loss = criterion(out, target)
@@ -376,7 +342,7 @@ def train(model, optimizer, criterion, train_loader, valid_loader, parameters, t
         with torch.no_grad():
             for data in valid_loader:
                 # Converting each element of data.y to a float
-                target = torch.tensor([float(y) for y in data.y], dtype=torch.long)
+                target = torch.tensor(data.y, dtype=torch.long)
                 out = model(data.x, data.edge_index, data.batch)
                 valid_loss += criterion(out, target)
                 valid_accuracy += quick_accuracy(out, target)
@@ -389,7 +355,7 @@ def train(model, optimizer, criterion, train_loader, valid_loader, parameters, t
                 test_accuracy = 0
                 for data in test_loader:
                     # Converting each element of data.y to a long
-                    target = torch.tensor([float(y) for y in data.y], dtype=torch.long)
+                    target = torch.tensor(data.y, dtype=torch.long)
                     out = model(data.x, data.edge_index, data.batch)
                     test_loss += criterion(out, target)
                     test_accuracy += quick_accuracy(out, target)
@@ -434,7 +400,10 @@ def train(model, optimizer, criterion, train_loader, valid_loader, parameters, t
     num_layers = parameters[2]
     dropout = parameters[3]
     heads = parameters[4]
-    filename = f'GAT_Models/lr{lr}_hc{hidden_channels}_nl{num_layers}_d{dropout}_epochs{n_epochs}_heads{heads}.png'
+    if matrixprofile:
+        filename = f'GAT_Models_MP/lr{lr}_hc{hidden_channels}_nl{num_layers}_d{dropout}_epochs{n_epochs}_heads{heads}.png'
+    else:
+        filename = f'GAT_Models/lr{lr}_hc{hidden_channels}_nl{num_layers}_d{dropout}_epochs{n_epochs}_heads{heads}.png'
     plt.savefig(filename)
     plt.show()
 
@@ -447,23 +416,23 @@ def train(model, optimizer, criterion, train_loader, valid_loader, parameters, t
 # In[8]:
 
 
-# # Defining the model, optimizer and loss function
-# lr=0.00001
-# hidden_channels=32
-# dropout=0.2
-# num_layers=3
-# heads=2
-# parameters = [lr, hidden_channels, num_layers, dropout, heads]
+# Defining the model, optimizer and loss function
+lr=0.00001
+hidden_channels=32
+dropout=0.2
+num_layers=3
+heads=2
+parameters = [lr, hidden_channels, num_layers, dropout, heads]
 
-# model = GAT(in_channels=nbr_features, hidden_channels=parameters[1], out_channels=nbr_classes, num_layers=parameters[2], dropout=parameters[3], heads=parameters[4], nbr_classes=nbr_classes)
-# optimizer = torch.optim.Adam(model.parameters(), lr=parameters[0])
-# criterion = torch.nn.CrossEntropyLoss()
+model = GAT(in_channels=in_channels, hidden_channels=parameters[1], out_channels=nbr_classes, num_layers=parameters[2], dropout=parameters[3], heads=parameters[4], nbr_classes=nbr_classes)
+optimizer = torch.optim.Adam(model.parameters(), lr=parameters[0])
+criterion = torch.nn.CrossEntropyLoss()
 
-# # Printing the model architecture
-# print(model)
+# Printing the model architecture
+print(model)
 
-# # Running the training
-# train_losses, train_accuracies, valid_losses, valid_accuracies = train(model, optimizer, criterion, train_loader, valid_loader, parameters, n_epochs=1000)
+# Running the training
+train_losses, train_accuracies, valid_losses, valid_accuracies = train(model, optimizer, criterion, train_loader, valid_loader, parameters, n_epochs=1000)
 
 
 # In[11]:
@@ -472,34 +441,39 @@ def train(model, optimizer, criterion, train_loader, valid_loader, parameters, t
 # Doing some parameter gridsearch to find the best hyperparameters
 from sklearn.model_selection import ParameterGrid
 
+MP = True
+
 # param_grid = {
-#     'learning_rate': [0.1, 0.01, 0.001, 0.0001, 0.00001, 0.000001],
+#     'learning_rate': [0.01, 0.001, 0.0001, 0.00001],
 #     'hidden_channels': [128, 64, 32],
 #     'num_layers': [3, 2, 1],
 #     'dropout_rate': [0.3, 0.2, 0.1, 0.0],
 #     'heads': [5, 4, 3, 2]
 # }
 param_grid = {
-    'learning_rate': [0.000001, 0.00001, 0.0001, 0.001, 0.01, 0.1],
+    'learning_rate': [0.00001, 0.0001, 0.001, 0.01],
     'hidden_channels': [32, 64, 128],
     'num_layers': [1, 2, 3],
     'dropout_rate': [0.0, 0.1, 0.2, 0.3],
     'heads': [2, 3, 4, 5]
 }
 
-
 # Create combinations of hyperparameters
 param_combinations = ParameterGrid(param_grid)
 n_epochs = 500
 # Train using each combination
 for params in param_combinations:
-    filename = f'GAT_Models/lr{params["learning_rate"]}_hc{params["hidden_channels"]}_nl{params["num_layers"]}_d{params["dropout_rate"]}_epochs{n_epochs}_heads{params["heads"]}.png'
+    if MP:
+        filename = f'GAT_Models_MP/lr{params["learning_rate"]}_hc{params["hidden_channels"]}_nl{params["num_layers"]}_d{params["dropout_rate"]}_epochs{n_epochs}_heads{params["heads"]}.png'
+    else:
+        filename = f'GAT_Models/lr{params["learning_rate"]}_hc{params["hidden_channels"]}_nl{params["num_layers"]}_d{params["dropout_rate"]}_epochs{n_epochs}_heads{params["heads"]}.png'
     if os.path.exists(filename):
         pass
     else:
         parameters = [params['learning_rate'], params['hidden_channels'], params['num_layers'], params['dropout_rate'], params['heads']]
-        model = GAT(in_channels=nbr_features, hidden_channels=parameters[1], out_channels=nbr_classes, num_layers=parameters[2], dropout=parameters[3], heads=parameters[4], nbr_classes=nbr_classes)
+        model = GAT(in_channels=in_channels, hidden_channels=parameters[1], out_channels=nbr_classes, num_layers=parameters[2], dropout=parameters[3], heads=parameters[4], nbr_classes=nbr_classes)
         optimizer = torch.optim.Adam(model.parameters(), lr=parameters[0])
         criterion = torch.nn.CrossEntropyLoss()
         train_losses, train_accuracies, valid_losses, valid_accuracies = train(model, optimizer, criterion, train_loader, valid_loader, parameters, n_epochs=n_epochs)
+
 
