@@ -1,0 +1,38 @@
+2024-03-03 20:28:38,359 INFO    MainThread:14101 [wandb_setup.py:_flush():76] Current SDK version is 0.16.3
+2024-03-03 20:28:38,360 INFO    MainThread:14101 [wandb_setup.py:_flush():76] Configure stats pid to 14101
+2024-03-03 20:28:38,360 INFO    MainThread:14101 [wandb_setup.py:_flush():76] Loading settings from /Users/mathilde/.config/wandb/settings
+2024-03-03 20:28:38,360 INFO    MainThread:14101 [wandb_setup.py:_flush():76] Loading settings from /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/settings
+2024-03-03 20:28:38,360 INFO    MainThread:14101 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'notebook_name': 'GAT.ipynb'}
+2024-03-03 20:28:38,360 INFO    MainThread:14101 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-03-03 20:28:38,360 INFO    MainThread:14101 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-03-03 20:28:38,360 INFO    MainThread:14101 [wandb_init.py:_log_setup():526] Logging user logs to /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_202838-xp067irq/logs/debug.log
+2024-03-03 20:28:38,361 INFO    MainThread:14101 [wandb_init.py:_log_setup():527] Logging internal logs to /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_202838-xp067irq/logs/debug-internal.log
+2024-03-03 20:28:38,361 INFO    MainThread:14101 [wandb_init.py:_jupyter_setup():472] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x14593c750>
+2024-03-03 20:28:38,361 INFO    MainThread:14101 [wandb_init.py:init():566] calling init triggers
+2024-03-03 20:28:38,361 INFO    MainThread:14101 [wandb_init.py:init():573] wandb.init called with sweep_config: {}
+config: {'architecture': 'GAT', 'weights': False, 'matrix profiling': True, 'learning_rate': 1e-05, 'hidden_channels': 32, 'num_layers': 2, 'dropout': 0.0, 'heads': 2, 'epochs': 500}
+2024-03-03 20:28:38,361 INFO    MainThread:14101 [wandb_init.py:init():591] re-initializing run, found existing run on stack: n362swew
+2024-03-03 20:28:38,366 INFO    MainThread:14101 [wandb_run.py:_finish():1970] finishing run alzheimers-cl/Alzheimers_GNN/n362swew
+2024-03-03 20:28:38,367 INFO    MainThread:14101 [wandb_run.py:_atexit_cleanup():2210] got exitcode: 0
+2024-03-03 20:28:38,367 INFO    MainThread:14101 [wandb_run.py:_restore():2193] restore
+2024-03-03 20:28:38,367 INFO    MainThread:14101 [wandb_run.py:_restore():2199] restore done
+2024-03-03 20:28:44,581 INFO    MainThread:14101 [wandb_run.py:_footer_history_summary_info():3866] rendering history
+2024-03-03 20:28:44,583 INFO    MainThread:14101 [wandb_run.py:_footer_history_summary_info():3898] rendering summary
+2024-03-03 20:28:44,596 INFO    MainThread:14101 [wandb_run.py:_footer_sync_info():3825] logging synced files
+2024-03-03 20:28:44,644 INFO    MainThread:14101 [wandb_init.py:init():616] starting backend
+2024-03-03 20:28:44,645 INFO    MainThread:14101 [wandb_init.py:init():620] setting up manager
+2024-03-03 20:28:44,649 INFO    MainThread:14101 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2024-03-03 20:28:44,650 INFO    MainThread:14101 [wandb_init.py:init():628] backend started and connected
+2024-03-03 20:28:44,680 INFO    MainThread:14101 [wandb_run.py:_label_probe_notebook():1295] probe notebook
+2024-03-03 20:28:44,690 INFO    MainThread:14101 [wandb_init.py:init():720] updated telemetry
+2024-03-03 20:28:44,893 INFO    MainThread:14101 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-03-03 20:28:45,996 INFO    MainThread:14101 [wandb_run.py:_on_init():2262] communicating current version
+2024-03-03 20:28:46,095 INFO    MainThread:14101 [wandb_run.py:_on_init():2271] got version response 
+2024-03-03 20:28:46,095 INFO    MainThread:14101 [wandb_init.py:init():804] starting run threads in backend
+2024-03-03 20:28:52,352 INFO    MainThread:14101 [wandb_run.py:_console_start():2241] atexit reg
+2024-03-03 20:28:52,353 INFO    MainThread:14101 [wandb_run.py:_redirect():2096] redirect: wrap_raw
+2024-03-03 20:28:52,353 INFO    MainThread:14101 [wandb_run.py:_redirect():2161] Wrapping output streams.
+2024-03-03 20:28:52,353 INFO    MainThread:14101 [wandb_run.py:_redirect():2186] Redirects installed.
+2024-03-03 20:28:52,356 INFO    MainThread:14101 [wandb_init.py:init():847] run started, returning control to user process
+2024-03-03 20:34:29,915 INFO    MainThread:14101 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-03-03 20:34:29,916 INFO    MainThread:14101 [wandb_init.py:_pause_backend():437] pausing backend

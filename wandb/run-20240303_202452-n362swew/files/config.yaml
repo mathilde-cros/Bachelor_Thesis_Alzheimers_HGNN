@@ -17,16 +17,16 @@ hidden_channels:
   value: 32
 num_layers:
   desc: null
-  value: 3
+  value: 1
 dropout:
   desc: null
-  value: 0.2
+  value: 0.0
 heads:
   desc: null
   value: 2
 epochs:
   desc: null
-  value: 1000
+  value: 500
 _wandb:
   desc: null
   value:
@@ -35,7 +35,7 @@ _wandb:
     framework: torch
     is_jupyter_run: true
     is_kaggle_kernel: false
-    start_time: 1709496224.764464
+    start_time: 1709497500.337215
     t:
       1:
       - 1

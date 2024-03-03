@@ -26,3 +26,29 @@ config: {'architecture': 'GAT', 'weights': False, 'matrix profiling': True, 'lea
 2024-03-03 20:03:53,676 INFO    MainThread:14101 [wandb_run.py:_redirect():2161] Wrapping output streams.
 2024-03-03 20:03:53,676 INFO    MainThread:14101 [wandb_run.py:_redirect():2186] Redirects installed.
 2024-03-03 20:03:53,679 INFO    MainThread:14101 [wandb_init.py:init():847] run started, returning control to user process
+2024-03-03 20:24:52,615 INFO    MainThread:14101 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-03-03 20:24:52,617 INFO    MainThread:14101 [wandb_init.py:_pause_backend():437] pausing backend
+2024-03-03 20:24:52,678 INFO    MainThread:14101 [wandb_init.py:_resume_backend():442] resuming backend
+2024-03-03 20:24:52,776 INFO    MainThread:14101 [wandb_setup.py:_flush():76] Current SDK version is 0.16.3
+2024-03-03 20:24:52,776 INFO    MainThread:14101 [wandb_setup.py:_flush():76] Configure stats pid to 14101
+2024-03-03 20:24:52,776 INFO    MainThread:14101 [wandb_setup.py:_flush():76] Loading settings from /Users/mathilde/.config/wandb/settings
+2024-03-03 20:24:52,777 INFO    MainThread:14101 [wandb_setup.py:_flush():76] Loading settings from /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/settings
+2024-03-03 20:24:52,777 INFO    MainThread:14101 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'notebook_name': 'GAT.ipynb'}
+2024-03-03 20:24:52,777 INFO    MainThread:14101 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-03-03 20:24:52,778 INFO    MainThread:14101 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-03-03 20:24:52,778 INFO    MainThread:14101 [wandb_init.py:_log_setup():526] Logging user logs to /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_202452-n362swew/logs/debug.log
+2024-03-03 20:24:52,778 INFO    MainThread:14101 [wandb_init.py:_log_setup():527] Logging internal logs to /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_202452-n362swew/logs/debug-internal.log
+2024-03-03 20:24:52,780 INFO    MainThread:14101 [wandb_init.py:init():566] calling init triggers
+2024-03-03 20:24:52,780 INFO    MainThread:14101 [wandb_init.py:init():573] wandb.init called with sweep_config: {}
+config: {'architecture': 'GAT', 'weights': False, 'matrix profiling': True, 'learning_rate': 1e-05, 'hidden_channels': 32, 'num_layers': 1, 'dropout': 0.0, 'heads': 2, 'epochs': 500}
+2024-03-03 20:24:52,781 INFO    MainThread:14101 [wandb_init.py:init():591] re-initializing run, found existing run on stack: ziddmly2
+2024-03-03 20:24:52,785 INFO    MainThread:14101 [wandb_run.py:_finish():1970] finishing run alzheimers-cl/Alzheimers_GNN/ziddmly2
+2024-03-03 20:24:52,788 ERROR   MainThread:14101 [jupyter.py:save_history():437] Run pip install nbformat to save notebook history
+2024-03-03 20:24:52,788 INFO    MainThread:14101 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-03-03 20:24:52,788 INFO    MainThread:14101 [wandb_init.py:_jupyter_teardown():454] cleaning up jupyter logic
+2024-03-03 20:24:52,789 INFO    MainThread:14101 [wandb_run.py:_atexit_cleanup():2210] got exitcode: 0
+2024-03-03 20:24:52,789 INFO    MainThread:14101 [wandb_run.py:_restore():2193] restore
+2024-03-03 20:24:52,789 INFO    MainThread:14101 [wandb_run.py:_restore():2199] restore done
+2024-03-03 20:25:00,073 INFO    MainThread:14101 [wandb_run.py:_footer_history_summary_info():3866] rendering history
+2024-03-03 20:25:00,079 INFO    MainThread:14101 [wandb_run.py:_footer_history_summary_info():3898] rendering summary
+2024-03-03 20:25:00,139 INFO    MainThread:14101 [wandb_run.py:_footer_sync_info():3825] logging synced files
