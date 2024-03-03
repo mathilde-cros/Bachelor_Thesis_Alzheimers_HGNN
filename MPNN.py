@@ -174,7 +174,6 @@ def train(model, optimizer, criterion, train_loader, valid_loader, parameters, t
 
     # Plot Losses
     plt.subplot(1, 2, 1)
-    print(train_losses)
     plt.plot(train_losses, label=f'Train Loss')
     plt.plot(valid_losses, label=f'Validation Loss')
     if testing:
@@ -205,12 +204,12 @@ def train(model, optimizer, criterion, train_loader, valid_loader, parameters, t
     plt.savefig(filename)
     plt.show()
 
+    wandb.finish()
+
     if testing:
         return train_losses, train_accuracies, valid_losses, valid_accuracies, test_losses, test_accuracies
     else:
         return train_losses, train_accuracies, valid_losses, valid_accuracies
-    
-    wandb.finish()
 
 
 # In[9]:

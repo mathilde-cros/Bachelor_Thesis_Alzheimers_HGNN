@@ -1,0 +1,29 @@
+2024-03-03 22:09:50,154 INFO    MainThread:4089701 [wandb_setup.py:_flush():76] Current SDK version is 0.16.3
+2024-03-03 22:09:50,160 INFO    MainThread:4089701 [wandb_setup.py:_flush():76] Configure stats pid to 4089701
+2024-03-03 22:09:50,160 INFO    MainThread:4089701 [wandb_setup.py:_flush():76] Loading settings from /users/eleves-b/2021/mathilde.cros/.config/wandb/settings
+2024-03-03 22:09:50,160 INFO    MainThread:4089701 [wandb_setup.py:_flush():76] Loading settings from /users/eleves-b/2021/mathilde.cros/Bachelor-Thesis-Alzheimers-HGNN/wandb/settings
+2024-03-03 22:09:50,161 INFO    MainThread:4089701 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'notebook_name': 'GCN.ipynb'}
+2024-03-03 22:09:50,161 INFO    MainThread:4089701 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-03-03 22:09:50,161 INFO    MainThread:4089701 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'GCN.py', 'program_abspath': '/users/eleves-b/2021/mathilde.cros/Bachelor-Thesis-Alzheimers-HGNN/GCN.py', 'program': '/users/eleves-b/2021/mathilde.cros/Bachelor-Thesis-Alzheimers-HGNN/GCN.py'}
+2024-03-03 22:09:50,161 INFO    MainThread:4089701 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2024-03-03 22:09:50,161 INFO    MainThread:4089701 [wandb_init.py:_log_setup():526] Logging user logs to /users/eleves-b/2021/mathilde.cros/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_220950-7v5ojbmz/logs/debug.log
+2024-03-03 22:09:50,161 INFO    MainThread:4089701 [wandb_init.py:_log_setup():527] Logging internal logs to /users/eleves-b/2021/mathilde.cros/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_220950-7v5ojbmz/logs/debug-internal.log
+2024-03-03 22:09:50,162 INFO    MainThread:4089701 [wandb_init.py:init():566] calling init triggers
+2024-03-03 22:09:50,162 INFO    MainThread:4089701 [wandb_init.py:init():573] wandb.init called with sweep_config: {}
+config: {'architecture': 'GCN', 'weights': False, 'matrix profiling': True, 'learning_rate': 0.0001, 'hidden_channels': 64, 'num_layers': 3, 'dropout': 0.0, 'epochs': 800}
+2024-03-03 22:09:50,162 INFO    MainThread:4089701 [wandb_init.py:init():611] wandb.init() called when a run is still active
+2024-03-03 22:14:48,160 INFO    MainThread:4089701 [wandb_setup.py:_flush():76] Current SDK version is 0.16.3
+2024-03-03 22:14:48,164 INFO    MainThread:4089701 [wandb_setup.py:_flush():76] Configure stats pid to 4089701
+2024-03-03 22:14:48,164 INFO    MainThread:4089701 [wandb_setup.py:_flush():76] Loading settings from /users/eleves-b/2021/mathilde.cros/.config/wandb/settings
+2024-03-03 22:14:48,164 INFO    MainThread:4089701 [wandb_setup.py:_flush():76] Loading settings from /users/eleves-b/2021/mathilde.cros/Bachelor-Thesis-Alzheimers-HGNN/wandb/settings
+2024-03-03 22:14:48,165 INFO    MainThread:4089701 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'notebook_name': 'GCN.ipynb'}
+2024-03-03 22:14:48,165 INFO    MainThread:4089701 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-03-03 22:14:48,165 INFO    MainThread:4089701 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'GCN.py', 'program_abspath': '/users/eleves-b/2021/mathilde.cros/Bachelor-Thesis-Alzheimers-HGNN/GCN.py', 'program': '/users/eleves-b/2021/mathilde.cros/Bachelor-Thesis-Alzheimers-HGNN/GCN.py'}
+2024-03-03 22:14:48,165 INFO    MainThread:4089701 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2024-03-03 22:14:48,166 INFO    MainThread:4089701 [wandb_init.py:_log_setup():526] Logging user logs to /users/eleves-b/2021/mathilde.cros/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_221448-q634ukf4/logs/debug.log
+2024-03-03 22:14:48,166 INFO    MainThread:4089701 [wandb_init.py:_log_setup():527] Logging internal logs to /users/eleves-b/2021/mathilde.cros/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_221448-q634ukf4/logs/debug-internal.log
+2024-03-03 22:14:48,166 INFO    MainThread:4089701 [wandb_init.py:init():566] calling init triggers
+2024-03-03 22:14:48,166 INFO    MainThread:4089701 [wandb_init.py:init():573] wandb.init called with sweep_config: {}
+config: {'architecture': 'GCN', 'weights': False, 'matrix profiling': True, 'learning_rate': 0.001, 'hidden_channels': 64, 'num_layers': 1, 'dropout': 0.0, 'epochs': 800}
+2024-03-03 22:14:48,167 INFO    MainThread:4089701 [wandb_init.py:init():611] wandb.init() called when a run is still active
+2024-03-03 22:16:38,181 WARNING MsgRouterThr:4089701 [router.py:message_loop():77] message_loop has been closed
