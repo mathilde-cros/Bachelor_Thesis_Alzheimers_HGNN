@@ -1,0 +1,3598 @@
+Epoch 1/1200
+Train Loss: 4.6457, Validation Loss: 5.2815
+Train Accuracy: 0.2384, Validation Accuracy: 0.1000
+Epoch 2/1200
+Train Loss: 4.4098, Validation Loss: 5.0226
+Train Accuracy: 0.2384, Validation Accuracy: 0.1000
+Epoch 3/1200
+Train Loss: 4.2192, Validation Loss: 4.7947
+Train Accuracy: 0.2330, Validation Accuracy: 0.1000
+Epoch 4/1200
+Train Loss: 4.0130, Validation Loss: 4.5535
+Train Accuracy: 0.2276, Validation Accuracy: 0.1000
+Epoch 5/1200
+Train Loss: 3.7064, Validation Loss: 4.2874
+Train Accuracy: 0.2384, Validation Accuracy: 0.1000
+Epoch 6/1200
+Train Loss: 3.5638, Validation Loss: 4.0008
+Train Accuracy: 0.2384, Validation Accuracy: 0.1000
+Epoch 7/1200
+Train Loss: 3.2789, Validation Loss: 3.6825
+Train Accuracy: 0.2384, Validation Accuracy: 0.1000
+Epoch 8/1200
+Train Loss: 3.0919, Validation Loss: 3.3661
+Train Accuracy: 0.2330, Validation Accuracy: 0.1000
+Epoch 9/1200
+Train Loss: 2.8327, Validation Loss: 3.0426
+Train Accuracy: 0.2276, Validation Accuracy: 0.1000
+Epoch 10/1200
+Train Loss: 2.6198, Validation Loss: 2.7526
+Train Accuracy: 0.2276, Validation Accuracy: 0.1000
+Epoch 11/1200
+Train Loss: 2.4219, Validation Loss: 2.4843
+Train Accuracy: 0.2276, Validation Accuracy: 0.1000
+Epoch 12/1200
+Train Loss: 2.2097, Validation Loss: 2.2736
+Train Accuracy: 0.2384, Validation Accuracy: 0.1000
+Epoch 13/1200
+Train Loss: 2.0361, Validation Loss: 2.1072
+Train Accuracy: 0.2384, Validation Accuracy: 0.1000
+Epoch 14/1200
+Train Loss: 1.9340, Validation Loss: 1.9770
+Train Accuracy: 0.2330, Validation Accuracy: 0.1000
+Epoch 15/1200
+Train Loss: 1.8412, Validation Loss: 1.8648
+Train Accuracy: 0.2276, Validation Accuracy: 0.1000
+Epoch 16/1200
+Train Loss: 1.7530, Validation Loss: 1.7652
+Train Accuracy: 0.2330, Validation Accuracy: 0.1000
+Epoch 17/1200
+Train Loss: 1.6678, Validation Loss: 1.6839
+Train Accuracy: 0.2276, Validation Accuracy: 0.1000
+Epoch 18/1200
+Train Loss: 1.5912, Validation Loss: 1.6123
+Train Accuracy: 0.2207, Validation Accuracy: 0.1000
+Epoch 19/1200
+Train Loss: 1.5290, Validation Loss: 1.5449
+Train Accuracy: 0.2523, Validation Accuracy: 0.1000
+Epoch 20/1200
+Train Loss: 1.4476, Validation Loss: 1.4943
+Train Accuracy: 0.2369, Validation Accuracy: 0.1500
+Epoch 21/1200
+Train Loss: 1.4426, Validation Loss: 1.4502
+Train Accuracy: 0.2346, Validation Accuracy: 0.4000
+Epoch 22/1200
+Train Loss: 1.3881, Validation Loss: 1.4094
+Train Accuracy: 0.2662, Validation Accuracy: 0.5000
+Epoch 23/1200
+Train Loss: 1.3232, Validation Loss: 1.3777
+Train Accuracy: 0.3966, Validation Accuracy: 0.5000
+Epoch 24/1200
+Train Loss: 1.3220, Validation Loss: 1.3509
+Train Accuracy: 0.2870, Validation Accuracy: 0.5500
+Epoch 25/1200
+Train Loss: 1.3070, Validation Loss: 1.3344
+Train Accuracy: 0.4506, Validation Accuracy: 0.5500
+Epoch 26/1200
+Train Loss: 1.2636, Validation Loss: 1.3266
+Train Accuracy: 0.4506, Validation Accuracy: 0.5500
+Epoch 27/1200
+Train Loss: 1.2800, Validation Loss: 1.3204
+Train Accuracy: 0.4745, Validation Accuracy: 0.5500
+Epoch 28/1200
+Train Loss: 1.2823, Validation Loss: 1.3087
+Train Accuracy: 0.4205, Validation Accuracy: 0.5500
+Epoch 29/1200
+Train Loss: 1.2909, Validation Loss: 1.2963
+Train Accuracy: 0.4452, Validation Accuracy: 0.5500
+Epoch 30/1200
+Train Loss: 1.2624, Validation Loss: 1.2915
+Train Accuracy: 0.4853, Validation Accuracy: 0.5500
+Epoch 31/1200
+Train Loss: 1.2489, Validation Loss: 1.2929
+Train Accuracy: 0.4745, Validation Accuracy: 0.5500
+Epoch 32/1200
+Train Loss: 1.2981, Validation Loss: 1.2881
+Train Accuracy: 0.4660, Validation Accuracy: 0.5500
+Epoch 33/1200
+Train Loss: 1.2669, Validation Loss: 1.2871
+Train Accuracy: 0.5201, Validation Accuracy: 0.5500
+Epoch 34/1200
+Train Loss: 1.2365, Validation Loss: 1.2863
+Train Accuracy: 0.4784, Validation Accuracy: 0.5500
+Epoch 35/1200
+Train Loss: 1.2111, Validation Loss: 1.2829
+Train Accuracy: 0.4823, Validation Accuracy: 0.5500
+Epoch 36/1200
+Train Loss: 1.2144, Validation Loss: 1.2766
+Train Accuracy: 0.4869, Validation Accuracy: 0.5500
+Epoch 37/1200
+Train Loss: 1.2452, Validation Loss: 1.2709
+Train Accuracy: 0.4923, Validation Accuracy: 0.5500
+Epoch 38/1200
+Train Loss: 1.2417, Validation Loss: 1.2655
+Train Accuracy: 0.4799, Validation Accuracy: 0.5500
+Epoch 39/1200
+Train Loss: 1.2528, Validation Loss: 1.2607
+Train Accuracy: 0.4869, Validation Accuracy: 0.5500
+Epoch 40/1200
+Train Loss: 1.2524, Validation Loss: 1.2566
+Train Accuracy: 0.4676, Validation Accuracy: 0.5500
+Epoch 41/1200
+Train Loss: 1.2295, Validation Loss: 1.2521
+Train Accuracy: 0.4576, Validation Accuracy: 0.5500
+Epoch 42/1200
+Train Loss: 1.2267, Validation Loss: 1.2508
+Train Accuracy: 0.5077, Validation Accuracy: 0.5500
+Epoch 43/1200
+Train Loss: 1.2345, Validation Loss: 1.2436
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 44/1200
+Train Loss: 1.2626, Validation Loss: 1.2462
+Train Accuracy: 0.4799, Validation Accuracy: 0.5500
+Epoch 45/1200
+Train Loss: 1.2149, Validation Loss: 1.2427
+Train Accuracy: 0.4769, Validation Accuracy: 0.5500
+Epoch 46/1200
+Train Loss: 1.2251, Validation Loss: 1.2371
+Train Accuracy: 0.4745, Validation Accuracy: 0.5500
+Epoch 47/1200
+Train Loss: 1.2422, Validation Loss: 1.2380
+Train Accuracy: 0.4853, Validation Accuracy: 0.5500
+Epoch 48/1200
+Train Loss: 1.2572, Validation Loss: 1.2360
+Train Accuracy: 0.4730, Validation Accuracy: 0.5500
+Epoch 49/1200
+Train Loss: 1.2432, Validation Loss: 1.2333
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 50/1200
+Train Loss: 1.2598, Validation Loss: 1.2297
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 51/1200
+Train Loss: 1.2230, Validation Loss: 1.2325
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 52/1200
+Train Loss: 1.2667, Validation Loss: 1.2339
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 53/1200
+Train Loss: 1.2504, Validation Loss: 1.2370
+Train Accuracy: 0.4622, Validation Accuracy: 0.5500
+Epoch 54/1200
+Train Loss: 1.2203, Validation Loss: 1.2336
+Train Accuracy: 0.4907, Validation Accuracy: 0.5500
+Epoch 55/1200
+Train Loss: 1.2278, Validation Loss: 1.2285
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 56/1200
+Train Loss: 1.2307, Validation Loss: 1.2293
+Train Accuracy: 0.4853, Validation Accuracy: 0.5500
+Epoch 57/1200
+Train Loss: 1.2509, Validation Loss: 1.2292
+Train Accuracy: 0.4676, Validation Accuracy: 0.5500
+Epoch 58/1200
+Train Loss: 1.2172, Validation Loss: 1.2271
+Train Accuracy: 0.5031, Validation Accuracy: 0.5500
+Epoch 59/1200
+Train Loss: 1.2286, Validation Loss: 1.2304
+Train Accuracy: 0.4830, Validation Accuracy: 0.5500
+Epoch 60/1200
+Train Loss: 1.2305, Validation Loss: 1.2309
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 61/1200
+Train Loss: 1.2484, Validation Loss: 1.2285
+Train Accuracy: 0.4660, Validation Accuracy: 0.5500
+Epoch 62/1200
+Train Loss: 1.2281, Validation Loss: 1.2273
+Train Accuracy: 0.4660, Validation Accuracy: 0.5500
+Epoch 63/1200
+Train Loss: 1.2883, Validation Loss: 1.2239
+Train Accuracy: 0.4761, Validation Accuracy: 0.5500
+Epoch 64/1200
+Train Loss: 1.2544, Validation Loss: 1.2212
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 65/1200
+Train Loss: 1.2296, Validation Loss: 1.2201
+Train Accuracy: 0.4676, Validation Accuracy: 0.5500
+Epoch 66/1200
+Train Loss: 1.2384, Validation Loss: 1.2224
+Train Accuracy: 0.4954, Validation Accuracy: 0.5500
+Epoch 67/1200
+Train Loss: 1.2209, Validation Loss: 1.2201
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 68/1200
+Train Loss: 1.2247, Validation Loss: 1.2180
+Train Accuracy: 0.4977, Validation Accuracy: 0.5500
+Epoch 69/1200
+Train Loss: 1.2348, Validation Loss: 1.2167
+Train Accuracy: 0.4853, Validation Accuracy: 0.5500
+Epoch 70/1200
+Train Loss: 1.2374, Validation Loss: 1.2184
+Train Accuracy: 0.4853, Validation Accuracy: 0.5500
+Epoch 71/1200
+Train Loss: 1.2267, Validation Loss: 1.2200
+Train Accuracy: 0.5023, Validation Accuracy: 0.5500
+Epoch 72/1200
+Train Loss: 1.2646, Validation Loss: 1.2231
+Train Accuracy: 0.4691, Validation Accuracy: 0.5500
+Epoch 73/1200
+Train Loss: 1.2451, Validation Loss: 1.2239
+Train Accuracy: 0.4923, Validation Accuracy: 0.5500
+Epoch 74/1200
+Train Loss: 1.2435, Validation Loss: 1.2234
+Train Accuracy: 0.4923, Validation Accuracy: 0.5500
+Epoch 75/1200
+Train Loss: 1.2334, Validation Loss: 1.2217
+Train Accuracy: 0.4923, Validation Accuracy: 0.5500
+Epoch 76/1200
+Train Loss: 1.2400, Validation Loss: 1.2180
+Train Accuracy: 0.4900, Validation Accuracy: 0.5500
+Epoch 77/1200
+Train Loss: 1.2002, Validation Loss: 1.2189
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 78/1200
+Train Loss: 1.2188, Validation Loss: 1.2179
+Train Accuracy: 0.4923, Validation Accuracy: 0.5500
+Epoch 79/1200
+Train Loss: 1.2207, Validation Loss: 1.2159
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 80/1200
+Train Loss: 1.2527, Validation Loss: 1.2137
+Train Accuracy: 0.4745, Validation Accuracy: 0.5500
+Epoch 81/1200
+Train Loss: 1.2360, Validation Loss: 1.2120
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 82/1200
+Train Loss: 1.2340, Validation Loss: 1.2114
+Train Accuracy: 0.5100, Validation Accuracy: 0.5500
+Epoch 83/1200
+Train Loss: 1.2272, Validation Loss: 1.2111
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 84/1200
+Train Loss: 1.2373, Validation Loss: 1.2128
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 85/1200
+Train Loss: 1.2443, Validation Loss: 1.2146
+Train Accuracy: 0.4923, Validation Accuracy: 0.5500
+Epoch 86/1200
+Train Loss: 1.2331, Validation Loss: 1.2148
+Train Accuracy: 0.4676, Validation Accuracy: 0.5500
+Epoch 87/1200
+Train Loss: 1.2160, Validation Loss: 1.2144
+Train Accuracy: 0.5255, Validation Accuracy: 0.5500
+Epoch 88/1200
+Train Loss: 1.2489, Validation Loss: 1.2127
+Train Accuracy: 0.4761, Validation Accuracy: 0.5500
+Epoch 89/1200
+Train Loss: 1.2370, Validation Loss: 1.2148
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 90/1200
+Train Loss: 1.2475, Validation Loss: 1.2148
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 91/1200
+Train Loss: 1.2328, Validation Loss: 1.2160
+Train Accuracy: 0.4923, Validation Accuracy: 0.5500
+Epoch 92/1200
+Train Loss: 1.2185, Validation Loss: 1.2149
+Train Accuracy: 0.4869, Validation Accuracy: 0.5500
+Epoch 93/1200
+Train Loss: 1.2365, Validation Loss: 1.2134
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 94/1200
+Train Loss: 1.2221, Validation Loss: 1.2155
+Train Accuracy: 0.4954, Validation Accuracy: 0.5500
+Epoch 95/1200
+Train Loss: 1.2194, Validation Loss: 1.2151
+Train Accuracy: 0.4923, Validation Accuracy: 0.5500
+Epoch 96/1200
+Train Loss: 1.2438, Validation Loss: 1.2144
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 97/1200
+Train Loss: 1.2432, Validation Loss: 1.2142
+Train Accuracy: 0.4830, Validation Accuracy: 0.5500
+Epoch 98/1200
+Train Loss: 1.2387, Validation Loss: 1.2146
+Train Accuracy: 0.4923, Validation Accuracy: 0.5500
+Epoch 99/1200
+Train Loss: 1.2213, Validation Loss: 1.2151
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 100/1200
+Train Loss: 1.2117, Validation Loss: 1.2132
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 101/1200
+Train Loss: 1.2186, Validation Loss: 1.2132
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 102/1200
+Train Loss: 1.2458, Validation Loss: 1.2111
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 103/1200
+Train Loss: 1.2335, Validation Loss: 1.2130
+Train Accuracy: 0.4923, Validation Accuracy: 0.5500
+Epoch 104/1200
+Train Loss: 1.2387, Validation Loss: 1.2141
+Train Accuracy: 0.4830, Validation Accuracy: 0.5500
+Epoch 105/1200
+Train Loss: 1.2231, Validation Loss: 1.2146
+Train Accuracy: 0.4977, Validation Accuracy: 0.5500
+Epoch 106/1200
+Train Loss: 1.2537, Validation Loss: 1.2147
+Train Accuracy: 0.4776, Validation Accuracy: 0.5500
+Epoch 107/1200
+Train Loss: 1.2038, Validation Loss: 1.2131
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 108/1200
+Train Loss: 1.2727, Validation Loss: 1.2114
+Train Accuracy: 0.4830, Validation Accuracy: 0.5500
+Epoch 109/1200
+Train Loss: 1.2356, Validation Loss: 1.2098
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 110/1200
+Train Loss: 1.2415, Validation Loss: 1.2116
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 111/1200
+Train Loss: 1.2346, Validation Loss: 1.2117
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 112/1200
+Train Loss: 1.2349, Validation Loss: 1.2096
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 113/1200
+Train Loss: 1.1983, Validation Loss: 1.2098
+Train Accuracy: 0.4977, Validation Accuracy: 0.5500
+Epoch 114/1200
+Train Loss: 1.2199, Validation Loss: 1.2095
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 115/1200
+Train Loss: 1.2222, Validation Loss: 1.2105
+Train Accuracy: 0.4923, Validation Accuracy: 0.5500
+Epoch 116/1200
+Train Loss: 1.2499, Validation Loss: 1.2134
+Train Accuracy: 0.4830, Validation Accuracy: 0.5500
+Epoch 117/1200
+Train Loss: 1.2548, Validation Loss: 1.2171
+Train Accuracy: 0.4815, Validation Accuracy: 0.5500
+Epoch 118/1200
+Train Loss: 1.2254, Validation Loss: 1.2160
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 119/1200
+Train Loss: 1.2173, Validation Loss: 1.2148
+Train Accuracy: 0.4923, Validation Accuracy: 0.5500
+Epoch 120/1200
+Train Loss: 1.2363, Validation Loss: 1.2163
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 121/1200
+Train Loss: 1.2529, Validation Loss: 1.2157
+Train Accuracy: 0.4730, Validation Accuracy: 0.5500
+Epoch 122/1200
+Train Loss: 1.2179, Validation Loss: 1.2157
+Train Accuracy: 0.4869, Validation Accuracy: 0.5500
+Epoch 123/1200
+Train Loss: 1.2458, Validation Loss: 1.2146
+Train Accuracy: 0.4776, Validation Accuracy: 0.5500
+Epoch 124/1200
+Train Loss: 1.2516, Validation Loss: 1.2157
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 125/1200
+Train Loss: 1.2308, Validation Loss: 1.2164
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 126/1200
+Train Loss: 1.2295, Validation Loss: 1.2163
+Train Accuracy: 0.4799, Validation Accuracy: 0.5500
+Epoch 127/1200
+Train Loss: 1.2233, Validation Loss: 1.2180
+Train Accuracy: 0.4799, Validation Accuracy: 0.5500
+Epoch 128/1200
+Train Loss: 1.2292, Validation Loss: 1.2196
+Train Accuracy: 0.4745, Validation Accuracy: 0.5500
+Epoch 129/1200
+Train Loss: 1.2246, Validation Loss: 1.2194
+Train Accuracy: 0.4869, Validation Accuracy: 0.5500
+Epoch 130/1200
+Train Loss: 1.2117, Validation Loss: 1.2197
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 131/1200
+Train Loss: 1.2295, Validation Loss: 1.2189
+Train Accuracy: 0.4869, Validation Accuracy: 0.5500
+Epoch 132/1200
+Train Loss: 1.2319, Validation Loss: 1.2165
+Train Accuracy: 0.4676, Validation Accuracy: 0.5500
+Epoch 133/1200
+Train Loss: 1.2389, Validation Loss: 1.2162
+Train Accuracy: 0.4815, Validation Accuracy: 0.5500
+Epoch 134/1200
+Train Loss: 1.2258, Validation Loss: 1.2149
+Train Accuracy: 0.4869, Validation Accuracy: 0.5500
+Epoch 135/1200
+Train Loss: 1.2567, Validation Loss: 1.2139
+Train Accuracy: 0.4730, Validation Accuracy: 0.5500
+Epoch 136/1200
+Train Loss: 1.2085, Validation Loss: 1.2145
+Train Accuracy: 0.5100, Validation Accuracy: 0.5500
+Epoch 137/1200
+Train Loss: 1.2264, Validation Loss: 1.2165
+Train Accuracy: 0.4869, Validation Accuracy: 0.5500
+Epoch 138/1200
+Train Loss: 1.2229, Validation Loss: 1.2150
+Train Accuracy: 0.5116, Validation Accuracy: 0.5500
+Epoch 139/1200
+Train Loss: 1.2255, Validation Loss: 1.2133
+Train Accuracy: 0.4923, Validation Accuracy: 0.5500
+Epoch 140/1200
+Train Loss: 1.2294, Validation Loss: 1.2145
+Train Accuracy: 0.5170, Validation Accuracy: 0.5500
+Epoch 141/1200
+Train Loss: 1.2458, Validation Loss: 1.2138
+Train Accuracy: 0.4830, Validation Accuracy: 0.5500
+Epoch 142/1200
+Train Loss: 1.2475, Validation Loss: 1.2146
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 143/1200
+Train Loss: 1.2256, Validation Loss: 1.2165
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 144/1200
+Train Loss: 1.2184, Validation Loss: 1.2174
+Train Accuracy: 0.4815, Validation Accuracy: 0.5500
+Epoch 145/1200
+Train Loss: 1.2220, Validation Loss: 1.2179
+Train Accuracy: 0.4923, Validation Accuracy: 0.5500
+Epoch 146/1200
+Train Loss: 1.2463, Validation Loss: 1.2156
+Train Accuracy: 0.4815, Validation Accuracy: 0.5500
+Epoch 147/1200
+Train Loss: 1.2557, Validation Loss: 1.2170
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 148/1200
+Train Loss: 1.2467, Validation Loss: 1.2170
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 149/1200
+Train Loss: 1.1973, Validation Loss: 1.2195
+Train Accuracy: 0.5031, Validation Accuracy: 0.5500
+Epoch 150/1200
+Train Loss: 1.2272, Validation Loss: 1.2196
+Train Accuracy: 0.5077, Validation Accuracy: 0.5500
+Epoch 151/1200
+Train Loss: 1.2309, Validation Loss: 1.2182
+Train Accuracy: 0.4923, Validation Accuracy: 0.5500
+Epoch 152/1200
+Train Loss: 1.2362, Validation Loss: 1.2184
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 153/1200
+Train Loss: 1.2238, Validation Loss: 1.2185
+Train Accuracy: 0.4923, Validation Accuracy: 0.5500
+Epoch 154/1200
+Train Loss: 1.2452, Validation Loss: 1.2178
+Train Accuracy: 0.4707, Validation Accuracy: 0.5500
+Epoch 155/1200
+Train Loss: 1.2167, Validation Loss: 1.2204
+Train Accuracy: 0.4923, Validation Accuracy: 0.5500
+Epoch 156/1200
+Train Loss: 1.2461, Validation Loss: 1.2197
+Train Accuracy: 0.4830, Validation Accuracy: 0.5500
+Epoch 157/1200
+Train Loss: 1.2232, Validation Loss: 1.2209
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 158/1200
+Train Loss: 1.2631, Validation Loss: 1.2196
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 159/1200
+Train Loss: 1.2494, Validation Loss: 1.2200
+Train Accuracy: 0.4761, Validation Accuracy: 0.5500
+Epoch 160/1200
+Train Loss: 1.2088, Validation Loss: 1.2212
+Train Accuracy: 0.4923, Validation Accuracy: 0.5500
+Epoch 161/1200
+Train Loss: 1.2345, Validation Loss: 1.2196
+Train Accuracy: 0.4799, Validation Accuracy: 0.5500
+Epoch 162/1200
+Train Loss: 1.2124, Validation Loss: 1.2188
+Train Accuracy: 0.4900, Validation Accuracy: 0.5500
+Epoch 163/1200
+Train Loss: 1.2286, Validation Loss: 1.2193
+Train Accuracy: 0.4923, Validation Accuracy: 0.5500
+Epoch 164/1200
+Train Loss: 1.2207, Validation Loss: 1.2183
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 165/1200
+Train Loss: 1.2177, Validation Loss: 1.2200
+Train Accuracy: 0.4761, Validation Accuracy: 0.5500
+Epoch 166/1200
+Train Loss: 1.2073, Validation Loss: 1.2209
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 167/1200
+Train Loss: 1.2246, Validation Loss: 1.2213
+Train Accuracy: 0.4977, Validation Accuracy: 0.5500
+Epoch 168/1200
+Train Loss: 1.2399, Validation Loss: 1.2190
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 169/1200
+Train Loss: 1.2365, Validation Loss: 1.2168
+Train Accuracy: 0.4923, Validation Accuracy: 0.5500
+Epoch 170/1200
+Train Loss: 1.2328, Validation Loss: 1.2171
+Train Accuracy: 0.4923, Validation Accuracy: 0.5500
+Epoch 171/1200
+Train Loss: 1.2342, Validation Loss: 1.2162
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 172/1200
+Train Loss: 1.2363, Validation Loss: 1.2156
+Train Accuracy: 0.4815, Validation Accuracy: 0.5500
+Epoch 173/1200
+Train Loss: 1.2349, Validation Loss: 1.2169
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 174/1200
+Train Loss: 1.2295, Validation Loss: 1.2158
+Train Accuracy: 0.4977, Validation Accuracy: 0.5500
+Epoch 175/1200
+Train Loss: 1.2278, Validation Loss: 1.2173
+Train Accuracy: 0.4745, Validation Accuracy: 0.5500
+Epoch 176/1200
+Train Loss: 1.2236, Validation Loss: 1.2150
+Train Accuracy: 0.4977, Validation Accuracy: 0.5500
+Epoch 177/1200
+Train Loss: 1.2430, Validation Loss: 1.2151
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 178/1200
+Train Loss: 1.2212, Validation Loss: 1.2151
+Train Accuracy: 0.4923, Validation Accuracy: 0.5500
+Epoch 179/1200
+Train Loss: 1.2153, Validation Loss: 1.2150
+Train Accuracy: 0.4923, Validation Accuracy: 0.5500
+Epoch 180/1200
+Train Loss: 1.2221, Validation Loss: 1.2157
+Train Accuracy: 0.4869, Validation Accuracy: 0.5500
+Epoch 181/1200
+Train Loss: 1.2091, Validation Loss: 1.2144
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 182/1200
+Train Loss: 1.2544, Validation Loss: 1.2140
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 183/1200
+Train Loss: 1.2467, Validation Loss: 1.2148
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 184/1200
+Train Loss: 1.2335, Validation Loss: 1.2140
+Train Accuracy: 0.4892, Validation Accuracy: 0.5500
+Epoch 185/1200
+Train Loss: 1.2255, Validation Loss: 1.2139
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 186/1200
+Train Loss: 1.2283, Validation Loss: 1.2137
+Train Accuracy: 0.4761, Validation Accuracy: 0.5500
+Epoch 187/1200
+Train Loss: 1.2464, Validation Loss: 1.2155
+Train Accuracy: 0.4869, Validation Accuracy: 0.5500
+Epoch 188/1200
+Train Loss: 1.2349, Validation Loss: 1.2154
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 189/1200
+Train Loss: 1.2287, Validation Loss: 1.2151
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 190/1200
+Train Loss: 1.2242, Validation Loss: 1.2121
+Train Accuracy: 0.4853, Validation Accuracy: 0.5500
+Epoch 191/1200
+Train Loss: 1.2391, Validation Loss: 1.2090
+Train Accuracy: 0.4815, Validation Accuracy: 0.5500
+Epoch 192/1200
+Train Loss: 1.2340, Validation Loss: 1.2105
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 193/1200
+Train Loss: 1.2167, Validation Loss: 1.2119
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 194/1200
+Train Loss: 1.2347, Validation Loss: 1.2102
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 195/1200
+Train Loss: 1.2439, Validation Loss: 1.2087
+Train Accuracy: 0.4869, Validation Accuracy: 0.5500
+Epoch 196/1200
+Train Loss: 1.2269, Validation Loss: 1.2069
+Train Accuracy: 0.4869, Validation Accuracy: 0.5500
+Epoch 197/1200
+Train Loss: 1.2561, Validation Loss: 1.2063
+Train Accuracy: 0.4830, Validation Accuracy: 0.5500
+Epoch 198/1200
+Train Loss: 1.2248, Validation Loss: 1.2086
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 199/1200
+Train Loss: 1.2343, Validation Loss: 1.2081
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 200/1200
+Train Loss: 1.2204, Validation Loss: 1.2075
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 201/1200
+Train Loss: 1.2260, Validation Loss: 1.2083
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 202/1200
+Train Loss: 1.2274, Validation Loss: 1.2081
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 203/1200
+Train Loss: 1.2137, Validation Loss: 1.2072
+Train Accuracy: 0.4923, Validation Accuracy: 0.5500
+Epoch 204/1200
+Train Loss: 1.2082, Validation Loss: 1.2069
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 205/1200
+Train Loss: 1.2241, Validation Loss: 1.2088
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 206/1200
+Train Loss: 1.2402, Validation Loss: 1.2076
+Train Accuracy: 0.4869, Validation Accuracy: 0.5500
+Epoch 207/1200
+Train Loss: 1.2147, Validation Loss: 1.2058
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 208/1200
+Train Loss: 1.2233, Validation Loss: 1.2054
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 209/1200
+Train Loss: 1.2374, Validation Loss: 1.2040
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 210/1200
+Train Loss: 1.2290, Validation Loss: 1.2024
+Train Accuracy: 0.4977, Validation Accuracy: 0.5500
+Epoch 211/1200
+Train Loss: 1.2593, Validation Loss: 1.2033
+Train Accuracy: 0.4830, Validation Accuracy: 0.5500
+Epoch 212/1200
+Train Loss: 1.2220, Validation Loss: 1.2029
+Train Accuracy: 0.4869, Validation Accuracy: 0.5500
+Epoch 213/1200
+Train Loss: 1.2280, Validation Loss: 1.2029
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 214/1200
+Train Loss: 1.2505, Validation Loss: 1.2052
+Train Accuracy: 0.4776, Validation Accuracy: 0.5500
+Epoch 215/1200
+Train Loss: 1.2250, Validation Loss: 1.2075
+Train Accuracy: 0.4869, Validation Accuracy: 0.5500
+Epoch 216/1200
+Train Loss: 1.2274, Validation Loss: 1.2104
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 217/1200
+Train Loss: 1.2222, Validation Loss: 1.2105
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 218/1200
+Train Loss: 1.2094, Validation Loss: 1.2099
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 219/1200
+Train Loss: 1.2040, Validation Loss: 1.2113
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 220/1200
+Train Loss: 1.2196, Validation Loss: 1.2105
+Train Accuracy: 0.5031, Validation Accuracy: 0.5500
+Epoch 221/1200
+Train Loss: 1.2509, Validation Loss: 1.2104
+Train Accuracy: 0.4815, Validation Accuracy: 0.5500
+Epoch 222/1200
+Train Loss: 1.2403, Validation Loss: 1.2114
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 223/1200
+Train Loss: 1.2109, Validation Loss: 1.2133
+Train Accuracy: 0.4853, Validation Accuracy: 0.5500
+Epoch 224/1200
+Train Loss: 1.2277, Validation Loss: 1.2140
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 225/1200
+Train Loss: 1.2306, Validation Loss: 1.2145
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 226/1200
+Train Loss: 1.2573, Validation Loss: 1.2089
+Train Accuracy: 0.4830, Validation Accuracy: 0.5500
+Epoch 227/1200
+Train Loss: 1.2326, Validation Loss: 1.2098
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 228/1200
+Train Loss: 1.2184, Validation Loss: 1.2104
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 229/1200
+Train Loss: 1.2229, Validation Loss: 1.2147
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 230/1200
+Train Loss: 1.2324, Validation Loss: 1.2167
+Train Accuracy: 0.4830, Validation Accuracy: 0.5500
+Epoch 231/1200
+Train Loss: 1.2195, Validation Loss: 1.2169
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 232/1200
+Train Loss: 1.2255, Validation Loss: 1.2174
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 233/1200
+Train Loss: 1.2283, Validation Loss: 1.2150
+Train Accuracy: 0.4815, Validation Accuracy: 0.5500
+Epoch 234/1200
+Train Loss: 1.2025, Validation Loss: 1.2147
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 235/1200
+Train Loss: 1.2313, Validation Loss: 1.2146
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 236/1200
+Train Loss: 1.2059, Validation Loss: 1.2117
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 237/1200
+Train Loss: 1.1990, Validation Loss: 1.2108
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 238/1200
+Train Loss: 1.2133, Validation Loss: 1.2115
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 239/1200
+Train Loss: 1.2289, Validation Loss: 1.2159
+Train Accuracy: 0.4830, Validation Accuracy: 0.5500
+Epoch 240/1200
+Train Loss: 1.2213, Validation Loss: 1.2112
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 241/1200
+Train Loss: 1.2148, Validation Loss: 1.2135
+Train Accuracy: 0.4977, Validation Accuracy: 0.5500
+Epoch 242/1200
+Train Loss: 1.2143, Validation Loss: 1.2102
+Train Accuracy: 0.4923, Validation Accuracy: 0.5500
+Epoch 243/1200
+Train Loss: 1.2074, Validation Loss: 1.2111
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 244/1200
+Train Loss: 1.1995, Validation Loss: 1.2141
+Train Accuracy: 0.5100, Validation Accuracy: 0.5500
+Epoch 245/1200
+Train Loss: 1.2193, Validation Loss: 1.2178
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 246/1200
+Train Loss: 1.2375, Validation Loss: 1.2163
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 247/1200
+Train Loss: 1.2227, Validation Loss: 1.2190
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 248/1200
+Train Loss: 1.2272, Validation Loss: 1.2189
+Train Accuracy: 0.4923, Validation Accuracy: 0.5500
+Epoch 249/1200
+Train Loss: 1.2272, Validation Loss: 1.2199
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 250/1200
+Train Loss: 1.2322, Validation Loss: 1.2153
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 251/1200
+Train Loss: 1.2206, Validation Loss: 1.2165
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 252/1200
+Train Loss: 1.2123, Validation Loss: 1.2151
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 253/1200
+Train Loss: 1.2239, Validation Loss: 1.2159
+Train Accuracy: 0.4954, Validation Accuracy: 0.5500
+Epoch 254/1200
+Train Loss: 1.2169, Validation Loss: 1.2094
+Train Accuracy: 0.5116, Validation Accuracy: 0.5500
+Epoch 255/1200
+Train Loss: 1.2335, Validation Loss: 1.2046
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 256/1200
+Train Loss: 1.2043, Validation Loss: 1.2039
+Train Accuracy: 0.5100, Validation Accuracy: 0.5500
+Epoch 257/1200
+Train Loss: 1.2333, Validation Loss: 1.2034
+Train Accuracy: 0.4707, Validation Accuracy: 0.5500
+Epoch 258/1200
+Train Loss: 1.2315, Validation Loss: 1.2024
+Train Accuracy: 0.4815, Validation Accuracy: 0.5500
+Epoch 259/1200
+Train Loss: 1.2496, Validation Loss: 1.2005
+Train Accuracy: 0.4830, Validation Accuracy: 0.5500
+Epoch 260/1200
+Train Loss: 1.2460, Validation Loss: 1.1980
+Train Accuracy: 0.4830, Validation Accuracy: 0.5500
+Epoch 261/1200
+Train Loss: 1.2281, Validation Loss: 1.1980
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 262/1200
+Train Loss: 1.2362, Validation Loss: 1.1997
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 263/1200
+Train Loss: 1.2344, Validation Loss: 1.2046
+Train Accuracy: 0.4761, Validation Accuracy: 0.5500
+Epoch 264/1200
+Train Loss: 1.2248, Validation Loss: 1.2013
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 265/1200
+Train Loss: 1.2051, Validation Loss: 1.2030
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 266/1200
+Train Loss: 1.2186, Validation Loss: 1.2030
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 267/1200
+Train Loss: 1.2209, Validation Loss: 1.2058
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 268/1200
+Train Loss: 1.2165, Validation Loss: 1.2074
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 269/1200
+Train Loss: 1.2338, Validation Loss: 1.2080
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 270/1200
+Train Loss: 1.2173, Validation Loss: 1.2083
+Train Accuracy: 0.5100, Validation Accuracy: 0.5500
+Epoch 271/1200
+Train Loss: 1.2450, Validation Loss: 1.2101
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 272/1200
+Train Loss: 1.2322, Validation Loss: 1.2111
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 273/1200
+Train Loss: 1.2135, Validation Loss: 1.2148
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 274/1200
+Train Loss: 1.2214, Validation Loss: 1.2134
+Train Accuracy: 0.5031, Validation Accuracy: 0.5500
+Epoch 275/1200
+Train Loss: 1.2114, Validation Loss: 1.2152
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 276/1200
+Train Loss: 1.2111, Validation Loss: 1.2151
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 277/1200
+Train Loss: 1.2160, Validation Loss: 1.2150
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 278/1200
+Train Loss: 1.2293, Validation Loss: 1.2159
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 279/1200
+Train Loss: 1.2117, Validation Loss: 1.2134
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 280/1200
+Train Loss: 1.2022, Validation Loss: 1.2168
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 281/1200
+Train Loss: 1.2076, Validation Loss: 1.2177
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 282/1200
+Train Loss: 1.2464, Validation Loss: 1.2177
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 283/1200
+Train Loss: 1.2540, Validation Loss: 1.2176
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 284/1200
+Train Loss: 1.2497, Validation Loss: 1.2128
+Train Accuracy: 0.4830, Validation Accuracy: 0.5500
+Epoch 285/1200
+Train Loss: 1.2237, Validation Loss: 1.2108
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 286/1200
+Train Loss: 1.1890, Validation Loss: 1.2129
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 287/1200
+Train Loss: 1.2110, Validation Loss: 1.2157
+Train Accuracy: 0.4830, Validation Accuracy: 0.5500
+Epoch 288/1200
+Train Loss: 1.2229, Validation Loss: 1.2189
+Train Accuracy: 0.4815, Validation Accuracy: 0.5500
+Epoch 289/1200
+Train Loss: 1.2268, Validation Loss: 1.2198
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 290/1200
+Train Loss: 1.2433, Validation Loss: 1.2165
+Train Accuracy: 0.4869, Validation Accuracy: 0.5500
+Epoch 291/1200
+Train Loss: 1.2071, Validation Loss: 1.2148
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 292/1200
+Train Loss: 1.2242, Validation Loss: 1.2135
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 293/1200
+Train Loss: 1.1980, Validation Loss: 1.2161
+Train Accuracy: 0.5154, Validation Accuracy: 0.5500
+Epoch 294/1200
+Train Loss: 1.2310, Validation Loss: 1.2168
+Train Accuracy: 0.4815, Validation Accuracy: 0.5500
+Epoch 295/1200
+Train Loss: 1.2038, Validation Loss: 1.2235
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 296/1200
+Train Loss: 1.2350, Validation Loss: 1.2245
+Train Accuracy: 0.4815, Validation Accuracy: 0.5500
+Epoch 297/1200
+Train Loss: 1.2347, Validation Loss: 1.2230
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 298/1200
+Train Loss: 1.2339, Validation Loss: 1.2275
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 299/1200
+Train Loss: 1.2428, Validation Loss: 1.2300
+Train Accuracy: 0.4745, Validation Accuracy: 0.5500
+Epoch 300/1200
+Train Loss: 1.1987, Validation Loss: 1.2232
+Train Accuracy: 0.4923, Validation Accuracy: 0.5500
+Epoch 301/1200
+Train Loss: 1.2042, Validation Loss: 1.2224
+Train Accuracy: 0.4830, Validation Accuracy: 0.5500
+Epoch 302/1200
+Train Loss: 1.2383, Validation Loss: 1.2197
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 303/1200
+Train Loss: 1.2245, Validation Loss: 1.2173
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 304/1200
+Train Loss: 1.2282, Validation Loss: 1.2131
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 305/1200
+Train Loss: 1.2082, Validation Loss: 1.2133
+Train Accuracy: 0.4954, Validation Accuracy: 0.5500
+Epoch 306/1200
+Train Loss: 1.2249, Validation Loss: 1.2142
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 307/1200
+Train Loss: 1.2106, Validation Loss: 1.2094
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 308/1200
+Train Loss: 1.2048, Validation Loss: 1.2075
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 309/1200
+Train Loss: 1.2153, Validation Loss: 1.2070
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 310/1200
+Train Loss: 1.2209, Validation Loss: 1.2118
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 311/1200
+Train Loss: 1.2174, Validation Loss: 1.2174
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 312/1200
+Train Loss: 1.2066, Validation Loss: 1.2244
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 313/1200
+Train Loss: 1.2418, Validation Loss: 1.2247
+Train Accuracy: 0.4977, Validation Accuracy: 0.5500
+Epoch 314/1200
+Train Loss: 1.1840, Validation Loss: 1.2215
+Train Accuracy: 0.5100, Validation Accuracy: 0.5500
+Epoch 315/1200
+Train Loss: 1.2216, Validation Loss: 1.2241
+Train Accuracy: 0.4830, Validation Accuracy: 0.5500
+Epoch 316/1200
+Train Loss: 1.2429, Validation Loss: 1.2203
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 317/1200
+Train Loss: 1.2068, Validation Loss: 1.2288
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 318/1200
+Train Loss: 1.2257, Validation Loss: 1.2225
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 319/1200
+Train Loss: 1.2217, Validation Loss: 1.2241
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 320/1200
+Train Loss: 1.2359, Validation Loss: 1.2233
+Train Accuracy: 0.4923, Validation Accuracy: 0.5500
+Epoch 321/1200
+Train Loss: 1.1961, Validation Loss: 1.2305
+Train Accuracy: 0.5100, Validation Accuracy: 0.5500
+Epoch 322/1200
+Train Loss: 1.2311, Validation Loss: 1.2198
+Train Accuracy: 0.4830, Validation Accuracy: 0.5500
+Epoch 323/1200
+Train Loss: 1.2173, Validation Loss: 1.2228
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 324/1200
+Train Loss: 1.2222, Validation Loss: 1.2254
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 325/1200
+Train Loss: 1.2360, Validation Loss: 1.2268
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 326/1200
+Train Loss: 1.2188, Validation Loss: 1.2219
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 327/1200
+Train Loss: 1.2131, Validation Loss: 1.2164
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 328/1200
+Train Loss: 1.1938, Validation Loss: 1.2125
+Train Accuracy: 0.5031, Validation Accuracy: 0.5500
+Epoch 329/1200
+Train Loss: 1.2188, Validation Loss: 1.2080
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 330/1200
+Train Loss: 1.2056, Validation Loss: 1.2117
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 331/1200
+Train Loss: 1.2066, Validation Loss: 1.2181
+Train Accuracy: 0.5100, Validation Accuracy: 0.5500
+Epoch 332/1200
+Train Loss: 1.2261, Validation Loss: 1.2173
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 333/1200
+Train Loss: 1.2187, Validation Loss: 1.2204
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 334/1200
+Train Loss: 1.1955, Validation Loss: 1.2225
+Train Accuracy: 0.4977, Validation Accuracy: 0.5500
+Epoch 335/1200
+Train Loss: 1.2211, Validation Loss: 1.2236
+Train Accuracy: 0.4815, Validation Accuracy: 0.5500
+Epoch 336/1200
+Train Loss: 1.2030, Validation Loss: 1.2217
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 337/1200
+Train Loss: 1.2006, Validation Loss: 1.2214
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 338/1200
+Train Loss: 1.1819, Validation Loss: 1.2239
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 339/1200
+Train Loss: 1.1927, Validation Loss: 1.2266
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 340/1200
+Train Loss: 1.2066, Validation Loss: 1.2340
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 341/1200
+Train Loss: 1.2072, Validation Loss: 1.2373
+Train Accuracy: 0.4730, Validation Accuracy: 0.5500
+Epoch 342/1200
+Train Loss: 1.2230, Validation Loss: 1.2289
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 343/1200
+Train Loss: 1.2067, Validation Loss: 1.2214
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 344/1200
+Train Loss: 1.2007, Validation Loss: 1.2176
+Train Accuracy: 0.5100, Validation Accuracy: 0.5500
+Epoch 345/1200
+Train Loss: 1.2162, Validation Loss: 1.2221
+Train Accuracy: 0.4830, Validation Accuracy: 0.5500
+Epoch 346/1200
+Train Loss: 1.2135, Validation Loss: 1.2224
+Train Accuracy: 0.5116, Validation Accuracy: 0.5500
+Epoch 347/1200
+Train Loss: 1.2282, Validation Loss: 1.2206
+Train Accuracy: 0.5023, Validation Accuracy: 0.5500
+Epoch 348/1200
+Train Loss: 1.1947, Validation Loss: 1.2248
+Train Accuracy: 0.5170, Validation Accuracy: 0.5500
+Epoch 349/1200
+Train Loss: 1.2236, Validation Loss: 1.2239
+Train Accuracy: 0.4815, Validation Accuracy: 0.5500
+Epoch 350/1200
+Train Loss: 1.2169, Validation Loss: 1.2255
+Train Accuracy: 0.4923, Validation Accuracy: 0.5500
+Epoch 351/1200
+Train Loss: 1.2240, Validation Loss: 1.2302
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 352/1200
+Train Loss: 1.2245, Validation Loss: 1.2253
+Train Accuracy: 0.4954, Validation Accuracy: 0.5500
+Epoch 353/1200
+Train Loss: 1.2308, Validation Loss: 1.2221
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 354/1200
+Train Loss: 1.2208, Validation Loss: 1.2229
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 355/1200
+Train Loss: 1.2262, Validation Loss: 1.2209
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 356/1200
+Train Loss: 1.2152, Validation Loss: 1.2221
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 357/1200
+Train Loss: 1.2398, Validation Loss: 1.2195
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 358/1200
+Train Loss: 1.2029, Validation Loss: 1.2238
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 359/1200
+Train Loss: 1.2153, Validation Loss: 1.2226
+Train Accuracy: 0.5116, Validation Accuracy: 0.5500
+Epoch 360/1200
+Train Loss: 1.2291, Validation Loss: 1.2254
+Train Accuracy: 0.4923, Validation Accuracy: 0.5500
+Epoch 361/1200
+Train Loss: 1.2010, Validation Loss: 1.2210
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 362/1200
+Train Loss: 1.2236, Validation Loss: 1.2170
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 363/1200
+Train Loss: 1.2549, Validation Loss: 1.2171
+Train Accuracy: 0.4691, Validation Accuracy: 0.5500
+Epoch 364/1200
+Train Loss: 1.2102, Validation Loss: 1.2161
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 365/1200
+Train Loss: 1.2340, Validation Loss: 1.2172
+Train Accuracy: 0.4954, Validation Accuracy: 0.5500
+Epoch 366/1200
+Train Loss: 1.2120, Validation Loss: 1.2185
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 367/1200
+Train Loss: 1.1940, Validation Loss: 1.2232
+Train Accuracy: 0.4923, Validation Accuracy: 0.5500
+Epoch 368/1200
+Train Loss: 1.1948, Validation Loss: 1.2254
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 369/1200
+Train Loss: 1.2401, Validation Loss: 1.2180
+Train Accuracy: 0.4745, Validation Accuracy: 0.5500
+Epoch 370/1200
+Train Loss: 1.2203, Validation Loss: 1.2208
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 371/1200
+Train Loss: 1.2348, Validation Loss: 1.2215
+Train Accuracy: 0.4830, Validation Accuracy: 0.5500
+Epoch 372/1200
+Train Loss: 1.2406, Validation Loss: 1.2210
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 373/1200
+Train Loss: 1.2080, Validation Loss: 1.2149
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 374/1200
+Train Loss: 1.2181, Validation Loss: 1.2143
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 375/1200
+Train Loss: 1.2205, Validation Loss: 1.2124
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 376/1200
+Train Loss: 1.2234, Validation Loss: 1.2155
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 377/1200
+Train Loss: 1.2103, Validation Loss: 1.2162
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 378/1200
+Train Loss: 1.1957, Validation Loss: 1.2195
+Train Accuracy: 0.4923, Validation Accuracy: 0.5500
+Epoch 379/1200
+Train Loss: 1.1784, Validation Loss: 1.2221
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 380/1200
+Train Loss: 1.2385, Validation Loss: 1.2184
+Train Accuracy: 0.4761, Validation Accuracy: 0.5500
+Epoch 381/1200
+Train Loss: 1.2159, Validation Loss: 1.2238
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 382/1200
+Train Loss: 1.2144, Validation Loss: 1.2205
+Train Accuracy: 0.4869, Validation Accuracy: 0.5500
+Epoch 383/1200
+Train Loss: 1.1997, Validation Loss: 1.2236
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 384/1200
+Train Loss: 1.2228, Validation Loss: 1.2205
+Train Accuracy: 0.4954, Validation Accuracy: 0.5500
+Epoch 385/1200
+Train Loss: 1.2048, Validation Loss: 1.2180
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 386/1200
+Train Loss: 1.2307, Validation Loss: 1.2218
+Train Accuracy: 0.4923, Validation Accuracy: 0.5500
+Epoch 387/1200
+Train Loss: 1.2311, Validation Loss: 1.2237
+Train Accuracy: 0.4954, Validation Accuracy: 0.5500
+Epoch 388/1200
+Train Loss: 1.2374, Validation Loss: 1.2241
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 389/1200
+Train Loss: 1.2020, Validation Loss: 1.2249
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 390/1200
+Train Loss: 1.2136, Validation Loss: 1.2276
+Train Accuracy: 0.5077, Validation Accuracy: 0.5500
+Epoch 391/1200
+Train Loss: 1.2073, Validation Loss: 1.2243
+Train Accuracy: 0.4923, Validation Accuracy: 0.5500
+Epoch 392/1200
+Train Loss: 1.1864, Validation Loss: 1.2221
+Train Accuracy: 0.5116, Validation Accuracy: 0.5500
+Epoch 393/1200
+Train Loss: 1.2081, Validation Loss: 1.2178
+Train Accuracy: 0.5131, Validation Accuracy: 0.5500
+Epoch 394/1200
+Train Loss: 1.1962, Validation Loss: 1.2135
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 395/1200
+Train Loss: 1.1930, Validation Loss: 1.2196
+Train Accuracy: 0.5170, Validation Accuracy: 0.5500
+Epoch 396/1200
+Train Loss: 1.2225, Validation Loss: 1.2194
+Train Accuracy: 0.4869, Validation Accuracy: 0.5500
+Epoch 397/1200
+Train Loss: 1.2125, Validation Loss: 1.2168
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 398/1200
+Train Loss: 1.2082, Validation Loss: 1.2218
+Train Accuracy: 0.5116, Validation Accuracy: 0.5500
+Epoch 399/1200
+Train Loss: 1.2281, Validation Loss: 1.2110
+Train Accuracy: 0.4815, Validation Accuracy: 0.5500
+Epoch 400/1200
+Train Loss: 1.2143, Validation Loss: 1.2121
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 401/1200
+Train Loss: 1.2173, Validation Loss: 1.2116
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 402/1200
+Train Loss: 1.2072, Validation Loss: 1.2144
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 403/1200
+Train Loss: 1.2302, Validation Loss: 1.2194
+Train Accuracy: 0.4730, Validation Accuracy: 0.5500
+Epoch 404/1200
+Train Loss: 1.1969, Validation Loss: 1.2270
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 405/1200
+Train Loss: 1.2150, Validation Loss: 1.2272
+Train Accuracy: 0.4954, Validation Accuracy: 0.5500
+Epoch 406/1200
+Train Loss: 1.2103, Validation Loss: 1.2234
+Train Accuracy: 0.4869, Validation Accuracy: 0.5500
+Epoch 407/1200
+Train Loss: 1.2215, Validation Loss: 1.2100
+Train Accuracy: 0.4869, Validation Accuracy: 0.5500
+Epoch 408/1200
+Train Loss: 1.2046, Validation Loss: 1.2119
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 409/1200
+Train Loss: 1.2245, Validation Loss: 1.2125
+Train Accuracy: 0.4830, Validation Accuracy: 0.5500
+Epoch 410/1200
+Train Loss: 1.2079, Validation Loss: 1.2069
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 411/1200
+Train Loss: 1.1856, Validation Loss: 1.2056
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 412/1200
+Train Loss: 1.2089, Validation Loss: 1.2077
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Train Loss: 1.2157, Validation Loss: 1.2139
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 414/1200
+Train Loss: 1.1955, Validation Loss: 1.2135
+Train Accuracy: 0.4799, Validation Accuracy: 0.5500
+Epoch 415/1200
+Train Loss: 1.2221, Validation Loss: 1.2121
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 416/1200
+Train Loss: 1.2183, Validation Loss: 1.2112
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 417/1200
+Train Loss: 1.2226, Validation Loss: 1.2101
+Train Accuracy: 0.4954, Validation Accuracy: 0.5500
+Epoch 418/1200
+Train Loss: 1.2198, Validation Loss: 1.2138
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 419/1200
+Train Loss: 1.2180, Validation Loss: 1.2142
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 420/1200
+Train Loss: 1.2121, Validation Loss: 1.2153
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 421/1200
+Train Loss: 1.2225, Validation Loss: 1.2200
+Train Accuracy: 0.4830, Validation Accuracy: 0.5500
+Epoch 422/1200
+Train Loss: 1.2026, Validation Loss: 1.2278
+Train Accuracy: 0.4923, Validation Accuracy: 0.5500
+Epoch 423/1200
+Train Loss: 1.2186, Validation Loss: 1.2322
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 424/1200
+Train Loss: 1.1995, Validation Loss: 1.2299
+Train Accuracy: 0.5031, Validation Accuracy: 0.5500
+Epoch 425/1200
+Train Loss: 1.2086, Validation Loss: 1.2159
+Train Accuracy: 0.4869, Validation Accuracy: 0.5500
+Epoch 426/1200
+Train Loss: 1.2230, Validation Loss: 1.2068
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 427/1200
+Train Loss: 1.2516, Validation Loss: 1.2080
+Train Accuracy: 0.4761, Validation Accuracy: 0.5500
+Epoch 428/1200
+Train Loss: 1.2357, Validation Loss: 1.2118
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 429/1200
+Train Loss: 1.2138, Validation Loss: 1.2078
+Train Accuracy: 0.5077, Validation Accuracy: 0.5500
+Epoch 430/1200
+Train Loss: 1.2186, Validation Loss: 1.2138
+Train Accuracy: 0.4923, Validation Accuracy: 0.5500
+Epoch 431/1200
+Train Loss: 1.1975, Validation Loss: 1.2188
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 432/1200
+Train Loss: 1.2302, Validation Loss: 1.2208
+Train Accuracy: 0.4660, Validation Accuracy: 0.5500
+Epoch 433/1200
+Train Loss: 1.1829, Validation Loss: 1.2184
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 434/1200
+Train Loss: 1.2058, Validation Loss: 1.2142
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 435/1200
+Train Loss: 1.2353, Validation Loss: 1.2142
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 436/1200
+Train Loss: 1.2172, Validation Loss: 1.2130
+Train Accuracy: 0.5147, Validation Accuracy: 0.5500
+Epoch 437/1200
+Train Loss: 1.2101, Validation Loss: 1.2128
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 438/1200
+Train Loss: 1.2153, Validation Loss: 1.2227
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 439/1200
+Train Loss: 1.1969, Validation Loss: 1.2351
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 440/1200
+Train Loss: 1.2157, Validation Loss: 1.2395
+Train Accuracy: 0.4923, Validation Accuracy: 0.5500
+Epoch 441/1200
+Train Loss: 1.1965, Validation Loss: 1.2356
+Train Accuracy: 0.4907, Validation Accuracy: 0.5500
+Epoch 442/1200
+Train Loss: 1.2441, Validation Loss: 1.2196
+Train Accuracy: 0.4707, Validation Accuracy: 0.5500
+Epoch 443/1200
+Train Loss: 1.2122, Validation Loss: 1.2152
+Train Accuracy: 0.4745, Validation Accuracy: 0.5500
+Epoch 444/1200
+Train Loss: 1.1928, Validation Loss: 1.2198
+Train Accuracy: 0.5077, Validation Accuracy: 0.5500
+Epoch 445/1200
+Train Loss: 1.2291, Validation Loss: 1.2211
+Train Accuracy: 0.4869, Validation Accuracy: 0.5500
+Epoch 446/1200
+Train Loss: 1.1875, Validation Loss: 1.2239
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 447/1200
+Train Loss: 1.2277, Validation Loss: 1.2105
+Train Accuracy: 0.4761, Validation Accuracy: 0.5500
+Epoch 448/1200
+Train Loss: 1.1935, Validation Loss: 1.2175
+Train Accuracy: 0.4745, Validation Accuracy: 0.5500
+Epoch 449/1200
+Train Loss: 1.2089, Validation Loss: 1.2187
+Train Accuracy: 0.4815, Validation Accuracy: 0.5500
+Epoch 450/1200
+Train Loss: 1.2132, Validation Loss: 1.2236
+Train Accuracy: 0.4815, Validation Accuracy: 0.5500
+Epoch 451/1200
+Train Loss: 1.2302, Validation Loss: 1.2148
+Train Accuracy: 0.4745, Validation Accuracy: 0.5500
+Epoch 452/1200
+Train Loss: 1.2155, Validation Loss: 1.2159
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 453/1200
+Train Loss: 1.2080, Validation Loss: 1.2203
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 454/1200
+Train Loss: 1.1984, Validation Loss: 1.2117
+Train Accuracy: 0.5077, Validation Accuracy: 0.5500
+Epoch 455/1200
+Train Loss: 1.2249, Validation Loss: 1.2119
+Train Accuracy: 0.4900, Validation Accuracy: 0.5500
+Epoch 456/1200
+Train Loss: 1.2475, Validation Loss: 1.2050
+Train Accuracy: 0.4900, Validation Accuracy: 0.5500
+Epoch 457/1200
+Train Loss: 1.1918, Validation Loss: 1.2123
+Train Accuracy: 0.5185, Validation Accuracy: 0.5500
+Epoch 458/1200
+Train Loss: 1.2171, Validation Loss: 1.2188
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 459/1200
+Train Loss: 1.2393, Validation Loss: 1.2156
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 460/1200
+Train Loss: 1.1963, Validation Loss: 1.2118
+Train Accuracy: 0.5023, Validation Accuracy: 0.5500
+Epoch 461/1200
+Train Loss: 1.2017, Validation Loss: 1.2128
+Train Accuracy: 0.4954, Validation Accuracy: 0.5500
+Epoch 462/1200
+Train Loss: 1.1831, Validation Loss: 1.2275
+Train Accuracy: 0.4907, Validation Accuracy: 0.5500
+Epoch 463/1200
+Train Loss: 1.2264, Validation Loss: 1.2220
+Train Accuracy: 0.4730, Validation Accuracy: 0.5500
+Epoch 464/1200
+Train Loss: 1.2167, Validation Loss: 1.2152
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 465/1200
+Train Loss: 1.1821, Validation Loss: 1.2183
+Train Accuracy: 0.5100, Validation Accuracy: 0.5500
+Epoch 466/1200
+Train Loss: 1.2243, Validation Loss: 1.2107
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 467/1200
+Train Loss: 1.2310, Validation Loss: 1.2096
+Train Accuracy: 0.4707, Validation Accuracy: 0.5500
+Epoch 468/1200
+Train Loss: 1.1956, Validation Loss: 1.2060
+Train Accuracy: 0.4954, Validation Accuracy: 0.5500
+Epoch 469/1200
+Train Loss: 1.1773, Validation Loss: 1.2073
+Train Accuracy: 0.5201, Validation Accuracy: 0.5500
+Epoch 470/1200
+Train Loss: 1.2034, Validation Loss: 1.2115
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 471/1200
+Train Loss: 1.1984, Validation Loss: 1.2146
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 472/1200
+Train Loss: 1.2093, Validation Loss: 1.2172
+Train Accuracy: 0.5100, Validation Accuracy: 0.5500
+Epoch 473/1200
+Train Loss: 1.1931, Validation Loss: 1.2208
+Train Accuracy: 0.4853, Validation Accuracy: 0.5500
+Epoch 474/1200
+Train Loss: 1.1910, Validation Loss: 1.2173
+Train Accuracy: 0.5116, Validation Accuracy: 0.5500
+Epoch 475/1200
+Train Loss: 1.2106, Validation Loss: 1.2133
+Train Accuracy: 0.4869, Validation Accuracy: 0.5500
+Epoch 476/1200
+Train Loss: 1.1713, Validation Loss: 1.2187
+Train Accuracy: 0.5100, Validation Accuracy: 0.5500
+Epoch 477/1200
+Train Loss: 1.2224, Validation Loss: 1.2264
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 478/1200
+Train Loss: 1.1888, Validation Loss: 1.2333
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 479/1200
+Train Loss: 1.1739, Validation Loss: 1.2332
+Train Accuracy: 0.5224, Validation Accuracy: 0.5500
+Epoch 480/1200
+Train Loss: 1.1958, Validation Loss: 1.2338
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 481/1200
+Train Loss: 1.2333, Validation Loss: 1.2262
+Train Accuracy: 0.4954, Validation Accuracy: 0.5500
+Epoch 482/1200
+Train Loss: 1.2140, Validation Loss: 1.2282
+Train Accuracy: 0.5116, Validation Accuracy: 0.5500
+Epoch 483/1200
+Train Loss: 1.2303, Validation Loss: 1.2298
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 484/1200
+Train Loss: 1.1933, Validation Loss: 1.2303
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 485/1200
+Train Loss: 1.1993, Validation Loss: 1.2360
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 486/1200
+Train Loss: 1.2214, Validation Loss: 1.2359
+Train Accuracy: 0.5185, Validation Accuracy: 0.5500
+Epoch 487/1200
+Train Loss: 1.2028, Validation Loss: 1.2217
+Train Accuracy: 0.4869, Validation Accuracy: 0.5500
+Epoch 488/1200
+Train Loss: 1.2031, Validation Loss: 1.2218
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 489/1200
+Train Loss: 1.1736, Validation Loss: 1.2306
+Train Accuracy: 0.5031, Validation Accuracy: 0.5500
+Epoch 490/1200
+Train Loss: 1.2046, Validation Loss: 1.2327
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 491/1200
+Train Loss: 1.1860, Validation Loss: 1.2305
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 492/1200
+Train Loss: 1.1907, Validation Loss: 1.2371
+Train Accuracy: 0.5023, Validation Accuracy: 0.5500
+Epoch 493/1200
+Train Loss: 1.2021, Validation Loss: 1.2297
+Train Accuracy: 0.4954, Validation Accuracy: 0.5500
+Epoch 494/1200
+Train Loss: 1.1975, Validation Loss: 1.2348
+Train Accuracy: 0.4923, Validation Accuracy: 0.5500
+Epoch 495/1200
+Train Loss: 1.2028, Validation Loss: 1.2278
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 496/1200
+Train Loss: 1.2420, Validation Loss: 1.2185
+Train Accuracy: 0.4830, Validation Accuracy: 0.5500
+Epoch 497/1200
+Train Loss: 1.2050, Validation Loss: 1.2235
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 498/1200
+Train Loss: 1.1738, Validation Loss: 1.2210
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 499/1200
+Train Loss: 1.1842, Validation Loss: 1.2270
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 500/1200
+Train Loss: 1.2056, Validation Loss: 1.2155
+Train Accuracy: 0.5077, Validation Accuracy: 0.5500
+Epoch 501/1200
+Train Loss: 1.2151, Validation Loss: 1.2121
+Train Accuracy: 0.4830, Validation Accuracy: 0.5500
+Epoch 502/1200
+Train Loss: 1.2295, Validation Loss: 1.2144
+Train Accuracy: 0.5023, Validation Accuracy: 0.5500
+Epoch 503/1200
+Train Loss: 1.2066, Validation Loss: 1.2226
+Train Accuracy: 0.5116, Validation Accuracy: 0.5500
+Epoch 504/1200
+Train Loss: 1.2053, Validation Loss: 1.2248
+Train Accuracy: 0.5131, Validation Accuracy: 0.5500
+Epoch 505/1200
+Train Loss: 1.2170, Validation Loss: 1.2365
+Train Accuracy: 0.5116, Validation Accuracy: 0.5500
+Epoch 506/1200
+Train Loss: 1.2202, Validation Loss: 1.2464
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 507/1200
+Train Loss: 1.2184, Validation Loss: 1.2408
+Train Accuracy: 0.4923, Validation Accuracy: 0.5500
+Epoch 508/1200
+Train Loss: 1.2035, Validation Loss: 1.2409
+Train Accuracy: 0.5131, Validation Accuracy: 0.5500
+Epoch 509/1200
+Train Loss: 1.1877, Validation Loss: 1.2384
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 510/1200
+Train Loss: 1.2007, Validation Loss: 1.2407
+Train Accuracy: 0.5093, Validation Accuracy: 0.5500
+Epoch 511/1200
+Train Loss: 1.2014, Validation Loss: 1.2269
+Train Accuracy: 0.4784, Validation Accuracy: 0.5500
+Epoch 512/1200
+Train Loss: 1.2195, Validation Loss: 1.2277
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 513/1200
+Train Loss: 1.2192, Validation Loss: 1.2264
+Train Accuracy: 0.4815, Validation Accuracy: 0.5500
+Epoch 514/1200
+Train Loss: 1.2266, Validation Loss: 1.2225
+Train Accuracy: 0.4784, Validation Accuracy: 0.5500
+Epoch 515/1200
+Train Loss: 1.2227, Validation Loss: 1.2256
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 516/1200
+Train Loss: 1.1982, Validation Loss: 1.2214
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 517/1200
+Train Loss: 1.1978, Validation Loss: 1.2283
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 518/1200
+Train Loss: 1.2265, Validation Loss: 1.2168
+Train Accuracy: 0.4745, Validation Accuracy: 0.5500
+Epoch 519/1200
+Train Loss: 1.1989, Validation Loss: 1.2184
+Train Accuracy: 0.5131, Validation Accuracy: 0.5500
+Epoch 520/1200
+Train Loss: 1.2113, Validation Loss: 1.2255
+Train Accuracy: 0.5147, Validation Accuracy: 0.5500
+Epoch 521/1200
+Train Loss: 1.1831, Validation Loss: 1.2297
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 522/1200
+Train Loss: 1.2397, Validation Loss: 1.2356
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 523/1200
+Train Loss: 1.2059, Validation Loss: 1.2297
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 524/1200
+Train Loss: 1.1997, Validation Loss: 1.2314
+Train Accuracy: 0.5201, Validation Accuracy: 0.5500
+Epoch 525/1200
+Train Loss: 1.2339, Validation Loss: 1.2181
+Train Accuracy: 0.4900, Validation Accuracy: 0.5500
+Epoch 526/1200
+Train Loss: 1.2308, Validation Loss: 1.2143
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 527/1200
+Train Loss: 1.1882, Validation Loss: 1.2155
+Train Accuracy: 0.4907, Validation Accuracy: 0.5500
+Epoch 528/1200
+Train Loss: 1.1928, Validation Loss: 1.2205
+Train Accuracy: 0.5100, Validation Accuracy: 0.5500
+Epoch 529/1200
+Train Loss: 1.2124, Validation Loss: 1.2216
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 530/1200
+Train Loss: 1.1669, Validation Loss: 1.2216
+Train Accuracy: 0.5347, Validation Accuracy: 0.5500
+Epoch 531/1200
+Train Loss: 1.1998, Validation Loss: 1.2244
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 532/1200
+Train Loss: 1.2159, Validation Loss: 1.2199
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 533/1200
+Train Loss: 1.2399, Validation Loss: 1.2166
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 534/1200
+Train Loss: 1.1955, Validation Loss: 1.2189
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 535/1200
+Train Loss: 1.1946, Validation Loss: 1.2202
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 536/1200
+Train Loss: 1.2107, Validation Loss: 1.2257
+Train Accuracy: 0.5077, Validation Accuracy: 0.5500
+Epoch 537/1200
+Train Loss: 1.1999, Validation Loss: 1.2301
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 538/1200
+Train Loss: 1.2346, Validation Loss: 1.2227
+Train Accuracy: 0.4745, Validation Accuracy: 0.5500
+Epoch 539/1200
+Train Loss: 1.2192, Validation Loss: 1.2297
+Train Accuracy: 0.4745, Validation Accuracy: 0.5500
+Epoch 540/1200
+Train Loss: 1.1766, Validation Loss: 1.2322
+Train Accuracy: 0.4923, Validation Accuracy: 0.5500
+Epoch 541/1200
+Train Loss: 1.2063, Validation Loss: 1.2274
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 542/1200
+Train Loss: 1.2118, Validation Loss: 1.2196
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 543/1200
+Train Loss: 1.1951, Validation Loss: 1.2203
+Train Accuracy: 0.5170, Validation Accuracy: 0.5500
+Epoch 544/1200
+Train Loss: 1.2034, Validation Loss: 1.2217
+Train Accuracy: 0.4869, Validation Accuracy: 0.5500
+Epoch 545/1200
+Train Loss: 1.2036, Validation Loss: 1.2244
+Train Accuracy: 0.5239, Validation Accuracy: 0.5500
+Epoch 546/1200
+Train Loss: 1.2141, Validation Loss: 1.2219
+Train Accuracy: 0.5293, Validation Accuracy: 0.5500
+Epoch 547/1200
+Train Loss: 1.2010, Validation Loss: 1.2170
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 548/1200
+Train Loss: 1.2013, Validation Loss: 1.2170
+Train Accuracy: 0.4869, Validation Accuracy: 0.5500
+Epoch 549/1200
+Train Loss: 1.2096, Validation Loss: 1.2108
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 550/1200
+Train Loss: 1.1773, Validation Loss: 1.2173
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 551/1200
+Train Loss: 1.1836, Validation Loss: 1.2213
+Train Accuracy: 0.5116, Validation Accuracy: 0.5500
+Epoch 552/1200
+Train Loss: 1.2566, Validation Loss: 1.2325
+Train Accuracy: 0.4954, Validation Accuracy: 0.5500
+Epoch 553/1200
+Train Loss: 1.1980, Validation Loss: 1.2390
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 554/1200
+Train Loss: 1.1890, Validation Loss: 1.2275
+Train Accuracy: 0.4907, Validation Accuracy: 0.5500
+Epoch 555/1200
+Train Loss: 1.1867, Validation Loss: 1.2197
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 556/1200
+Train Loss: 1.2036, Validation Loss: 1.2233
+Train Accuracy: 0.5255, Validation Accuracy: 0.5500
+Epoch 557/1200
+Train Loss: 1.2077, Validation Loss: 1.2228
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 558/1200
+Train Loss: 1.1914, Validation Loss: 1.2245
+Train Accuracy: 0.4838, Validation Accuracy: 0.5500
+Epoch 559/1200
+Train Loss: 1.2064, Validation Loss: 1.2288
+Train Accuracy: 0.5031, Validation Accuracy: 0.5500
+Epoch 560/1200
+Train Loss: 1.2213, Validation Loss: 1.2228
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 561/1200
+Train Loss: 1.1955, Validation Loss: 1.2169
+Train Accuracy: 0.5116, Validation Accuracy: 0.5500
+Epoch 562/1200
+Train Loss: 1.2149, Validation Loss: 1.2240
+Train Accuracy: 0.5147, Validation Accuracy: 0.5500
+Epoch 563/1200
+Train Loss: 1.2192, Validation Loss: 1.2261
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 564/1200
+Train Loss: 1.2171, Validation Loss: 1.2261
+Train Accuracy: 0.5201, Validation Accuracy: 0.5500
+Epoch 565/1200
+Train Loss: 1.1889, Validation Loss: 1.2263
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 566/1200
+Train Loss: 1.1969, Validation Loss: 1.2236
+Train Accuracy: 0.5147, Validation Accuracy: 0.5500
+Epoch 567/1200
+Train Loss: 1.2115, Validation Loss: 1.2182
+Train Accuracy: 0.4892, Validation Accuracy: 0.5500
+Epoch 568/1200
+Train Loss: 1.2379, Validation Loss: 1.2172
+Train Accuracy: 0.4745, Validation Accuracy: 0.5500
+Epoch 569/1200
+Train Loss: 1.1895, Validation Loss: 1.2221
+Train Accuracy: 0.5116, Validation Accuracy: 0.5500
+Epoch 570/1200
+Train Loss: 1.2142, Validation Loss: 1.2316
+Train Accuracy: 0.5116, Validation Accuracy: 0.5500
+Epoch 571/1200
+Train Loss: 1.1918, Validation Loss: 1.2408
+Train Accuracy: 0.5185, Validation Accuracy: 0.5500
+Epoch 572/1200
+Train Loss: 1.2275, Validation Loss: 1.2288
+Train Accuracy: 0.4830, Validation Accuracy: 0.5500
+Epoch 573/1200
+Train Loss: 1.1904, Validation Loss: 1.2259
+Train Accuracy: 0.4815, Validation Accuracy: 0.5500
+Epoch 574/1200
+Train Loss: 1.2029, Validation Loss: 1.2289
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 575/1200
+Train Loss: 1.1906, Validation Loss: 1.2245
+Train Accuracy: 0.5131, Validation Accuracy: 0.5500
+Epoch 576/1200
+Train Loss: 1.1959, Validation Loss: 1.2304
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 577/1200
+Train Loss: 1.1934, Validation Loss: 1.2298
+Train Accuracy: 0.5077, Validation Accuracy: 0.5500
+Epoch 578/1200
+Train Loss: 1.2164, Validation Loss: 1.2287
+Train Accuracy: 0.5147, Validation Accuracy: 0.5500
+Epoch 579/1200
+Train Loss: 1.2186, Validation Loss: 1.2282
+Train Accuracy: 0.4900, Validation Accuracy: 0.5500
+Epoch 580/1200
+Train Loss: 1.2311, Validation Loss: 1.2330
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 581/1200
+Train Loss: 1.2028, Validation Loss: 1.2236
+Train Accuracy: 0.4745, Validation Accuracy: 0.5500
+Epoch 582/1200
+Train Loss: 1.2091, Validation Loss: 1.2212
+Train Accuracy: 0.4923, Validation Accuracy: 0.5500
+Epoch 583/1200
+Train Loss: 1.2187, Validation Loss: 1.2236
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 584/1200
+Train Loss: 1.1879, Validation Loss: 1.2232
+Train Accuracy: 0.5154, Validation Accuracy: 0.5500
+Epoch 585/1200
+Train Loss: 1.2042, Validation Loss: 1.2167
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 586/1200
+Train Loss: 1.2102, Validation Loss: 1.2097
+Train Accuracy: 0.5077, Validation Accuracy: 0.5500
+Epoch 587/1200
+Train Loss: 1.2020, Validation Loss: 1.2107
+Train Accuracy: 0.5131, Validation Accuracy: 0.5500
+Epoch 588/1200
+Train Loss: 1.1803, Validation Loss: 1.2098
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 589/1200
+Train Loss: 1.2050, Validation Loss: 1.2154
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 590/1200
+Train Loss: 1.2402, Validation Loss: 1.2190
+Train Accuracy: 0.4745, Validation Accuracy: 0.5500
+Epoch 591/1200
+Train Loss: 1.2156, Validation Loss: 1.2250
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 592/1200
+Train Loss: 1.2154, Validation Loss: 1.2289
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 593/1200
+Train Loss: 1.1978, Validation Loss: 1.2267
+Train Accuracy: 0.4676, Validation Accuracy: 0.5500
+Epoch 594/1200
+Train Loss: 1.1812, Validation Loss: 1.2287
+Train Accuracy: 0.5309, Validation Accuracy: 0.5500
+Epoch 595/1200
+Train Loss: 1.2062, Validation Loss: 1.2297
+Train Accuracy: 0.5239, Validation Accuracy: 0.5500
+Epoch 596/1200
+Train Loss: 1.1940, Validation Loss: 1.2210
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 597/1200
+Train Loss: 1.2078, Validation Loss: 1.2175
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 598/1200
+Train Loss: 1.1943, Validation Loss: 1.2196
+Train Accuracy: 0.5255, Validation Accuracy: 0.5500
+Epoch 599/1200
+Train Loss: 1.1975, Validation Loss: 1.2124
+Train Accuracy: 0.4707, Validation Accuracy: 0.5500
+Epoch 600/1200
+Train Loss: 1.2157, Validation Loss: 1.2168
+Train Accuracy: 0.4923, Validation Accuracy: 0.5500
+Epoch 601/1200
+Train Loss: 1.1972, Validation Loss: 1.2182
+Train Accuracy: 0.5170, Validation Accuracy: 0.5500
+Epoch 602/1200
+Train Loss: 1.1930, Validation Loss: 1.2191
+Train Accuracy: 0.5201, Validation Accuracy: 0.5500
+Epoch 603/1200
+Train Loss: 1.1804, Validation Loss: 1.2223
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 604/1200
+Train Loss: 1.1960, Validation Loss: 1.2273
+Train Accuracy: 0.4969, Validation Accuracy: 0.5500
+Epoch 605/1200
+Train Loss: 1.2034, Validation Loss: 1.2274
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 606/1200
+Train Loss: 1.2056, Validation Loss: 1.2252
+Train Accuracy: 0.4923, Validation Accuracy: 0.5500
+Epoch 607/1200
+Train Loss: 1.2138, Validation Loss: 1.2307
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 608/1200
+Train Loss: 1.2197, Validation Loss: 1.2250
+Train Accuracy: 0.4830, Validation Accuracy: 0.5500
+Epoch 609/1200
+Train Loss: 1.1792, Validation Loss: 1.2239
+Train Accuracy: 0.5085, Validation Accuracy: 0.5500
+Epoch 610/1200
+Train Loss: 1.2076, Validation Loss: 1.2248
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 611/1200
+Train Loss: 1.1784, Validation Loss: 1.2359
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 612/1200
+Train Loss: 1.1972, Validation Loss: 1.2261
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 613/1200
+Train Loss: 1.2214, Validation Loss: 1.2308
+Train Accuracy: 0.4745, Validation Accuracy: 0.5500
+Epoch 614/1200
+Train Loss: 1.1910, Validation Loss: 1.2327
+Train Accuracy: 0.5131, Validation Accuracy: 0.5500
+Epoch 615/1200
+Train Loss: 1.2198, Validation Loss: 1.2268
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 616/1200
+Train Loss: 1.1968, Validation Loss: 1.2248
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 617/1200
+Train Loss: 1.1868, Validation Loss: 1.2349
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 618/1200
+Train Loss: 1.2043, Validation Loss: 1.2292
+Train Accuracy: 0.5100, Validation Accuracy: 0.5500
+Epoch 619/1200
+Train Loss: 1.1999, Validation Loss: 1.2227
+Train Accuracy: 0.5340, Validation Accuracy: 0.5500
+Epoch 620/1200
+Train Loss: 1.2225, Validation Loss: 1.2219
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 621/1200
+Train Loss: 1.1852, Validation Loss: 1.2180
+Train Accuracy: 0.5216, Validation Accuracy: 0.5500
+Epoch 622/1200
+Train Loss: 1.2097, Validation Loss: 1.2172
+Train Accuracy: 0.4815, Validation Accuracy: 0.5500
+Epoch 623/1200
+Train Loss: 1.1943, Validation Loss: 1.2230
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 624/1200
+Train Loss: 1.1857, Validation Loss: 1.2232
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 625/1200
+Train Loss: 1.1917, Validation Loss: 1.2247
+Train Accuracy: 0.4869, Validation Accuracy: 0.5500
+Epoch 626/1200
+Train Loss: 1.2042, Validation Loss: 1.2296
+Train Accuracy: 0.5023, Validation Accuracy: 0.5500
+Epoch 627/1200
+Train Loss: 1.1868, Validation Loss: 1.2295
+Train Accuracy: 0.5216, Validation Accuracy: 0.5500
+Epoch 628/1200
+Train Loss: 1.1892, Validation Loss: 1.2209
+Train Accuracy: 0.4869, Validation Accuracy: 0.5500
+Epoch 629/1200
+Train Loss: 1.2099, Validation Loss: 1.2214
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 630/1200
+Train Loss: 1.2017, Validation Loss: 1.2244
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 631/1200
+Train Loss: 1.2049, Validation Loss: 1.2192
+Train Accuracy: 0.4969, Validation Accuracy: 0.5500
+Epoch 632/1200
+Train Loss: 1.1885, Validation Loss: 1.2187
+Train Accuracy: 0.4977, Validation Accuracy: 0.5500
+Epoch 633/1200
+Train Loss: 1.2060, Validation Loss: 1.2244
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 634/1200
+Train Loss: 1.2003, Validation Loss: 1.2272
+Train Accuracy: 0.5077, Validation Accuracy: 0.5500
+Epoch 635/1200
+Train Loss: 1.2022, Validation Loss: 1.2202
+Train Accuracy: 0.5077, Validation Accuracy: 0.5500
+Epoch 636/1200
+Train Loss: 1.2262, Validation Loss: 1.2135
+Train Accuracy: 0.5093, Validation Accuracy: 0.5500
+Epoch 637/1200
+Train Loss: 1.2218, Validation Loss: 1.2123
+Train Accuracy: 0.4869, Validation Accuracy: 0.5500
+Epoch 638/1200
+Train Loss: 1.2005, Validation Loss: 1.2175
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 639/1200
+Train Loss: 1.2012, Validation Loss: 1.2240
+Train Accuracy: 0.4954, Validation Accuracy: 0.5500
+Epoch 640/1200
+Train Loss: 1.2155, Validation Loss: 1.2193
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 641/1200
+Train Loss: 1.1982, Validation Loss: 1.2212
+Train Accuracy: 0.5231, Validation Accuracy: 0.5500
+Epoch 642/1200
+Train Loss: 1.2057, Validation Loss: 1.2176
+Train Accuracy: 0.4954, Validation Accuracy: 0.5500
+Epoch 643/1200
+Train Loss: 1.1845, Validation Loss: 1.2234
+Train Accuracy: 0.5185, Validation Accuracy: 0.5500
+Epoch 644/1200
+Train Loss: 1.2011, Validation Loss: 1.2106
+Train Accuracy: 0.4954, Validation Accuracy: 0.5500
+Epoch 645/1200
+Train Loss: 1.2122, Validation Loss: 1.2090
+Train Accuracy: 0.4815, Validation Accuracy: 0.5500
+Epoch 646/1200
+Train Loss: 1.1967, Validation Loss: 1.2149
+Train Accuracy: 0.5116, Validation Accuracy: 0.5500
+Epoch 647/1200
+Train Loss: 1.2048, Validation Loss: 1.2117
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 648/1200
+Train Loss: 1.1734, Validation Loss: 1.2173
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 649/1200
+Train Loss: 1.2005, Validation Loss: 1.2256
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 650/1200
+Train Loss: 1.2016, Validation Loss: 1.2281
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 651/1200
+Train Loss: 1.1878, Validation Loss: 1.2347
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 652/1200
+Train Loss: 1.1873, Validation Loss: 1.2429
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 653/1200
+Train Loss: 1.1886, Validation Loss: 1.2406
+Train Accuracy: 0.5108, Validation Accuracy: 0.5500
+Epoch 654/1200
+Train Loss: 1.2212, Validation Loss: 1.2368
+Train Accuracy: 0.4846, Validation Accuracy: 0.5500
+Epoch 655/1200
+Train Loss: 1.2228, Validation Loss: 1.2424
+Train Accuracy: 0.4954, Validation Accuracy: 0.5500
+Epoch 656/1200
+Train Loss: 1.1854, Validation Loss: 1.2377
+Train Accuracy: 0.4977, Validation Accuracy: 0.5500
+Epoch 657/1200
+Train Loss: 1.2067, Validation Loss: 1.2312
+Train Accuracy: 0.5177, Validation Accuracy: 0.5500
+Epoch 658/1200
+Train Loss: 1.2064, Validation Loss: 1.2302
+Train Accuracy: 0.4815, Validation Accuracy: 0.5500
+Epoch 659/1200
+Train Loss: 1.1885, Validation Loss: 1.2303
+Train Accuracy: 0.5116, Validation Accuracy: 0.5500
+Epoch 660/1200
+Train Loss: 1.2099, Validation Loss: 1.2231
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 661/1200
+Train Loss: 1.2076, Validation Loss: 1.2148
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 662/1200
+Train Loss: 1.1990, Validation Loss: 1.2167
+Train Accuracy: 0.5147, Validation Accuracy: 0.5500
+Epoch 663/1200
+Train Loss: 1.1838, Validation Loss: 1.2280
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 664/1200
+Train Loss: 1.2089, Validation Loss: 1.2401
+Train Accuracy: 0.4869, Validation Accuracy: 0.5500
+Epoch 665/1200
+Train Loss: 1.2070, Validation Loss: 1.2379
+Train Accuracy: 0.4799, Validation Accuracy: 0.5500
+Epoch 666/1200
+Train Loss: 1.1785, Validation Loss: 1.2328
+Train Accuracy: 0.5239, Validation Accuracy: 0.5500
+Epoch 667/1200
+Train Loss: 1.2267, Validation Loss: 1.2237
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 668/1200
+Train Loss: 1.2152, Validation Loss: 1.2204
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 669/1200
+Train Loss: 1.2042, Validation Loss: 1.2159
+Train Accuracy: 0.5077, Validation Accuracy: 0.5500
+Epoch 670/1200
+Train Loss: 1.2025, Validation Loss: 1.2163
+Train Accuracy: 0.5255, Validation Accuracy: 0.5500
+Epoch 671/1200
+Train Loss: 1.2024, Validation Loss: 1.2202
+Train Accuracy: 0.5340, Validation Accuracy: 0.5500
+Epoch 672/1200
+Train Loss: 1.1911, Validation Loss: 1.2179
+Train Accuracy: 0.5116, Validation Accuracy: 0.5500
+Epoch 673/1200
+Train Loss: 1.2038, Validation Loss: 1.2164
+Train Accuracy: 0.5093, Validation Accuracy: 0.5500
+Epoch 674/1200
+Train Loss: 1.2018, Validation Loss: 1.2235
+Train Accuracy: 0.4969, Validation Accuracy: 0.5500
+Epoch 675/1200
+Train Loss: 1.2063, Validation Loss: 1.2243
+Train Accuracy: 0.5077, Validation Accuracy: 0.5500
+Epoch 676/1200
+Train Loss: 1.2005, Validation Loss: 1.2240
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 677/1200
+Train Loss: 1.1715, Validation Loss: 1.2263
+Train Accuracy: 0.5170, Validation Accuracy: 0.5500
+Epoch 678/1200
+Train Loss: 1.2033, Validation Loss: 1.2320
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 679/1200
+Train Loss: 1.1971, Validation Loss: 1.2236
+Train Accuracy: 0.4799, Validation Accuracy: 0.5500
+Epoch 680/1200
+Train Loss: 1.1571, Validation Loss: 1.2201
+Train Accuracy: 0.5185, Validation Accuracy: 0.5500
+Epoch 681/1200
+Train Loss: 1.2040, Validation Loss: 1.2161
+Train Accuracy: 0.5077, Validation Accuracy: 0.5500
+Epoch 682/1200
+Train Loss: 1.2023, Validation Loss: 1.2096
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 683/1200
+Train Loss: 1.2197, Validation Loss: 1.2126
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 684/1200
+Train Loss: 1.2071, Validation Loss: 1.2181
+Train Accuracy: 0.4660, Validation Accuracy: 0.5500
+Epoch 685/1200
+Train Loss: 1.2011, Validation Loss: 1.2208
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 686/1200
+Train Loss: 1.2085, Validation Loss: 1.2186
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 687/1200
+Train Loss: 1.2056, Validation Loss: 1.2165
+Train Accuracy: 0.5170, Validation Accuracy: 0.5500
+Epoch 688/1200
+Train Loss: 1.2158, Validation Loss: 1.2135
+Train Accuracy: 0.5162, Validation Accuracy: 0.5500
+Epoch 689/1200
+Train Loss: 1.2036, Validation Loss: 1.2079
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 690/1200
+Train Loss: 1.1894, Validation Loss: 1.2051
+Train Accuracy: 0.4954, Validation Accuracy: 0.5500
+Epoch 691/1200
+Train Loss: 1.2358, Validation Loss: 1.2102
+Train Accuracy: 0.4900, Validation Accuracy: 0.5500
+Epoch 692/1200
+Train Loss: 1.1596, Validation Loss: 1.2152
+Train Accuracy: 0.4954, Validation Accuracy: 0.5500
+Epoch 693/1200
+Train Loss: 1.2313, Validation Loss: 1.2227
+Train Accuracy: 0.4622, Validation Accuracy: 0.5500
+Epoch 694/1200
+Train Loss: 1.2079, Validation Loss: 1.2229
+Train Accuracy: 0.4923, Validation Accuracy: 0.5500
+Epoch 695/1200
+Train Loss: 1.2019, Validation Loss: 1.2193
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 696/1200
+Train Loss: 1.2062, Validation Loss: 1.2259
+Train Accuracy: 0.5131, Validation Accuracy: 0.5500
+Epoch 697/1200
+Train Loss: 1.1944, Validation Loss: 1.2289
+Train Accuracy: 0.5201, Validation Accuracy: 0.5500
+Epoch 698/1200
+Train Loss: 1.1811, Validation Loss: 1.2253
+Train Accuracy: 0.5015, Validation Accuracy: 0.5500
+Epoch 699/1200
+Train Loss: 1.2054, Validation Loss: 1.2210
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 700/1200
+Train Loss: 1.1715, Validation Loss: 1.2171
+Train Accuracy: 0.5170, Validation Accuracy: 0.5500
+Epoch 701/1200
+Train Loss: 1.1962, Validation Loss: 1.2169
+Train Accuracy: 0.5077, Validation Accuracy: 0.5500
+Epoch 702/1200
+Train Loss: 1.2080, Validation Loss: 1.2184
+Train Accuracy: 0.5077, Validation Accuracy: 0.5500
+Epoch 703/1200
+Train Loss: 1.1851, Validation Loss: 1.2238
+Train Accuracy: 0.5239, Validation Accuracy: 0.5500
+Epoch 704/1200
+Train Loss: 1.2039, Validation Loss: 1.2270
+Train Accuracy: 0.4954, Validation Accuracy: 0.5500
+Epoch 705/1200
+Train Loss: 1.2215, Validation Loss: 1.2258
+Train Accuracy: 0.4815, Validation Accuracy: 0.5500
+Epoch 706/1200
+Train Loss: 1.2031, Validation Loss: 1.2277
+Train Accuracy: 0.4869, Validation Accuracy: 0.5500
+Epoch 707/1200
+Train Loss: 1.1873, Validation Loss: 1.2285
+Train Accuracy: 0.4869, Validation Accuracy: 0.5500
+Epoch 708/1200
+Train Loss: 1.2023, Validation Loss: 1.2190
+Train Accuracy: 0.5039, Validation Accuracy: 0.5500
+Epoch 709/1200
+Train Loss: 1.2263, Validation Loss: 1.2241
+Train Accuracy: 0.4784, Validation Accuracy: 0.5500
+Epoch 710/1200
+Train Loss: 1.2120, Validation Loss: 1.2249
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 711/1200
+Train Loss: 1.1922, Validation Loss: 1.2224
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 712/1200
+Train Loss: 1.2022, Validation Loss: 1.2234
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 713/1200
+Train Loss: 1.1812, Validation Loss: 1.2256
+Train Accuracy: 0.5085, Validation Accuracy: 0.5500
+Epoch 714/1200
+Train Loss: 1.1783, Validation Loss: 1.2176
+Train Accuracy: 0.5116, Validation Accuracy: 0.5500
+Epoch 715/1200
+Train Loss: 1.2014, Validation Loss: 1.2195
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 716/1200
+Train Loss: 1.1922, Validation Loss: 1.2164
+Train Accuracy: 0.5116, Validation Accuracy: 0.5500
+Epoch 717/1200
+Train Loss: 1.1835, Validation Loss: 1.2205
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 718/1200
+Train Loss: 1.2218, Validation Loss: 1.2210
+Train Accuracy: 0.4954, Validation Accuracy: 0.5500
+Epoch 719/1200
+Train Loss: 1.1793, Validation Loss: 1.2258
+Train Accuracy: 0.5077, Validation Accuracy: 0.5500
+Epoch 720/1200
+Train Loss: 1.1729, Validation Loss: 1.2227
+Train Accuracy: 0.5077, Validation Accuracy: 0.5500
+Epoch 721/1200
+Train Loss: 1.1668, Validation Loss: 1.2139
+Train Accuracy: 0.5309, Validation Accuracy: 0.5500
+Epoch 722/1200
+Train Loss: 1.2005, Validation Loss: 1.2178
+Train Accuracy: 0.4900, Validation Accuracy: 0.5500
+Epoch 723/1200
+Train Loss: 1.1793, Validation Loss: 1.2153
+Train Accuracy: 0.5077, Validation Accuracy: 0.5500
+Epoch 724/1200
+Train Loss: 1.2272, Validation Loss: 1.2130
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 725/1200
+Train Loss: 1.2107, Validation Loss: 1.2056
+Train Accuracy: 0.4853, Validation Accuracy: 0.5500
+Epoch 726/1200
+Train Loss: 1.2056, Validation Loss: 1.2110
+Train Accuracy: 0.5147, Validation Accuracy: 0.5500
+Epoch 727/1200
+Train Loss: 1.2000, Validation Loss: 1.2124
+Train Accuracy: 0.4954, Validation Accuracy: 0.5500
+Epoch 728/1200
+Train Loss: 1.1842, Validation Loss: 1.2118
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 729/1200
+Train Loss: 1.2190, Validation Loss: 1.2112
+Train Accuracy: 0.5100, Validation Accuracy: 0.5500
+Epoch 730/1200
+Train Loss: 1.1945, Validation Loss: 1.2126
+Train Accuracy: 0.5285, Validation Accuracy: 0.5500
+Epoch 731/1200
+Train Loss: 1.2170, Validation Loss: 1.2132
+Train Accuracy: 0.4954, Validation Accuracy: 0.5500
+Epoch 732/1200
+Train Loss: 1.1797, Validation Loss: 1.2077
+Train Accuracy: 0.4923, Validation Accuracy: 0.5500
+Epoch 733/1200
+Train Loss: 1.2169, Validation Loss: 1.2118
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 734/1200
+Train Loss: 1.1718, Validation Loss: 1.2267
+Train Accuracy: 0.5309, Validation Accuracy: 0.5500
+Epoch 735/1200
+Train Loss: 1.2065, Validation Loss: 1.2248
+Train Accuracy: 0.5147, Validation Accuracy: 0.5500
+Epoch 736/1200
+Train Loss: 1.1796, Validation Loss: 1.2201
+Train Accuracy: 0.5239, Validation Accuracy: 0.5500
+Epoch 737/1200
+Train Loss: 1.2091, Validation Loss: 1.2260
+Train Accuracy: 0.5116, Validation Accuracy: 0.5500
+Epoch 738/1200
+Train Loss: 1.2018, Validation Loss: 1.2211
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 739/1200
+Train Loss: 1.1659, Validation Loss: 1.2170
+Train Accuracy: 0.5031, Validation Accuracy: 0.5500
+Epoch 740/1200
+Train Loss: 1.1805, Validation Loss: 1.2059
+Train Accuracy: 0.5185, Validation Accuracy: 0.5500
+Epoch 741/1200
+Train Loss: 1.2040, Validation Loss: 1.1902
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 742/1200
+Train Loss: 1.2024, Validation Loss: 1.1915
+Train Accuracy: 0.5100, Validation Accuracy: 0.5500
+Epoch 743/1200
+Train Loss: 1.2142, Validation Loss: 1.2141
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 744/1200
+Train Loss: 1.1868, Validation Loss: 1.2283
+Train Accuracy: 0.5255, Validation Accuracy: 0.5500
+Epoch 745/1200
+Train Loss: 1.2004, Validation Loss: 1.2365
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 746/1200
+Train Loss: 1.1816, Validation Loss: 1.2403
+Train Accuracy: 0.5100, Validation Accuracy: 0.5500
+Epoch 747/1200
+Train Loss: 1.1955, Validation Loss: 1.2379
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 748/1200
+Train Loss: 1.2105, Validation Loss: 1.2362
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 749/1200
+Train Loss: 1.1884, Validation Loss: 1.2277
+Train Accuracy: 0.5239, Validation Accuracy: 0.5500
+Epoch 750/1200
+Train Loss: 1.1969, Validation Loss: 1.2246
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 751/1200
+Train Loss: 1.1880, Validation Loss: 1.2186
+Train Accuracy: 0.5131, Validation Accuracy: 0.5500
+Epoch 752/1200
+Train Loss: 1.1868, Validation Loss: 1.2223
+Train Accuracy: 0.5185, Validation Accuracy: 0.5500
+Epoch 753/1200
+Train Loss: 1.1885, Validation Loss: 1.2114
+Train Accuracy: 0.5093, Validation Accuracy: 0.5500
+Epoch 754/1200
+Train Loss: 1.2323, Validation Loss: 1.2075
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 755/1200
+Train Loss: 1.1904, Validation Loss: 1.2157
+Train Accuracy: 0.5270, Validation Accuracy: 0.5500
+Epoch 756/1200
+Train Loss: 1.1771, Validation Loss: 1.2072
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 757/1200
+Train Loss: 1.2128, Validation Loss: 1.2225
+Train Accuracy: 0.5131, Validation Accuracy: 0.5500
+Epoch 758/1200
+Train Loss: 1.1840, Validation Loss: 1.2255
+Train Accuracy: 0.5085, Validation Accuracy: 0.5500
+Epoch 759/1200
+Train Loss: 1.2104, Validation Loss: 1.2172
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 760/1200
+Train Loss: 1.1749, Validation Loss: 1.2149
+Train Accuracy: 0.5100, Validation Accuracy: 0.5500
+Epoch 761/1200
+Train Loss: 1.2018, Validation Loss: 1.2096
+Train Accuracy: 0.5216, Validation Accuracy: 0.5500
+Epoch 762/1200
+Train Loss: 1.1746, Validation Loss: 1.2095
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 763/1200
+Train Loss: 1.1939, Validation Loss: 1.2117
+Train Accuracy: 0.5147, Validation Accuracy: 0.5500
+Epoch 764/1200
+Train Loss: 1.2126, Validation Loss: 1.2151
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 765/1200
+Train Loss: 1.1757, Validation Loss: 1.2194
+Train Accuracy: 0.5077, Validation Accuracy: 0.5500
+Epoch 766/1200
+Train Loss: 1.1966, Validation Loss: 1.2173
+Train Accuracy: 0.4869, Validation Accuracy: 0.5500
+Epoch 767/1200
+Train Loss: 1.2097, Validation Loss: 1.2127
+Train Accuracy: 0.4900, Validation Accuracy: 0.5500
+Epoch 768/1200
+Train Loss: 1.1817, Validation Loss: 1.2215
+Train Accuracy: 0.4954, Validation Accuracy: 0.5500
+Epoch 769/1200
+Train Loss: 1.2132, Validation Loss: 1.2259
+Train Accuracy: 0.5201, Validation Accuracy: 0.5500
+Epoch 770/1200
+Train Loss: 1.1835, Validation Loss: 1.2204
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 771/1200
+Train Loss: 1.1923, Validation Loss: 1.2248
+Train Accuracy: 0.5201, Validation Accuracy: 0.5500
+Epoch 772/1200
+Train Loss: 1.2243, Validation Loss: 1.2143
+Train Accuracy: 0.5077, Validation Accuracy: 0.5500
+Epoch 773/1200
+Train Loss: 1.1935, Validation Loss: 1.2251
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 774/1200
+Train Loss: 1.2099, Validation Loss: 1.2356
+Train Accuracy: 0.4869, Validation Accuracy: 0.5500
+Epoch 775/1200
+Train Loss: 1.1894, Validation Loss: 1.2289
+Train Accuracy: 0.4961, Validation Accuracy: 0.5500
+Epoch 776/1200
+Train Loss: 1.2137, Validation Loss: 1.2312
+Train Accuracy: 0.5131, Validation Accuracy: 0.5500
+Epoch 777/1200
+Train Loss: 1.1984, Validation Loss: 1.2251
+Train Accuracy: 0.4853, Validation Accuracy: 0.5500
+Epoch 778/1200
+Train Loss: 1.1867, Validation Loss: 1.2199
+Train Accuracy: 0.4869, Validation Accuracy: 0.5500
+Epoch 779/1200
+Train Loss: 1.2095, Validation Loss: 1.2177
+Train Accuracy: 0.5093, Validation Accuracy: 0.5500
+Epoch 780/1200
+Train Loss: 1.1822, Validation Loss: 1.2150
+Train Accuracy: 0.5201, Validation Accuracy: 0.5500
+Epoch 781/1200
+Train Loss: 1.1903, Validation Loss: 1.2101
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 782/1200
+Train Loss: 1.2331, Validation Loss: 1.2187
+Train Accuracy: 0.4830, Validation Accuracy: 0.5500
+Epoch 783/1200
+Train Loss: 1.2143, Validation Loss: 1.2273
+Train Accuracy: 0.4923, Validation Accuracy: 0.5500
+Epoch 784/1200
+Train Loss: 1.2001, Validation Loss: 1.2284
+Train Accuracy: 0.4907, Validation Accuracy: 0.5500
+Epoch 785/1200
+Train Loss: 1.2046, Validation Loss: 1.2343
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 786/1200
+Train Loss: 1.1998, Validation Loss: 1.2254
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 787/1200
+Train Loss: 1.2031, Validation Loss: 1.2127
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 788/1200
+Train Loss: 1.1877, Validation Loss: 1.2122
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 789/1200
+Train Loss: 1.1748, Validation Loss: 1.2180
+Train Accuracy: 0.5131, Validation Accuracy: 0.5500
+Epoch 790/1200
+Train Loss: 1.2071, Validation Loss: 1.2292
+Train Accuracy: 0.4954, Validation Accuracy: 0.5500
+Epoch 791/1200
+Train Loss: 1.1931, Validation Loss: 1.2322
+Train Accuracy: 0.5023, Validation Accuracy: 0.5500
+Epoch 792/1200
+Train Loss: 1.1930, Validation Loss: 1.2353
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 793/1200
+Train Loss: 1.1735, Validation Loss: 1.2290
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 794/1200
+Train Loss: 1.1752, Validation Loss: 1.2240
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 795/1200
+Train Loss: 1.1750, Validation Loss: 1.2205
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 796/1200
+Train Loss: 1.1780, Validation Loss: 1.2168
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 797/1200
+Train Loss: 1.2052, Validation Loss: 1.2138
+Train Accuracy: 0.4961, Validation Accuracy: 0.5500
+Epoch 798/1200
+Train Loss: 1.1606, Validation Loss: 1.2063
+Train Accuracy: 0.5185, Validation Accuracy: 0.5500
+Epoch 799/1200
+Train Loss: 1.1773, Validation Loss: 1.2028
+Train Accuracy: 0.5131, Validation Accuracy: 0.5500
+Epoch 800/1200
+Train Loss: 1.1830, Validation Loss: 1.2069
+Train Accuracy: 0.5116, Validation Accuracy: 0.5500
+Epoch 801/1200
+Train Loss: 1.1910, Validation Loss: 1.2132
+Train Accuracy: 0.5239, Validation Accuracy: 0.5500
+Epoch 802/1200
+Train Loss: 1.1799, Validation Loss: 1.2170
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 803/1200
+Train Loss: 1.2018, Validation Loss: 1.2083
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 804/1200
+Train Loss: 1.1883, Validation Loss: 1.2082
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 805/1200
+Train Loss: 1.2119, Validation Loss: 1.2165
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 806/1200
+Train Loss: 1.1864, Validation Loss: 1.2373
+Train Accuracy: 0.5077, Validation Accuracy: 0.5500
+Epoch 807/1200
+Train Loss: 1.1917, Validation Loss: 1.2591
+Train Accuracy: 0.5239, Validation Accuracy: 0.5500
+Epoch 808/1200
+Train Loss: 1.2056, Validation Loss: 1.2502
+Train Accuracy: 0.4954, Validation Accuracy: 0.5500
+Epoch 809/1200
+Train Loss: 1.1699, Validation Loss: 1.2358
+Train Accuracy: 0.5324, Validation Accuracy: 0.5500
+Epoch 810/1200
+Train Loss: 1.1626, Validation Loss: 1.2305
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 811/1200
+Train Loss: 1.2160, Validation Loss: 1.2366
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 812/1200
+Train Loss: 1.1903, Validation Loss: 1.2409
+Train Accuracy: 0.5077, Validation Accuracy: 0.5500
+Epoch 813/1200
+Train Loss: 1.1867, Validation Loss: 1.2293
+Train Accuracy: 0.5216, Validation Accuracy: 0.5500
+Epoch 814/1200
+Train Loss: 1.2004, Validation Loss: 1.2200
+Train Accuracy: 0.5093, Validation Accuracy: 0.5500
+Epoch 815/1200
+Train Loss: 1.1941, Validation Loss: 1.2209
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 816/1200
+Train Loss: 1.2189, Validation Loss: 1.2141
+Train Accuracy: 0.4761, Validation Accuracy: 0.5500
+Epoch 817/1200
+Train Loss: 1.2261, Validation Loss: 1.2279
+Train Accuracy: 0.4954, Validation Accuracy: 0.5500
+Epoch 818/1200
+Train Loss: 1.1707, Validation Loss: 1.2258
+Train Accuracy: 0.5309, Validation Accuracy: 0.5500
+Epoch 819/1200
+Train Loss: 1.1798, Validation Loss: 1.2155
+Train Accuracy: 0.5131, Validation Accuracy: 0.5500
+Epoch 820/1200
+Train Loss: 1.1914, Validation Loss: 1.2203
+Train Accuracy: 0.5170, Validation Accuracy: 0.5500
+Epoch 821/1200
+Train Loss: 1.2066, Validation Loss: 1.2229
+Train Accuracy: 0.4869, Validation Accuracy: 0.5500
+Epoch 822/1200
+Train Loss: 1.2012, Validation Loss: 1.2280
+Train Accuracy: 0.5077, Validation Accuracy: 0.5500
+Epoch 823/1200
+Train Loss: 1.2005, Validation Loss: 1.2224
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 824/1200
+Train Loss: 1.2138, Validation Loss: 1.2159
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 825/1200
+Train Loss: 1.1896, Validation Loss: 1.2088
+Train Accuracy: 0.4969, Validation Accuracy: 0.5500
+Epoch 826/1200
+Train Loss: 1.1943, Validation Loss: 1.2112
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 827/1200
+Train Loss: 1.1971, Validation Loss: 1.2095
+Train Accuracy: 0.5185, Validation Accuracy: 0.5500
+Epoch 828/1200
+Train Loss: 1.1879, Validation Loss: 1.2107
+Train Accuracy: 0.4977, Validation Accuracy: 0.5500
+Epoch 829/1200
+Train Loss: 1.1655, Validation Loss: 1.2188
+Train Accuracy: 0.5131, Validation Accuracy: 0.5500
+Epoch 830/1200
+Train Loss: 1.1813, Validation Loss: 1.2211
+Train Accuracy: 0.4923, Validation Accuracy: 0.5500
+Epoch 831/1200
+Train Loss: 1.2122, Validation Loss: 1.2272
+Train Accuracy: 0.4869, Validation Accuracy: 0.5500
+Epoch 832/1200
+Train Loss: 1.1968, Validation Loss: 1.2289
+Train Accuracy: 0.5131, Validation Accuracy: 0.5500
+Epoch 833/1200
+Train Loss: 1.1881, Validation Loss: 1.2292
+Train Accuracy: 0.5077, Validation Accuracy: 0.5500
+Epoch 834/1200
+Train Loss: 1.1749, Validation Loss: 1.2324
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 835/1200
+Train Loss: 1.1942, Validation Loss: 1.2316
+Train Accuracy: 0.5131, Validation Accuracy: 0.5500
+Epoch 836/1200
+Train Loss: 1.1899, Validation Loss: 1.2183
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 837/1200
+Train Loss: 1.1665, Validation Loss: 1.2110
+Train Accuracy: 0.5077, Validation Accuracy: 0.5500
+Epoch 838/1200
+Train Loss: 1.1912, Validation Loss: 1.2266
+Train Accuracy: 0.5116, Validation Accuracy: 0.5500
+Epoch 839/1200
+Train Loss: 1.1898, Validation Loss: 1.2228
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 840/1200
+Train Loss: 1.1746, Validation Loss: 1.2329
+Train Accuracy: 0.5116, Validation Accuracy: 0.5500
+Epoch 841/1200
+Train Loss: 1.1582, Validation Loss: 1.2189
+Train Accuracy: 0.5309, Validation Accuracy: 0.5500
+Epoch 842/1200
+Train Loss: 1.1778, Validation Loss: 1.2171
+Train Accuracy: 0.5147, Validation Accuracy: 0.5500
+Epoch 843/1200
+Train Loss: 1.1917, Validation Loss: 1.2136
+Train Accuracy: 0.5108, Validation Accuracy: 0.5500
+Epoch 844/1200
+Train Loss: 1.1970, Validation Loss: 1.2192
+Train Accuracy: 0.5201, Validation Accuracy: 0.5500
+Epoch 845/1200
+Train Loss: 1.1660, Validation Loss: 1.2160
+Train Accuracy: 0.5270, Validation Accuracy: 0.5500
+Epoch 846/1200
+Train Loss: 1.2003, Validation Loss: 1.2184
+Train Accuracy: 0.5093, Validation Accuracy: 0.5500
+Epoch 847/1200
+Train Loss: 1.2000, Validation Loss: 1.2157
+Train Accuracy: 0.5255, Validation Accuracy: 0.5500
+Epoch 848/1200
+Train Loss: 1.2029, Validation Loss: 1.2115
+Train Accuracy: 0.4900, Validation Accuracy: 0.5500
+Epoch 849/1200
+Train Loss: 1.2030, Validation Loss: 1.2236
+Train Accuracy: 0.5023, Validation Accuracy: 0.5500
+Epoch 850/1200
+Train Loss: 1.2186, Validation Loss: 1.2321
+Train Accuracy: 0.4869, Validation Accuracy: 0.5500
+Epoch 851/1200
+Train Loss: 1.1906, Validation Loss: 1.2317
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 852/1200
+Train Loss: 1.1868, Validation Loss: 1.2249
+Train Accuracy: 0.5270, Validation Accuracy: 0.5500
+Epoch 853/1200
+Train Loss: 1.2048, Validation Loss: 1.2386
+Train Accuracy: 0.5147, Validation Accuracy: 0.5500
+Epoch 854/1200
+Train Loss: 1.2021, Validation Loss: 1.2288
+Train Accuracy: 0.5201, Validation Accuracy: 0.5500
+Epoch 855/1200
+Train Loss: 1.2039, Validation Loss: 1.2206
+Train Accuracy: 0.5131, Validation Accuracy: 0.5500
+Epoch 856/1200
+Train Loss: 1.1785, Validation Loss: 1.2075
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 857/1200
+Train Loss: 1.2063, Validation Loss: 1.2005
+Train Accuracy: 0.4961, Validation Accuracy: 0.5500
+Epoch 858/1200
+Train Loss: 1.1915, Validation Loss: 1.2045
+Train Accuracy: 0.4954, Validation Accuracy: 0.5500
+Epoch 859/1200
+Train Loss: 1.1952, Validation Loss: 1.2028
+Train Accuracy: 0.5201, Validation Accuracy: 0.5500
+Epoch 860/1200
+Train Loss: 1.2151, Validation Loss: 1.2076
+Train Accuracy: 0.4900, Validation Accuracy: 0.5500
+Epoch 861/1200
+Train Loss: 1.1919, Validation Loss: 1.2127
+Train Accuracy: 0.5185, Validation Accuracy: 0.5500
+Epoch 862/1200
+Train Loss: 1.2084, Validation Loss: 1.2131
+Train Accuracy: 0.4869, Validation Accuracy: 0.5500
+Epoch 863/1200
+Train Loss: 1.1991, Validation Loss: 1.2279
+Train Accuracy: 0.5023, Validation Accuracy: 0.5500
+Epoch 864/1200
+Train Loss: 1.1997, Validation Loss: 1.2353
+Train Accuracy: 0.5201, Validation Accuracy: 0.5500
+Epoch 865/1200
+Train Loss: 1.1692, Validation Loss: 1.2343
+Train Accuracy: 0.5131, Validation Accuracy: 0.5500
+Epoch 866/1200
+Train Loss: 1.1878, Validation Loss: 1.2397
+Train Accuracy: 0.5394, Validation Accuracy: 0.5500
+Epoch 867/1200
+Train Loss: 1.2101, Validation Loss: 1.2370
+Train Accuracy: 0.4815, Validation Accuracy: 0.5500
+Epoch 868/1200
+Train Loss: 1.1630, Validation Loss: 1.2264
+Train Accuracy: 0.5131, Validation Accuracy: 0.5500
+Epoch 869/1200
+Train Loss: 1.2003, Validation Loss: 1.2166
+Train Accuracy: 0.5077, Validation Accuracy: 0.5500
+Epoch 870/1200
+Train Loss: 1.1918, Validation Loss: 1.2072
+Train Accuracy: 0.4846, Validation Accuracy: 0.5500
+Epoch 871/1200
+Train Loss: 1.1976, Validation Loss: 1.2165
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 872/1200
+Train Loss: 1.1565, Validation Loss: 1.2238
+Train Accuracy: 0.5116, Validation Accuracy: 0.5500
+Epoch 873/1200
+Train Loss: 1.1710, Validation Loss: 1.2212
+Train Accuracy: 0.5077, Validation Accuracy: 0.5500
+Epoch 874/1200
+Train Loss: 1.1565, Validation Loss: 1.2130
+Train Accuracy: 0.5309, Validation Accuracy: 0.5500
+Epoch 875/1200
+Train Loss: 1.1766, Validation Loss: 1.2119
+Train Accuracy: 0.5201, Validation Accuracy: 0.5500
+Epoch 876/1200
+Train Loss: 1.1753, Validation Loss: 1.2224
+Train Accuracy: 0.4977, Validation Accuracy: 0.5500
+Epoch 877/1200
+Train Loss: 1.2138, Validation Loss: 1.2199
+Train Accuracy: 0.5131, Validation Accuracy: 0.5500
+Epoch 878/1200
+Train Loss: 1.2057, Validation Loss: 1.2263
+Train Accuracy: 0.4915, Validation Accuracy: 0.5500
+Epoch 879/1200
+Train Loss: 1.1876, Validation Loss: 1.2257
+Train Accuracy: 0.5116, Validation Accuracy: 0.5500
+Epoch 880/1200
+Train Loss: 1.1985, Validation Loss: 1.2214
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 881/1200
+Train Loss: 1.1901, Validation Loss: 1.2237
+Train Accuracy: 0.5077, Validation Accuracy: 0.5500
+Epoch 882/1200
+Train Loss: 1.1766, Validation Loss: 1.2216
+Train Accuracy: 0.5378, Validation Accuracy: 0.5500
+Epoch 883/1200
+Train Loss: 1.1607, Validation Loss: 1.2068
+Train Accuracy: 0.5463, Validation Accuracy: 0.5500
+Epoch 884/1200
+Train Loss: 1.1685, Validation Loss: 1.2052
+Train Accuracy: 0.5093, Validation Accuracy: 0.5500
+Epoch 885/1200
+Train Loss: 1.2062, Validation Loss: 1.2126
+Train Accuracy: 0.5201, Validation Accuracy: 0.5500
+Epoch 886/1200
+Train Loss: 1.1835, Validation Loss: 1.2171
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 887/1200
+Train Loss: 1.1883, Validation Loss: 1.2203
+Train Accuracy: 0.5100, Validation Accuracy: 0.5500
+Epoch 888/1200
+Train Loss: 1.2096, Validation Loss: 1.2164
+Train Accuracy: 0.5201, Validation Accuracy: 0.5500
+Epoch 889/1200
+Train Loss: 1.2074, Validation Loss: 1.2129
+Train Accuracy: 0.4969, Validation Accuracy: 0.5500
+Epoch 890/1200
+Train Loss: 1.1713, Validation Loss: 1.2151
+Train Accuracy: 0.5378, Validation Accuracy: 0.5500
+Epoch 891/1200
+Train Loss: 1.1858, Validation Loss: 1.2125
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 892/1200
+Train Loss: 1.2180, Validation Loss: 1.2103
+Train Accuracy: 0.4907, Validation Accuracy: 0.5500
+Epoch 893/1200
+Train Loss: 1.2116, Validation Loss: 1.2145
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 894/1200
+Train Loss: 1.1946, Validation Loss: 1.2194
+Train Accuracy: 0.5131, Validation Accuracy: 0.5500
+Epoch 895/1200
+Train Loss: 1.2061, Validation Loss: 1.2146
+Train Accuracy: 0.4830, Validation Accuracy: 0.5500
+Epoch 896/1200
+Train Loss: 1.1784, Validation Loss: 1.2213
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 897/1200
+Train Loss: 1.1738, Validation Loss: 1.2253
+Train Accuracy: 0.5201, Validation Accuracy: 0.5500
+Epoch 898/1200
+Train Loss: 1.1897, Validation Loss: 1.2223
+Train Accuracy: 0.5077, Validation Accuracy: 0.5500
+Epoch 899/1200
+Train Loss: 1.1758, Validation Loss: 1.2155
+Train Accuracy: 0.5394, Validation Accuracy: 0.5500
+Epoch 900/1200
+Train Loss: 1.2002, Validation Loss: 1.2090
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 901/1200
+Train Loss: 1.1907, Validation Loss: 1.2092
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 902/1200
+Train Loss: 1.1819, Validation Loss: 1.2094
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 903/1200
+Train Loss: 1.2027, Validation Loss: 1.2144
+Train Accuracy: 0.5077, Validation Accuracy: 0.5500
+Epoch 904/1200
+Train Loss: 1.1789, Validation Loss: 1.2223
+Train Accuracy: 0.5131, Validation Accuracy: 0.5500
+Epoch 905/1200
+Train Loss: 1.1838, Validation Loss: 1.2201
+Train Accuracy: 0.4923, Validation Accuracy: 0.5500
+Epoch 906/1200
+Train Loss: 1.2165, Validation Loss: 1.2249
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 907/1200
+Train Loss: 1.1773, Validation Loss: 1.2257
+Train Accuracy: 0.5224, Validation Accuracy: 0.5500
+Epoch 908/1200
+Train Loss: 1.1924, Validation Loss: 1.2245
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 909/1200
+Train Loss: 1.2181, Validation Loss: 1.2221
+Train Accuracy: 0.4830, Validation Accuracy: 0.5500
+Epoch 910/1200
+Train Loss: 1.1853, Validation Loss: 1.2173
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 911/1200
+Train Loss: 1.1974, Validation Loss: 1.2282
+Train Accuracy: 0.5077, Validation Accuracy: 0.5500
+Epoch 912/1200
+Train Loss: 1.1688, Validation Loss: 1.2240
+Train Accuracy: 0.5185, Validation Accuracy: 0.5500
+Epoch 913/1200
+Train Loss: 1.1971, Validation Loss: 1.2100
+Train Accuracy: 0.4830, Validation Accuracy: 0.5500
+Epoch 914/1200
+Train Loss: 1.1988, Validation Loss: 1.2150
+Train Accuracy: 0.5231, Validation Accuracy: 0.5500
+Epoch 915/1200
+Train Loss: 1.1927, Validation Loss: 1.2126
+Train Accuracy: 0.5185, Validation Accuracy: 0.5500
+Epoch 916/1200
+Train Loss: 1.1913, Validation Loss: 1.2058
+Train Accuracy: 0.5131, Validation Accuracy: 0.5500
+Epoch 917/1200
+Train Loss: 1.1733, Validation Loss: 1.2181
+Train Accuracy: 0.5031, Validation Accuracy: 0.5500
+Epoch 918/1200
+Train Loss: 1.1807, Validation Loss: 1.2324
+Train Accuracy: 0.5147, Validation Accuracy: 0.5500
+Epoch 919/1200
+Train Loss: 1.2052, Validation Loss: 1.2239
+Train Accuracy: 0.5023, Validation Accuracy: 0.5500
+Epoch 920/1200
+Train Loss: 1.1684, Validation Loss: 1.2240
+Train Accuracy: 0.5378, Validation Accuracy: 0.5500
+Epoch 921/1200
+Train Loss: 1.1758, Validation Loss: 1.2207
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 922/1200
+Train Loss: 1.2266, Validation Loss: 1.2223
+Train Accuracy: 0.5023, Validation Accuracy: 0.5500
+Epoch 923/1200
+Train Loss: 1.1732, Validation Loss: 1.2217
+Train Accuracy: 0.5023, Validation Accuracy: 0.5500
+Epoch 924/1200
+Train Loss: 1.1517, Validation Loss: 1.2301
+Train Accuracy: 0.5448, Validation Accuracy: 0.5500
+Epoch 925/1200
+Train Loss: 1.1916, Validation Loss: 1.2218
+Train Accuracy: 0.5424, Validation Accuracy: 0.5500
+Epoch 926/1200
+Train Loss: 1.1783, Validation Loss: 1.2089
+Train Accuracy: 0.5255, Validation Accuracy: 0.5500
+Epoch 927/1200
+Train Loss: 1.1950, Validation Loss: 1.2070
+Train Accuracy: 0.5116, Validation Accuracy: 0.5500
+Epoch 928/1200
+Train Loss: 1.1835, Validation Loss: 1.2121
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 929/1200
+Train Loss: 1.2216, Validation Loss: 1.2077
+Train Accuracy: 0.5023, Validation Accuracy: 0.5500
+Epoch 930/1200
+Train Loss: 1.1560, Validation Loss: 1.2179
+Train Accuracy: 0.5116, Validation Accuracy: 0.5500
+Epoch 931/1200
+Train Loss: 1.1908, Validation Loss: 1.2226
+Train Accuracy: 0.5432, Validation Accuracy: 0.5500
+Epoch 932/1200
+Train Loss: 1.1496, Validation Loss: 1.2128
+Train Accuracy: 0.5363, Validation Accuracy: 0.5500
+Epoch 933/1200
+Train Loss: 1.2006, Validation Loss: 1.2129
+Train Accuracy: 0.5077, Validation Accuracy: 0.5500
+Epoch 934/1200
+Train Loss: 1.1699, Validation Loss: 1.2101
+Train Accuracy: 0.5201, Validation Accuracy: 0.5500
+Epoch 935/1200
+Train Loss: 1.1732, Validation Loss: 1.2211
+Train Accuracy: 0.5131, Validation Accuracy: 0.5500
+Epoch 936/1200
+Train Loss: 1.1765, Validation Loss: 1.2272
+Train Accuracy: 0.5255, Validation Accuracy: 0.5500
+Epoch 937/1200
+Train Loss: 1.1656, Validation Loss: 1.2248
+Train Accuracy: 0.5324, Validation Accuracy: 0.5500
+Epoch 938/1200
+Train Loss: 1.1662, Validation Loss: 1.2186
+Train Accuracy: 0.5201, Validation Accuracy: 0.5500
+Epoch 939/1200
+Train Loss: 1.1816, Validation Loss: 1.2139
+Train Accuracy: 0.5023, Validation Accuracy: 0.5500
+Epoch 940/1200
+Train Loss: 1.1938, Validation Loss: 1.2198
+Train Accuracy: 0.5023, Validation Accuracy: 0.5500
+Epoch 941/1200
+Train Loss: 1.2021, Validation Loss: 1.2217
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 942/1200
+Train Loss: 1.1817, Validation Loss: 1.2193
+Train Accuracy: 0.4923, Validation Accuracy: 0.5500
+Epoch 943/1200
+Train Loss: 1.1789, Validation Loss: 1.2225
+Train Accuracy: 0.4977, Validation Accuracy: 0.5500
+Epoch 944/1200
+Train Loss: 1.1956, Validation Loss: 1.2167
+Train Accuracy: 0.5131, Validation Accuracy: 0.5500
+Epoch 945/1200
+Train Loss: 1.1942, Validation Loss: 1.2157
+Train Accuracy: 0.4907, Validation Accuracy: 0.5500
+Epoch 946/1200
+Train Loss: 1.1788, Validation Loss: 1.2060
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 947/1200
+Train Loss: 1.1978, Validation Loss: 1.2103
+Train Accuracy: 0.4761, Validation Accuracy: 0.5500
+Epoch 948/1200
+Train Loss: 1.1947, Validation Loss: 1.2139
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 949/1200
+Train Loss: 1.2282, Validation Loss: 1.2212
+Train Accuracy: 0.5093, Validation Accuracy: 0.5500
+Epoch 950/1200
+Train Loss: 1.1825, Validation Loss: 1.2221
+Train Accuracy: 0.5116, Validation Accuracy: 0.5500
+Epoch 951/1200
+Train Loss: 1.1949, Validation Loss: 1.2132
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 952/1200
+Train Loss: 1.1859, Validation Loss: 1.2069
+Train Accuracy: 0.5077, Validation Accuracy: 0.5500
+Epoch 953/1200
+Train Loss: 1.2010, Validation Loss: 1.2057
+Train Accuracy: 0.5216, Validation Accuracy: 0.5500
+Epoch 954/1200
+Train Loss: 1.1676, Validation Loss: 1.2036
+Train Accuracy: 0.5131, Validation Accuracy: 0.5500
+Epoch 955/1200
+Train Loss: 1.1697, Validation Loss: 1.2018
+Train Accuracy: 0.5077, Validation Accuracy: 0.5500
+Epoch 956/1200
+Train Loss: 1.1906, Validation Loss: 1.2058
+Train Accuracy: 0.5077, Validation Accuracy: 0.5500
+Epoch 957/1200
+Train Loss: 1.1997, Validation Loss: 1.2095
+Train Accuracy: 0.5162, Validation Accuracy: 0.5500
+Epoch 958/1200
+Train Loss: 1.1803, Validation Loss: 1.2134
+Train Accuracy: 0.5324, Validation Accuracy: 0.5500
+Epoch 959/1200
+Train Loss: 1.1913, Validation Loss: 1.1989
+Train Accuracy: 0.5131, Validation Accuracy: 0.5500
+Epoch 960/1200
+Train Loss: 1.1878, Validation Loss: 1.2045
+Train Accuracy: 0.5077, Validation Accuracy: 0.5500
+Epoch 961/1200
+Train Loss: 1.1701, Validation Loss: 1.2012
+Train Accuracy: 0.5201, Validation Accuracy: 0.5500
+Epoch 962/1200
+Train Loss: 1.2044, Validation Loss: 1.2116
+Train Accuracy: 0.5093, Validation Accuracy: 0.5500
+Epoch 963/1200
+Train Loss: 1.1633, Validation Loss: 1.2097
+Train Accuracy: 0.5216, Validation Accuracy: 0.5500
+Epoch 964/1200
+Train Loss: 1.1843, Validation Loss: 1.2131
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 965/1200
+Train Loss: 1.1826, Validation Loss: 1.2153
+Train Accuracy: 0.4907, Validation Accuracy: 0.5500
+Epoch 966/1200
+Train Loss: 1.1404, Validation Loss: 1.2060
+Train Accuracy: 0.5448, Validation Accuracy: 0.5500
+Epoch 967/1200
+Train Loss: 1.1923, Validation Loss: 1.1959
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 968/1200
+Train Loss: 1.1541, Validation Loss: 1.2108
+Train Accuracy: 0.5116, Validation Accuracy: 0.5500
+Epoch 969/1200
+Train Loss: 1.1738, Validation Loss: 1.2145
+Train Accuracy: 0.5324, Validation Accuracy: 0.5500
+Epoch 970/1200
+Train Loss: 1.1636, Validation Loss: 1.2124
+Train Accuracy: 0.5131, Validation Accuracy: 0.5500
+Epoch 971/1200
+Train Loss: 1.1909, Validation Loss: 1.2125
+Train Accuracy: 0.5023, Validation Accuracy: 0.5500
+Epoch 972/1200
+Train Loss: 1.2088, Validation Loss: 1.2144
+Train Accuracy: 0.5216, Validation Accuracy: 0.5500
+Epoch 973/1200
+Train Loss: 1.1695, Validation Loss: 1.2190
+Train Accuracy: 0.5463, Validation Accuracy: 0.5500
+Epoch 974/1200
+Train Loss: 1.1579, Validation Loss: 1.2116
+Train Accuracy: 0.5324, Validation Accuracy: 0.5500
+Epoch 975/1200
+Train Loss: 1.1948, Validation Loss: 1.2092
+Train Accuracy: 0.4969, Validation Accuracy: 0.5500
+Epoch 976/1200
+Train Loss: 1.1818, Validation Loss: 1.2090
+Train Accuracy: 0.5201, Validation Accuracy: 0.5500
+Epoch 977/1200
+Train Loss: 1.1978, Validation Loss: 1.2174
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 978/1200
+Train Loss: 1.1601, Validation Loss: 1.2259
+Train Accuracy: 0.5147, Validation Accuracy: 0.5500
+Epoch 979/1200
+Train Loss: 1.1779, Validation Loss: 1.2143
+Train Accuracy: 0.5270, Validation Accuracy: 0.5500
+Epoch 980/1200
+Train Loss: 1.1792, Validation Loss: 1.2028
+Train Accuracy: 0.5077, Validation Accuracy: 0.5500
+Epoch 981/1200
+Train Loss: 1.1799, Validation Loss: 1.2080
+Train Accuracy: 0.5170, Validation Accuracy: 0.5500
+Epoch 982/1200
+Train Loss: 1.1622, Validation Loss: 1.2084
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 983/1200
+Train Loss: 1.1545, Validation Loss: 1.2181
+Train Accuracy: 0.5340, Validation Accuracy: 0.5500
+Epoch 984/1200
+Train Loss: 1.1877, Validation Loss: 1.2244
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 985/1200
+Train Loss: 1.1666, Validation Loss: 1.2240
+Train Accuracy: 0.5147, Validation Accuracy: 0.5500
+Epoch 986/1200
+Train Loss: 1.1699, Validation Loss: 1.2203
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 987/1200
+Train Loss: 1.1759, Validation Loss: 1.2220
+Train Accuracy: 0.5394, Validation Accuracy: 0.5500
+Epoch 988/1200
+Train Loss: 1.1833, Validation Loss: 1.2061
+Train Accuracy: 0.5409, Validation Accuracy: 0.5500
+Epoch 989/1200
+Train Loss: 1.1891, Validation Loss: 1.2060
+Train Accuracy: 0.5023, Validation Accuracy: 0.5500
+Epoch 990/1200
+Train Loss: 1.1558, Validation Loss: 1.2154
+Train Accuracy: 0.5640, Validation Accuracy: 0.5500
+Epoch 991/1200
+Train Loss: 1.2003, Validation Loss: 1.2086
+Train Accuracy: 0.5093, Validation Accuracy: 0.5500
+Epoch 992/1200
+Train Loss: 1.2057, Validation Loss: 1.2093
+Train Accuracy: 0.5131, Validation Accuracy: 0.5500
+Epoch 993/1200
+Train Loss: 1.1355, Validation Loss: 1.2063
+Train Accuracy: 0.5201, Validation Accuracy: 0.5500
+Epoch 994/1200
+Train Loss: 1.1751, Validation Loss: 1.2110
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 995/1200
+Train Loss: 1.1825, Validation Loss: 1.2162
+Train Accuracy: 0.4977, Validation Accuracy: 0.5500
+Epoch 996/1200
+Train Loss: 1.1951, Validation Loss: 1.2087
+Train Accuracy: 0.5023, Validation Accuracy: 0.5500
+Epoch 997/1200
+Train Loss: 1.2043, Validation Loss: 1.2071
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 998/1200
+Train Loss: 1.1964, Validation Loss: 1.2087
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 999/1200
+Train Loss: 1.1653, Validation Loss: 1.2150
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 1000/1200
+Train Loss: 1.1935, Validation Loss: 1.2133
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 1001/1200
+Train Loss: 1.1632, Validation Loss: 1.2075
+Train Accuracy: 0.5023, Validation Accuracy: 0.5500
+Epoch 1002/1200
+Train Loss: 1.2037, Validation Loss: 1.2169
+Train Accuracy: 0.4954, Validation Accuracy: 0.5500
+Epoch 1003/1200
+Train Loss: 1.1592, Validation Loss: 1.2094
+Train Accuracy: 0.5285, Validation Accuracy: 0.5500
+Epoch 1004/1200
+Train Loss: 1.1768, Validation Loss: 1.2068
+Train Accuracy: 0.5162, Validation Accuracy: 0.5500
+Epoch 1005/1200
+Train Loss: 1.1528, Validation Loss: 1.2096
+Train Accuracy: 0.5324, Validation Accuracy: 0.5500
+Epoch 1006/1200
+Train Loss: 1.1806, Validation Loss: 1.2098
+Train Accuracy: 0.5340, Validation Accuracy: 0.5500
+Epoch 1007/1200
+Train Loss: 1.1634, Validation Loss: 1.2128
+Train Accuracy: 0.5170, Validation Accuracy: 0.5500
+Epoch 1008/1200
+Train Loss: 1.1626, Validation Loss: 1.2145
+Train Accuracy: 0.5170, Validation Accuracy: 0.5500
+Epoch 1009/1200
+Train Loss: 1.1881, Validation Loss: 1.2130
+Train Accuracy: 0.5147, Validation Accuracy: 0.5500
+Epoch 1010/1200
+Train Loss: 1.1852, Validation Loss: 1.2041
+Train Accuracy: 0.5285, Validation Accuracy: 0.5500
+Epoch 1011/1200
+Train Loss: 1.1784, Validation Loss: 1.2063
+Train Accuracy: 0.5255, Validation Accuracy: 0.5500
+Epoch 1012/1200
+Train Loss: 1.1734, Validation Loss: 1.2031
+Train Accuracy: 0.5147, Validation Accuracy: 0.5500
+Epoch 1013/1200
+Train Loss: 1.1790, Validation Loss: 1.2070
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 1014/1200
+Train Loss: 1.1933, Validation Loss: 1.2033
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 1015/1200
+Train Loss: 1.1841, Validation Loss: 1.1991
+Train Accuracy: 0.5077, Validation Accuracy: 0.5500
+Epoch 1016/1200
+Train Loss: 1.1529, Validation Loss: 1.2066
+Train Accuracy: 0.5170, Validation Accuracy: 0.5500
+Epoch 1017/1200
+Train Loss: 1.1581, Validation Loss: 1.2146
+Train Accuracy: 0.5340, Validation Accuracy: 0.5500
+Epoch 1018/1200
+Train Loss: 1.1491, Validation Loss: 1.2041
+Train Accuracy: 0.5116, Validation Accuracy: 0.5500
+Epoch 1019/1200
+Train Loss: 1.1809, Validation Loss: 1.1967
+Train Accuracy: 0.5093, Validation Accuracy: 0.5500
+Epoch 1020/1200
+Train Loss: 1.1977, Validation Loss: 1.2113
+Train Accuracy: 0.5131, Validation Accuracy: 0.5500
+Epoch 1021/1200
+Train Loss: 1.1753, Validation Loss: 1.2199
+Train Accuracy: 0.5023, Validation Accuracy: 0.5500
+Epoch 1022/1200
+Train Loss: 1.1680, Validation Loss: 1.2093
+Train Accuracy: 0.5162, Validation Accuracy: 0.5500
+Epoch 1023/1200
+Train Loss: 1.1742, Validation Loss: 1.2068
+Train Accuracy: 0.5023, Validation Accuracy: 0.5500
+Epoch 1024/1200
+Train Loss: 1.1942, Validation Loss: 1.2093
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 1025/1200
+Train Loss: 1.1767, Validation Loss: 1.2068
+Train Accuracy: 0.5093, Validation Accuracy: 0.5500
+Epoch 1026/1200
+Train Loss: 1.1750, Validation Loss: 1.2169
+Train Accuracy: 0.5370, Validation Accuracy: 0.5500
+Epoch 1027/1200
+Train Loss: 1.2070, Validation Loss: 1.2247
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 1028/1200
+Train Loss: 1.1739, Validation Loss: 1.2175
+Train Accuracy: 0.5077, Validation Accuracy: 0.5500
+Epoch 1029/1200
+Train Loss: 1.1880, Validation Loss: 1.2166
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 1030/1200
+Train Loss: 1.1903, Validation Loss: 1.2063
+Train Accuracy: 0.4985, Validation Accuracy: 0.5500
+Epoch 1031/1200
+Train Loss: 1.1943, Validation Loss: 1.2087
+Train Accuracy: 0.5162, Validation Accuracy: 0.5500
+Epoch 1032/1200
+Train Loss: 1.1584, Validation Loss: 1.2116
+Train Accuracy: 0.5448, Validation Accuracy: 0.5500
+Epoch 1033/1200
+Train Loss: 1.1475, Validation Loss: 1.2068
+Train Accuracy: 0.5340, Validation Accuracy: 0.5500
+Epoch 1034/1200
+Train Loss: 1.1954, Validation Loss: 1.2029
+Train Accuracy: 0.5077, Validation Accuracy: 0.5500
+Epoch 1035/1200
+Train Loss: 1.2087, Validation Loss: 1.2011
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 1036/1200
+Train Loss: 1.1835, Validation Loss: 1.2082
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 1037/1200
+Train Loss: 1.1669, Validation Loss: 1.2032
+Train Accuracy: 0.5532, Validation Accuracy: 0.5500
+Epoch 1038/1200
+Train Loss: 1.1769, Validation Loss: 1.2025
+Train Accuracy: 0.4977, Validation Accuracy: 0.5500
+Epoch 1039/1200
+Train Loss: 1.1759, Validation Loss: 1.2118
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 1040/1200
+Train Loss: 1.1871, Validation Loss: 1.2077
+Train Accuracy: 0.5201, Validation Accuracy: 0.5500
+Epoch 1041/1200
+Train Loss: 1.1746, Validation Loss: 1.2125
+Train Accuracy: 0.5270, Validation Accuracy: 0.5500
+Epoch 1042/1200
+Train Loss: 1.1911, Validation Loss: 1.2227
+Train Accuracy: 0.5216, Validation Accuracy: 0.5500
+Epoch 1043/1200
+Train Loss: 1.1729, Validation Loss: 1.2168
+Train Accuracy: 0.5270, Validation Accuracy: 0.5500
+Epoch 1044/1200
+Train Loss: 1.1807, Validation Loss: 1.2110
+Train Accuracy: 0.5131, Validation Accuracy: 0.5500
+Epoch 1045/1200
+Train Loss: 1.1804, Validation Loss: 1.2121
+Train Accuracy: 0.5270, Validation Accuracy: 0.5500
+Epoch 1046/1200
+Train Loss: 1.1454, Validation Loss: 1.2157
+Train Accuracy: 0.5324, Validation Accuracy: 0.5500
+Epoch 1047/1200
+Train Loss: 1.1749, Validation Loss: 1.2152
+Train Accuracy: 0.5131, Validation Accuracy: 0.5500
+Epoch 1048/1200
+Train Loss: 1.1731, Validation Loss: 1.2161
+Train Accuracy: 0.5247, Validation Accuracy: 0.5500
+Epoch 1049/1200
+Train Loss: 1.1888, Validation Loss: 1.2095
+Train Accuracy: 0.5216, Validation Accuracy: 0.5500
+Epoch 1050/1200
+Train Loss: 1.1534, Validation Loss: 1.2067
+Train Accuracy: 0.5255, Validation Accuracy: 0.5500
+Epoch 1051/1200
+Train Loss: 1.1668, Validation Loss: 1.2035
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 1052/1200
+Train Loss: 1.1784, Validation Loss: 1.2094
+Train Accuracy: 0.5201, Validation Accuracy: 0.5500
+Epoch 1053/1200
+Train Loss: 1.1598, Validation Loss: 1.2151
+Train Accuracy: 0.5100, Validation Accuracy: 0.5500
+Epoch 1054/1200
+Train Loss: 1.1668, Validation Loss: 1.2134
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 1055/1200
+Train Loss: 1.1962, Validation Loss: 1.2109
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 1056/1200
+Train Loss: 1.1683, Validation Loss: 1.2053
+Train Accuracy: 0.5185, Validation Accuracy: 0.5500
+Epoch 1057/1200
+Train Loss: 1.1778, Validation Loss: 1.2077
+Train Accuracy: 0.5147, Validation Accuracy: 0.5500
+Epoch 1058/1200
+Train Loss: 1.2003, Validation Loss: 1.2106
+Train Accuracy: 0.5116, Validation Accuracy: 0.5500
+Epoch 1059/1200
+Train Loss: 1.1787, Validation Loss: 1.2104
+Train Accuracy: 0.5093, Validation Accuracy: 0.5500
+Epoch 1060/1200
+Train Loss: 1.1885, Validation Loss: 1.2298
+Train Accuracy: 0.5324, Validation Accuracy: 0.5500
+Epoch 1061/1200
+Train Loss: 1.1958, Validation Loss: 1.2226
+Train Accuracy: 0.5077, Validation Accuracy: 0.5500
+Epoch 1062/1200
+Train Loss: 1.1812, Validation Loss: 1.2184
+Train Accuracy: 0.4869, Validation Accuracy: 0.5500
+Epoch 1063/1200
+Train Loss: 1.1631, Validation Loss: 1.2112
+Train Accuracy: 0.5201, Validation Accuracy: 0.5500
+Epoch 1064/1200
+Train Loss: 1.1670, Validation Loss: 1.1986
+Train Accuracy: 0.5239, Validation Accuracy: 0.5500
+Epoch 1065/1200
+Train Loss: 1.1618, Validation Loss: 1.1903
+Train Accuracy: 0.5116, Validation Accuracy: 0.5500
+Epoch 1066/1200
+Train Loss: 1.1676, Validation Loss: 1.2100
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 1067/1200
+Train Loss: 1.1809, Validation Loss: 1.2191
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 1068/1200
+Train Loss: 1.1816, Validation Loss: 1.2194
+Train Accuracy: 0.5093, Validation Accuracy: 0.5500
+Epoch 1069/1200
+Train Loss: 1.1777, Validation Loss: 1.2199
+Train Accuracy: 0.5185, Validation Accuracy: 0.5500
+Epoch 1070/1200
+Train Loss: 1.1423, Validation Loss: 1.2167
+Train Accuracy: 0.5324, Validation Accuracy: 0.5500
+Epoch 1071/1200
+Train Loss: 1.2049, Validation Loss: 1.2149
+Train Accuracy: 0.5162, Validation Accuracy: 0.5500
+Epoch 1072/1200
+Train Loss: 1.1744, Validation Loss: 1.2191
+Train Accuracy: 0.5147, Validation Accuracy: 0.5500
+Epoch 1073/1200
+Train Loss: 1.1689, Validation Loss: 1.2177
+Train Accuracy: 0.5255, Validation Accuracy: 0.5500
+Epoch 1074/1200
+Train Loss: 1.1720, Validation Loss: 1.2114
+Train Accuracy: 0.5247, Validation Accuracy: 0.5500
+Epoch 1075/1200
+Train Loss: 1.1531, Validation Loss: 1.2192
+Train Accuracy: 0.5309, Validation Accuracy: 0.5500
+Epoch 1076/1200
+Train Loss: 1.1813, Validation Loss: 1.2179
+Train Accuracy: 0.5162, Validation Accuracy: 0.5500
+Epoch 1077/1200
+Train Loss: 1.1912, Validation Loss: 1.2045
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 1078/1200
+Train Loss: 1.1824, Validation Loss: 1.2064
+Train Accuracy: 0.5255, Validation Accuracy: 0.5500
+Epoch 1079/1200
+Train Loss: 1.1655, Validation Loss: 1.1945
+Train Accuracy: 0.5394, Validation Accuracy: 0.5500
+Epoch 1080/1200
+Train Loss: 1.1778, Validation Loss: 1.1884
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 1081/1200
+Train Loss: 1.2103, Validation Loss: 1.1966
+Train Accuracy: 0.5116, Validation Accuracy: 0.5500
+Epoch 1082/1200
+Train Loss: 1.1856, Validation Loss: 1.2025
+Train Accuracy: 0.5216, Validation Accuracy: 0.5500
+Epoch 1083/1200
+Train Loss: 1.1852, Validation Loss: 1.2230
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 1084/1200
+Train Loss: 1.1766, Validation Loss: 1.2185
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 1085/1200
+Train Loss: 1.1599, Validation Loss: 1.2160
+Train Accuracy: 0.5378, Validation Accuracy: 0.5500
+Epoch 1086/1200
+Train Loss: 1.1424, Validation Loss: 1.2111
+Train Accuracy: 0.5201, Validation Accuracy: 0.5500
+Epoch 1087/1200
+Train Loss: 1.1728, Validation Loss: 1.2099
+Train Accuracy: 0.4938, Validation Accuracy: 0.5500
+Epoch 1088/1200
+Train Loss: 1.1605, Validation Loss: 1.2183
+Train Accuracy: 0.5131, Validation Accuracy: 0.5500
+Epoch 1089/1200
+Train Loss: 1.1676, Validation Loss: 1.2246
+Train Accuracy: 0.5039, Validation Accuracy: 0.5500
+Epoch 1090/1200
+Train Loss: 1.1482, Validation Loss: 1.2245
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 1091/1200
+Train Loss: 1.1917, Validation Loss: 1.2094
+Train Accuracy: 0.4676, Validation Accuracy: 0.5500
+Epoch 1092/1200
+Train Loss: 1.1764, Validation Loss: 1.2033
+Train Accuracy: 0.5340, Validation Accuracy: 0.5500
+Epoch 1093/1200
+Train Loss: 1.1931, Validation Loss: 1.2079
+Train Accuracy: 0.4969, Validation Accuracy: 0.5500
+Epoch 1094/1200
+Train Loss: 1.1664, Validation Loss: 1.2220
+Train Accuracy: 0.5131, Validation Accuracy: 0.5500
+Epoch 1095/1200
+Train Loss: 1.1471, Validation Loss: 1.2129
+Train Accuracy: 0.5409, Validation Accuracy: 0.5500
+Epoch 1096/1200
+Train Loss: 1.1800, Validation Loss: 1.2109
+Train Accuracy: 0.5093, Validation Accuracy: 0.5500
+Epoch 1097/1200
+Train Loss: 1.1669, Validation Loss: 1.2200
+Train Accuracy: 0.5255, Validation Accuracy: 0.5500
+Epoch 1098/1200
+Train Loss: 1.2000, Validation Loss: 1.2013
+Train Accuracy: 0.5231, Validation Accuracy: 0.5500
+Epoch 1099/1200
+Train Loss: 1.1586, Validation Loss: 1.2004
+Train Accuracy: 0.5147, Validation Accuracy: 0.5500
+Epoch 1100/1200
+Train Loss: 1.1844, Validation Loss: 1.1941
+Train Accuracy: 0.4900, Validation Accuracy: 0.5500
+Epoch 1101/1200
+Train Loss: 1.1757, Validation Loss: 1.1983
+Train Accuracy: 0.5093, Validation Accuracy: 0.5500
+Epoch 1102/1200
+Train Loss: 1.1739, Validation Loss: 1.1961
+Train Accuracy: 0.5231, Validation Accuracy: 0.5500
+Epoch 1103/1200
+Train Loss: 1.1948, Validation Loss: 1.2057
+Train Accuracy: 0.5231, Validation Accuracy: 0.5500
+Epoch 1104/1200
+Train Loss: 1.1791, Validation Loss: 1.1982
+Train Accuracy: 0.5116, Validation Accuracy: 0.5500
+Epoch 1105/1200
+Train Loss: 1.1413, Validation Loss: 1.2062
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 1106/1200
+Train Loss: 1.1681, Validation Loss: 1.2009
+Train Accuracy: 0.5285, Validation Accuracy: 0.5500
+Epoch 1107/1200
+Train Loss: 1.1774, Validation Loss: 1.2065
+Train Accuracy: 0.5432, Validation Accuracy: 0.5500
+Epoch 1108/1200
+Train Loss: 1.1875, Validation Loss: 1.2031
+Train Accuracy: 0.5201, Validation Accuracy: 0.5500
+Epoch 1109/1200
+Train Loss: 1.1748, Validation Loss: 1.2063
+Train Accuracy: 0.5394, Validation Accuracy: 0.5500
+Epoch 1110/1200
+Train Loss: 1.1642, Validation Loss: 1.2059
+Train Accuracy: 0.5255, Validation Accuracy: 0.5500
+Epoch 1111/1200
+Train Loss: 1.1711, Validation Loss: 1.2137
+Train Accuracy: 0.5077, Validation Accuracy: 0.5500
+Epoch 1112/1200
+Train Loss: 1.1947, Validation Loss: 1.2375
+Train Accuracy: 0.5270, Validation Accuracy: 0.5500
+Epoch 1113/1200
+Train Loss: 1.2013, Validation Loss: 1.2304
+Train Accuracy: 0.5108, Validation Accuracy: 0.5500
+Epoch 1114/1200
+Train Loss: 1.1632, Validation Loss: 1.2245
+Train Accuracy: 0.5309, Validation Accuracy: 0.5500
+Epoch 1115/1200
+Train Loss: 1.1785, Validation Loss: 1.2127
+Train Accuracy: 0.5309, Validation Accuracy: 0.5500
+Epoch 1116/1200
+Train Loss: 1.1628, Validation Loss: 1.2141
+Train Accuracy: 0.5255, Validation Accuracy: 0.5500
+Epoch 1117/1200
+Train Loss: 1.1619, Validation Loss: 1.2126
+Train Accuracy: 0.5201, Validation Accuracy: 0.5500
+Epoch 1118/1200
+Train Loss: 1.1408, Validation Loss: 1.1994
+Train Accuracy: 0.5285, Validation Accuracy: 0.5500
+Epoch 1119/1200
+Train Loss: 1.1764, Validation Loss: 1.2114
+Train Accuracy: 0.5023, Validation Accuracy: 0.5500
+Epoch 1120/1200
+Train Loss: 1.1615, Validation Loss: 1.2213
+Train Accuracy: 0.5201, Validation Accuracy: 0.5500
+Epoch 1121/1200
+Train Loss: 1.1882, Validation Loss: 1.2151
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 1122/1200
+Train Loss: 1.1498, Validation Loss: 1.2084
+Train Accuracy: 0.5255, Validation Accuracy: 0.5500
+Epoch 1123/1200
+Train Loss: 1.1992, Validation Loss: 1.1981
+Train Accuracy: 0.4660, Validation Accuracy: 0.5500
+Epoch 1124/1200
+Train Loss: 1.1621, Validation Loss: 1.1961
+Train Accuracy: 0.5340, Validation Accuracy: 0.5500
+Epoch 1125/1200
+Train Loss: 1.1634, Validation Loss: 1.1948
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 1126/1200
+Train Loss: 1.1881, Validation Loss: 1.2024
+Train Accuracy: 0.5023, Validation Accuracy: 0.5500
+Epoch 1127/1200
+Train Loss: 1.1699, Validation Loss: 1.1931
+Train Accuracy: 0.5355, Validation Accuracy: 0.5500
+Epoch 1128/1200
+Train Loss: 1.1662, Validation Loss: 1.2055
+Train Accuracy: 0.5270, Validation Accuracy: 0.5500
+Epoch 1129/1200
+Train Loss: 1.1786, Validation Loss: 1.2213
+Train Accuracy: 0.5131, Validation Accuracy: 0.5500
+Epoch 1130/1200
+Train Loss: 1.1576, Validation Loss: 1.2322
+Train Accuracy: 0.5309, Validation Accuracy: 0.5500
+Epoch 1131/1200
+Train Loss: 1.2009, Validation Loss: 1.2225
+Train Accuracy: 0.4969, Validation Accuracy: 0.5500
+Epoch 1132/1200
+Train Loss: 1.1825, Validation Loss: 1.2129
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 1133/1200
+Train Loss: 1.1899, Validation Loss: 1.2124
+Train Accuracy: 0.5093, Validation Accuracy: 0.5500
+Epoch 1134/1200
+Train Loss: 1.1947, Validation Loss: 1.2301
+Train Accuracy: 0.4954, Validation Accuracy: 0.5500
+Epoch 1135/1200
+Train Loss: 1.1810, Validation Loss: 1.2234
+Train Accuracy: 0.4815, Validation Accuracy: 0.5500
+Epoch 1136/1200
+Train Loss: 1.1979, Validation Loss: 1.2298
+Train Accuracy: 0.4985, Validation Accuracy: 0.5500
+Epoch 1137/1200
+Train Loss: 1.1825, Validation Loss: 1.2290
+Train Accuracy: 0.5633, Validation Accuracy: 0.5500
+Epoch 1138/1200
+Train Loss: 1.1638, Validation Loss: 1.2124
+Train Accuracy: 0.5131, Validation Accuracy: 0.5500
+Epoch 1139/1200
+Train Loss: 1.1717, Validation Loss: 1.1927
+Train Accuracy: 0.5131, Validation Accuracy: 0.5500
+Epoch 1140/1200
+Train Loss: 1.1675, Validation Loss: 1.2138
+Train Accuracy: 0.5170, Validation Accuracy: 0.5500
+Epoch 1141/1200
+Train Loss: 1.1501, Validation Loss: 1.2127
+Train Accuracy: 0.5432, Validation Accuracy: 0.5500
+Epoch 1142/1200
+Train Loss: 1.1957, Validation Loss: 1.2231
+Train Accuracy: 0.4954, Validation Accuracy: 0.5500
+Epoch 1143/1200
+Train Loss: 1.1754, Validation Loss: 1.2216
+Train Accuracy: 0.5077, Validation Accuracy: 0.5500
+Epoch 1144/1200
+Train Loss: 1.1788, Validation Loss: 1.2153
+Train Accuracy: 0.5301, Validation Accuracy: 0.5500
+Epoch 1145/1200
+Train Loss: 1.1977, Validation Loss: 1.2327
+Train Accuracy: 0.5216, Validation Accuracy: 0.5500
+Epoch 1146/1200
+Train Loss: 1.1854, Validation Loss: 1.2201
+Train Accuracy: 0.5147, Validation Accuracy: 0.5500
+Epoch 1147/1200
+Train Loss: 1.1690, Validation Loss: 1.2016
+Train Accuracy: 0.5270, Validation Accuracy: 0.5500
+Epoch 1148/1200
+Train Loss: 1.1739, Validation Loss: 1.2091
+Train Accuracy: 0.5201, Validation Accuracy: 0.5500
+Epoch 1149/1200
+Train Loss: 1.1870, Validation Loss: 1.1872
+Train Accuracy: 0.4915, Validation Accuracy: 0.5500
+Epoch 1150/1200
+Train Loss: 1.1521, Validation Loss: 1.1972
+Train Accuracy: 0.5147, Validation Accuracy: 0.5500
+Epoch 1151/1200
+Train Loss: 1.1681, Validation Loss: 1.2042
+Train Accuracy: 0.5409, Validation Accuracy: 0.5500
+Epoch 1152/1200
+Train Loss: 1.1948, Validation Loss: 1.2026
+Train Accuracy: 0.5355, Validation Accuracy: 0.5500
+Epoch 1153/1200
+Train Loss: 1.1852, Validation Loss: 1.2155
+Train Accuracy: 0.5108, Validation Accuracy: 0.5500
+Epoch 1154/1200
+Train Loss: 1.1804, Validation Loss: 1.2131
+Train Accuracy: 0.5131, Validation Accuracy: 0.5500
+Epoch 1155/1200
+Train Loss: 1.1749, Validation Loss: 1.2051
+Train Accuracy: 0.5023, Validation Accuracy: 0.5500
+Epoch 1156/1200
+Train Loss: 1.1738, Validation Loss: 1.1976
+Train Accuracy: 0.5285, Validation Accuracy: 0.5500
+Epoch 1157/1200
+Train Loss: 1.1809, Validation Loss: 1.1918
+Train Accuracy: 0.4884, Validation Accuracy: 0.5500
+Epoch 1158/1200
+Train Loss: 1.1965, Validation Loss: 1.1814
+Train Accuracy: 0.5039, Validation Accuracy: 0.5500
+Epoch 1159/1200
+Train Loss: 1.1722, Validation Loss: 1.1968
+Train Accuracy: 0.5340, Validation Accuracy: 0.5500
+Epoch 1160/1200
+Train Loss: 1.1996, Validation Loss: 1.2024
+Train Accuracy: 0.4954, Validation Accuracy: 0.5500
+Epoch 1161/1200
+Train Loss: 1.1670, Validation Loss: 1.2053
+Train Accuracy: 0.5270, Validation Accuracy: 0.5500
+Epoch 1162/1200
+Train Loss: 1.1526, Validation Loss: 1.2190
+Train Accuracy: 0.5077, Validation Accuracy: 0.5500
+Epoch 1163/1200
+Train Loss: 1.1802, Validation Loss: 1.2298
+Train Accuracy: 0.5046, Validation Accuracy: 0.5500
+Epoch 1164/1200
+Train Loss: 1.1760, Validation Loss: 1.2323
+Train Accuracy: 0.5093, Validation Accuracy: 0.5500
+Epoch 1165/1200
+Train Loss: 1.1722, Validation Loss: 1.2396
+Train Accuracy: 0.5324, Validation Accuracy: 0.5500
+Epoch 1166/1200
+Train Loss: 1.1602, Validation Loss: 1.2197
+Train Accuracy: 0.5062, Validation Accuracy: 0.5500
+Epoch 1167/1200
+Train Loss: 1.1878, Validation Loss: 1.2081
+Train Accuracy: 0.4815, Validation Accuracy: 0.5500
+Epoch 1168/1200
+Train Loss: 1.1877, Validation Loss: 1.2140
+Train Accuracy: 0.5131, Validation Accuracy: 0.5500
+Epoch 1169/1200
+Train Loss: 1.1513, Validation Loss: 1.2169
+Train Accuracy: 0.5255, Validation Accuracy: 0.5500
+Epoch 1170/1200
+Train Loss: 1.1613, Validation Loss: 1.1975
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 1171/1200
+Train Loss: 1.1652, Validation Loss: 1.2016
+Train Accuracy: 0.5285, Validation Accuracy: 0.5500
+Epoch 1172/1200
+Train Loss: 1.1571, Validation Loss: 1.2186
+Train Accuracy: 0.5355, Validation Accuracy: 0.5500
+Epoch 1173/1200
+Train Loss: 1.1801, Validation Loss: 1.2089
+Train Accuracy: 0.4923, Validation Accuracy: 0.5500
+Epoch 1174/1200
+Train Loss: 1.1685, Validation Loss: 1.2155
+Train Accuracy: 0.5340, Validation Accuracy: 0.5500
+Epoch 1175/1200
+Train Loss: 1.1771, Validation Loss: 1.2128
+Train Accuracy: 0.5093, Validation Accuracy: 0.5500
+Epoch 1176/1200
+Train Loss: 1.1778, Validation Loss: 1.2064
+Train Accuracy: 0.5147, Validation Accuracy: 0.5500
+Epoch 1177/1200
+Train Loss: 1.1889, Validation Loss: 1.2206
+Train Accuracy: 0.5355, Validation Accuracy: 0.5500
+Epoch 1178/1200
+Train Loss: 1.1841, Validation Loss: 1.2203
+Train Accuracy: 0.5131, Validation Accuracy: 0.5500
+Epoch 1179/1200
+Train Loss: 1.1869, Validation Loss: 1.2112
+Train Accuracy: 0.5147, Validation Accuracy: 0.5500
+Epoch 1180/1200
+Train Loss: 1.1745, Validation Loss: 1.2065
+Train Accuracy: 0.5093, Validation Accuracy: 0.5500
+Epoch 1181/1200
+Train Loss: 1.1446, Validation Loss: 1.2164
+Train Accuracy: 0.5285, Validation Accuracy: 0.5500
+Epoch 1182/1200
+Train Loss: 1.1697, Validation Loss: 1.2197
+Train Accuracy: 0.5270, Validation Accuracy: 0.5500
+Epoch 1183/1200
+Train Loss: 1.1511, Validation Loss: 1.2228
+Train Accuracy: 0.5324, Validation Accuracy: 0.5500
+Epoch 1184/1200
+Train Loss: 1.1600, Validation Loss: 1.2214
+Train Accuracy: 0.5324, Validation Accuracy: 0.5500
+Epoch 1185/1200
+Train Loss: 1.1442, Validation Loss: 1.2136
+Train Accuracy: 0.5324, Validation Accuracy: 0.5500
+Epoch 1186/1200
+Train Loss: 1.1562, Validation Loss: 1.1972
+Train Accuracy: 0.4992, Validation Accuracy: 0.5500
+Epoch 1187/1200
+Train Loss: 1.1759, Validation Loss: 1.1908
+Train Accuracy: 0.5008, Validation Accuracy: 0.5500
+Epoch 1188/1200
+Train Loss: 1.1880, Validation Loss: 1.2000
+Train Accuracy: 0.5023, Validation Accuracy: 0.5500
+Epoch 1189/1200
+Train Loss: 1.1380, Validation Loss: 1.1891
+Train Accuracy: 0.5201, Validation Accuracy: 0.5500
+Epoch 1190/1200
+Train Loss: 1.1388, Validation Loss: 1.1975
+Train Accuracy: 0.5448, Validation Accuracy: 0.5500
+Epoch 1191/1200
+Train Loss: 1.1742, Validation Loss: 1.2058
+Train Accuracy: 0.5270, Validation Accuracy: 0.5500
+Epoch 1192/1200
+Train Loss: 1.1544, Validation Loss: 1.2278
+Train Accuracy: 0.5340, Validation Accuracy: 0.5500
+Epoch 1193/1200
+Train Loss: 1.1654, Validation Loss: 1.2343
+Train Accuracy: 0.5255, Validation Accuracy: 0.5500
+Epoch 1194/1200
+Train Loss: 1.1852, Validation Loss: 1.2352
+Train Accuracy: 0.5093, Validation Accuracy: 0.5500
+Epoch 1195/1200
+Train Loss: 1.1968, Validation Loss: 1.2285
+Train Accuracy: 0.4776, Validation Accuracy: 0.5500
+Epoch 1196/1200
+Train Loss: 1.1493, Validation Loss: 1.2189
+Train Accuracy: 0.5093, Validation Accuracy: 0.5500
+Epoch 1197/1200
+Train Loss: 1.1558, Validation Loss: 1.2134
+Train Accuracy: 0.5394, Validation Accuracy: 0.5500
+Epoch 1198/1200
+Train Loss: 1.1992, Validation Loss: 1.2059
+Train Accuracy: 0.5177, Validation Accuracy: 0.5500
+Epoch 1199/1200
+Train Loss: 1.1655, Validation Loss: 1.1901
+Train Accuracy: 0.5093, Validation Accuracy: 0.5500
+Epoch 1200/1200
+Train Loss: 1.1870, Validation Loss: 1.1995

@@ -1,0 +1,621 @@
+2024-03-03 20:03:44,782 INFO    StreamThr :15821 [internal.py:wandb_internal():86] W&B internal server running at pid: 15821, started at: 2024-03-03 20:03:44.770483
+2024-03-03 20:03:44,798 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: status
+2024-03-03 20:03:44,820 INFO    WriterThread:15821 [datastore.py:open_for_write():87] open: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/run-ziddmly2.wandb
+2024-03-03 20:03:44,822 DEBUG   SenderThread:15821 [sender.py:send():382] send: header
+2024-03-03 20:03:44,960 DEBUG   SenderThread:15821 [sender.py:send():382] send: run
+2024-03-03 20:03:45,546 INFO    SenderThread:15821 [dir_watcher.py:__init__():211] watching files in: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files
+2024-03-03 20:03:45,546 INFO    SenderThread:15821 [sender.py:_start_run_threads():1136] run started: ziddmly2 with start time 1709496224.764464
+2024-03-03 20:03:45,582 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: check_version
+2024-03-03 20:03:45,583 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: check_version
+2024-03-03 20:03:45,707 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: run_start
+2024-03-03 20:03:45,759 DEBUG   HandlerThread:15821 [system_info.py:__init__():27] System info init
+2024-03-03 20:03:45,759 DEBUG   HandlerThread:15821 [system_info.py:__init__():42] System info init done
+2024-03-03 20:03:45,760 INFO    HandlerThread:15821 [system_monitor.py:start():194] Starting system monitor
+2024-03-03 20:03:45,760 INFO    SystemMonitor:15821 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-03-03 20:03:45,761 INFO    HandlerThread:15821 [system_monitor.py:probe():214] Collecting system info
+2024-03-03 20:03:45,764 DEBUG   HandlerThread:15821 [system_info.py:probe():151] Probing system
+2024-03-03 20:03:45,764 INFO    SystemMonitor:15821 [interfaces.py:start():190] Started cpu monitoring
+2024-03-03 20:03:45,769 INFO    SystemMonitor:15821 [interfaces.py:start():190] Started disk monitoring
+2024-03-03 20:03:45,771 INFO    SystemMonitor:15821 [interfaces.py:start():190] Started memory monitoring
+2024-03-03 20:03:45,773 INFO    SystemMonitor:15821 [interfaces.py:start():190] Started network monitoring
+2024-03-03 20:03:45,792 DEBUG   HandlerThread:15821 [system_info.py:_probe_git():136] Probing git
+2024-03-03 20:03:45,851 DEBUG   HandlerThread:15821 [system_info.py:_probe_git():144] Probing git done
+2024-03-03 20:03:45,851 DEBUG   HandlerThread:15821 [system_info.py:probe():199] Probing system done
+2024-03-03 20:03:45,852 DEBUG   HandlerThread:15821 [system_monitor.py:probe():223] {'os': 'macOS-10.16-x86_64-i386-64bit', 'python': '3.11.7', 'heartbeatAt': '2024-03-03T20:03:45.764887', 'startedAt': '2024-03-03T20:03:44.738454', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'GAT.ipynb', 'codePathLocal': 'GAT.ipynb', 'git': {'remote': 'https://github.com/mathilde-cros/Bachelor-Thesis-Alzheimers-HGNN.git', 'commit': 'b32ac0387839a5cda6d95b857ef1b96bb99d0c35'}, 'email': 'mathilde.cros02@gmail.com', 'root': '/Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN', 'host': 'Mathildes-MacBook-Air.local', 'username': 'mathilde', 'executable': '/Users/mathilde/anaconda3/envs/alzheimers-cl/bin/python', 'cpu_count': 8, 'cpu_count_logical': 8, 'cpu_freq': {'current': 2400, 'min': 2400, 'max': 2400}, 'cpu_freq_per_core': [{'current': 2400, 'min': 2400, 'max': 2400}], 'disk': {'/': {'total': 228.27386474609375, 'used': 218.19252395629883}}, 'memory': {'total': 8.0}}
+2024-03-03 20:03:45,852 INFO    HandlerThread:15821 [system_monitor.py:probe():224] Finished collecting system info
+2024-03-03 20:03:45,852 INFO    HandlerThread:15821 [system_monitor.py:probe():227] Publishing system info
+2024-03-03 20:03:45,852 DEBUG   HandlerThread:15821 [system_info.py:_save_conda():208] Saving list of conda packages installed into the current environment
+2024-03-03 20:03:46,557 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/conda-environment.yaml
+2024-03-03 20:03:53,597 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/conda-environment.yaml
+2024-03-03 20:03:53,604 DEBUG   HandlerThread:15821 [system_info.py:_save_conda():220] Saving conda packages done
+2024-03-03 20:03:53,607 INFO    HandlerThread:15821 [system_monitor.py:probe():229] Finished publishing system info
+2024-03-03 20:03:53,615 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: status_report
+2024-03-03 20:03:53,615 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-03 20:03:53,616 DEBUG   SenderThread:15821 [sender.py:send():382] send: files
+2024-03-03 20:03:53,617 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-metadata.json with policy now
+2024-03-03 20:03:53,673 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: python_packages
+2024-03-03 20:03:53,674 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: python_packages
+2024-03-03 20:03:53,676 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-03 20:03:53,676 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: stop_status
+2024-03-03 20:03:53,681 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-03 20:03:53,904 DEBUG   SenderThread:15821 [sender.py:send():382] send: telemetry
+2024-03-03 20:03:54,228 INFO    wandb-upload_0:15821 [upload_job.py:push():131] Uploaded file /var/folders/wh/snjqmpvj7qv64q1ngy8zvqbh0000gn/T/tmpuj2a1e8ywandb/brz3dvyi-wandb-metadata.json
+2024-03-03 20:03:54,606 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/requirements.txt
+2024-03-03 20:03:54,607 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-metadata.json
+2024-03-03 20:03:55,920 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: status_report
+2024-03-03 20:03:56,224 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:03:56,233 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:03:56,234 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:03:56,238 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:03:56,613 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:03:56,614 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log
+2024-03-03 20:03:57,364 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:03:57,369 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:03:57,369 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:03:57,370 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:03:57,619 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:03:58,363 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:03:58,366 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:03:58,367 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:03:58,368 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:03:58,619 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:03:58,621 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log
+2024-03-03 20:04:00,650 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log
+2024-03-03 20:04:01,435 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: status_report
+2024-03-03 20:04:01,662 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:04:01,665 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:04:01,666 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:04:01,668 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:04:02,663 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:04:02,664 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log
+2024-03-03 20:04:05,800 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:04:05,809 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:04:05,809 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:04:05,814 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:04:06,689 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:04:06,690 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log
+2024-03-03 20:04:06,820 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: status_report
+2024-03-03 20:04:07,496 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:04:07,499 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:04:07,499 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:04:07,500 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:04:07,693 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:04:08,706 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-03 20:04:08,707 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-03 20:04:08,708 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: stop_status
+2024-03-03 20:04:08,715 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log
+2024-03-03 20:04:09,114 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:04:09,117 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:04:09,118 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:04:09,127 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:04:09,715 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:04:10,723 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log
+2024-03-03 20:04:12,172 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: status_report
+2024-03-03 20:04:13,528 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:04:13,534 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:04:13,535 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:04:13,541 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:04:13,743 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:04:14,744 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log
+2024-03-03 20:04:16,018 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:04:16,020 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:04:16,020 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:04:16,023 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:04:16,753 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:04:17,008 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:04:17,010 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:04:17,010 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:04:17,011 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:04:17,756 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:04:18,019 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: status_report
+2024-03-03 20:04:18,057 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:04:18,192 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:04:18,192 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:04:18,194 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:04:18,762 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/config.yaml
+2024-03-03 20:04:18,762 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:04:18,762 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log
+2024-03-03 20:04:19,031 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:04:19,032 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:04:19,033 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:04:19,033 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:04:19,767 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:04:19,986 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:04:19,987 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:04:19,988 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:04:19,988 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:04:20,773 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:04:20,773 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log
+2024-03-03 20:04:20,898 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:04:20,900 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:04:20,900 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:04:20,901 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:04:21,778 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:04:21,808 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:04:21,809 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:04:21,810 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:04:21,811 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:04:22,697 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:04:22,698 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:04:22,698 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:04:22,699 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:04:22,784 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:04:22,784 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log
+2024-03-03 20:04:23,590 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: status_report
+2024-03-03 20:04:23,592 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:04:23,593 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:04:23,593 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:04:23,594 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:04:23,700 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-03 20:04:23,706 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-03 20:04:23,707 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: stop_status
+2024-03-03 20:04:23,789 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:04:24,513 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:04:24,515 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:04:24,515 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:04:24,515 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:04:24,795 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:04:24,795 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log
+2024-03-03 20:04:25,464 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:04:25,465 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:04:25,466 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:04:25,467 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:04:25,796 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:04:26,368 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:04:26,370 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:04:26,370 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:04:26,371 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:04:26,798 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:04:26,798 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log
+2024-03-03 20:04:27,268 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:04:27,269 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:04:27,269 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:04:27,270 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:04:27,804 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:04:28,168 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:04:28,170 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:04:28,170 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:04:28,170 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:04:28,808 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:04:28,809 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log
+2024-03-03 20:04:29,174 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: status_report
+2024-03-03 20:04:29,502 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:04:29,503 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:04:29,504 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:04:29,505 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:04:29,812 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:04:30,814 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log
+2024-03-03 20:04:31,909 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:04:31,911 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:04:31,911 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:04:31,912 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:04:32,824 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:04:32,825 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log
+2024-03-03 20:04:33,064 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:04:33,065 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:04:33,066 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:04:33,066 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:04:33,830 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:04:33,993 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:04:33,995 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:04:33,995 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:04:33,996 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:04:34,832 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:04:34,833 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log
+2024-03-03 20:04:35,000 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: status_report
+2024-03-03 20:04:36,055 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:04:36,061 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:04:36,062 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:04:36,063 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:04:36,842 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:04:36,843 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log
+2024-03-03 20:04:38,410 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:04:38,412 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:04:38,415 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:04:38,416 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:04:38,705 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-03 20:04:38,711 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-03 20:04:38,712 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: stop_status
+2024-03-03 20:04:38,849 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:04:39,569 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:04:39,570 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:04:39,571 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:04:39,573 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:04:39,856 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:04:40,581 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: status_report
+2024-03-03 20:04:40,861 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log
+2024-03-03 20:04:44,204 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:04:44,208 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:04:44,208 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:04:44,209 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:04:44,887 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:04:45,684 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: status_report
+2024-03-03 20:04:45,685 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:04:45,687 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:04:45,687 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:04:45,688 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:04:45,775 DEBUG   SystemMonitor:15821 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-03-03 20:04:45,779 DEBUG   SenderThread:15821 [sender.py:send():382] send: stats
+2024-03-03 20:04:45,892 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:04:46,895 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log
+2024-03-03 20:04:46,960 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:04:46,962 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:04:46,963 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:04:46,964 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:04:47,901 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:04:48,166 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:04:48,169 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:04:48,169 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:04:48,171 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:04:48,923 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:04:48,925 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log
+2024-03-03 20:04:50,875 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:04:50,879 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: status_report
+2024-03-03 20:04:50,880 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:04:50,880 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:04:50,881 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:04:50,940 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:04:52,480 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:04:52,481 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:04:52,481 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:04:52,486 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:04:52,951 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:04:52,951 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log
+2024-03-03 20:04:53,711 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-03 20:04:53,715 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-03 20:04:53,715 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: stop_status
+2024-03-03 20:04:53,933 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:04:53,942 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:04:53,944 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:04:53,945 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:04:53,957 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:04:54,961 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log
+2024-03-03 20:04:55,198 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:04:55,200 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:04:55,200 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:04:55,201 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:04:55,966 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:04:56,191 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: status_report
+2024-03-03 20:04:56,192 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:04:56,193 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:04:56,193 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:04:56,194 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:04:56,973 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:04:56,975 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log
+2024-03-03 20:04:57,416 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:04:57,418 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:04:57,419 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:04:57,420 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:04:57,974 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:04:58,531 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:04:58,533 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:04:58,533 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:04:58,534 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:04:58,980 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:04:58,980 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log
+2024-03-03 20:04:59,560 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:04:59,562 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:04:59,562 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:04:59,563 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:04:59,985 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:05:00,662 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:05:00,664 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:05:00,664 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:05:00,665 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:05:00,989 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:05:00,989 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log
+2024-03-03 20:05:01,616 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: status_report
+2024-03-03 20:05:01,618 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:05:01,619 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:05:01,619 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:05:01,621 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:05:01,995 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:05:02,581 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:05:02,583 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:05:02,584 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:05:02,584 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:05:03,001 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:05:03,001 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log
+2024-03-03 20:05:03,519 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:05:03,520 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:05:03,520 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:05:03,521 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:05:04,006 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:05:05,050 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log
+2024-03-03 20:05:05,574 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:05:05,577 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:05:05,577 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:05:05,578 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:05:06,046 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:05:06,743 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: status_report
+2024-03-03 20:05:06,744 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:05:06,746 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:05:06,746 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:05:06,747 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:05:07,052 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:05:07,053 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log
+2024-03-03 20:05:07,705 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:05:07,708 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:05:07,708 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:05:07,709 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:05:08,057 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:05:08,715 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-03 20:05:08,718 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-03 20:05:08,719 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: stop_status
+2024-03-03 20:05:08,748 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:05:08,980 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:05:08,981 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:05:08,982 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:05:09,063 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:05:09,063 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log
+2024-03-03 20:05:09,659 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:05:09,660 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:05:09,661 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:05:09,662 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:05:10,068 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:05:10,530 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:05:10,531 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:05:10,532 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:05:10,532 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:05:11,074 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:05:11,074 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log
+2024-03-03 20:05:11,414 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:05:11,415 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:05:11,416 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:05:11,416 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:05:12,079 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:05:12,310 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: status_report
+2024-03-03 20:05:12,310 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:05:12,312 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:05:12,312 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:05:12,313 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:05:13,085 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:05:13,085 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log
+2024-03-03 20:05:13,225 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:05:13,227 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:05:13,227 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:05:13,228 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:05:14,093 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:05:14,399 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:05:14,400 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:05:14,400 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:05:14,401 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:05:15,094 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:05:15,094 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log
+2024-03-03 20:05:15,506 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:05:15,507 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:05:15,507 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:05:15,508 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:05:15,780 DEBUG   SenderThread:15821 [sender.py:send():382] send: stats
+2024-03-03 20:05:16,097 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:05:16,408 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:05:16,410 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:05:16,411 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:05:16,412 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:05:17,102 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:05:17,103 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log
+2024-03-03 20:05:17,387 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: status_report
+2024-03-03 20:05:17,388 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:05:17,389 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:05:17,389 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:05:17,390 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:05:18,103 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:05:18,300 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:05:18,301 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:05:18,301 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:05:18,302 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:05:19,107 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:05:19,109 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log
+2024-03-03 20:05:19,475 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:05:19,476 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:05:19,476 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:05:19,477 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:05:20,113 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:05:21,120 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log
+2024-03-03 20:05:21,257 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:05:21,259 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:05:21,260 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:05:21,261 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:05:22,125 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:05:22,396 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: status_report
+2024-03-03 20:05:22,397 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:05:22,398 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:05:22,398 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:05:22,399 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:05:23,129 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:05:23,129 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log
+2024-03-03 20:05:23,267 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:05:23,269 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:05:23,269 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:05:23,270 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:05:23,718 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-03 20:05:23,724 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-03 20:05:23,725 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: stop_status
+2024-03-03 20:05:24,134 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:05:24,162 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:05:24,163 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:05:24,164 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:05:24,164 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:05:25,092 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:05:25,094 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:05:25,095 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:05:25,095 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:05:25,140 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:05:25,140 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log
+2024-03-03 20:05:25,931 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:05:25,932 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:05:25,932 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:05:25,933 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:05:26,145 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:05:27,149 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log
+2024-03-03 20:05:27,397 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: status_report
+2024-03-03 20:05:27,398 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:05:27,401 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:05:27,401 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:05:27,402 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:05:28,149 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:05:28,341 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:05:28,342 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:05:28,343 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:05:28,343 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:05:29,156 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:05:29,159 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log
+2024-03-03 20:05:29,599 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:05:29,601 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:05:29,601 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:05:29,602 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:05:30,158 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:05:31,164 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log
+2024-03-03 20:05:31,866 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:05:31,868 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:05:31,869 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:05:31,870 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:05:32,169 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:05:32,874 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: status_report
+2024-03-03 20:05:32,966 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:05:32,967 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:05:32,967 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:05:32,968 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:05:33,175 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:05:33,175 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log
+2024-03-03 20:05:34,021 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:05:34,023 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:05:34,024 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:05:34,025 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:05:34,181 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:05:35,024 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:05:35,025 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:05:35,025 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:05:35,026 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:05:35,186 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:05:35,186 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log
+2024-03-03 20:05:35,934 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:05:35,935 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:05:35,935 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:05:35,936 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:05:36,192 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:05:36,864 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:05:36,865 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:05:36,866 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:05:36,867 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:05:37,195 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:05:37,195 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log
+2024-03-03 20:05:37,798 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:05:37,799 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:05:37,799 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:05:37,800 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:05:38,200 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:05:38,699 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: status_report
+2024-03-03 20:05:38,700 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:05:38,702 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:05:38,703 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:05:38,703 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:05:38,723 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-03 20:05:38,729 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-03 20:05:38,729 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: stop_status
+2024-03-03 20:05:39,206 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:05:39,206 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log
+2024-03-03 20:05:39,776 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:05:39,777 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:05:39,777 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:05:39,778 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:05:40,208 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:05:40,919 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:05:40,920 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:05:40,920 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:05:40,921 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:05:41,214 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:05:41,214 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log
+2024-03-03 20:05:41,899 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:05:41,901 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:05:41,901 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:05:41,902 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:05:42,219 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:05:43,001 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:05:43,002 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:05:43,002 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:05:43,003 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:05:43,223 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:05:43,224 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log
+2024-03-03 20:05:43,943 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: status_report
+2024-03-03 20:05:43,944 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:05:43,945 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:05:43,946 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:05:43,947 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:05:44,229 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:05:44,929 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:05:44,930 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:05:44,930 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:05:44,931 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:05:45,235 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:05:45,235 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log
+2024-03-03 20:05:45,786 DEBUG   SenderThread:15821 [sender.py:send():382] send: stats
+2024-03-03 20:05:45,846 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:05:45,848 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:05:45,848 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:05:45,849 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:05:46,240 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:05:46,802 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:05:46,803 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:05:46,804 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:05:46,805 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:05:47,246 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:05:47,246 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log
+2024-03-03 20:05:47,883 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:05:47,885 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:05:47,886 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:05:47,887 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:05:48,249 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:05:49,253 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log
+2024-03-03 20:05:49,278 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: status_report
+2024-03-03 20:05:49,280 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:05:49,282 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:05:49,282 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:05:49,283 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:05:50,298 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:05:51,281 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log
+2024-03-03 20:05:51,326 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:05:51,329 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:05:51,330 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:05:51,331 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:05:52,292 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:05:53,298 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log
+2024-03-03 20:05:53,724 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-03 20:05:53,730 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-03 20:05:53,731 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: stop_status
+2024-03-03 20:05:54,847 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: status_report
+2024-03-03 20:05:54,849 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:05:54,852 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:05:54,852 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:05:54,854 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:05:55,305 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:05:56,161 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:05:56,162 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:05:56,163 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:05:56,164 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:05:56,307 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:05:57,310 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log
+2024-03-03 20:05:57,387 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:05:57,391 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:05:57,392 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:05:57,392 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:05:58,315 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:05:58,499 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:05:58,501 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:05:58,501 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:05:58,502 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:05:59,322 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:05:59,323 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log
+2024-03-03 20:06:00,511 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: status_report
+2024-03-03 20:06:00,710 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:06:00,712 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:06:00,714 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:06:00,715 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:06:01,348 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:06:01,349 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log
+2024-03-03 20:06:01,972 DEBUG   HandlerThread:15821 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-03 20:06:01,974 DEBUG   SenderThread:15821 [sender.py:send():382] send: history
+2024-03-03 20:06:01,974 DEBUG   SenderThread:15821 [sender.py:send_request():409] send_request: summary_record
+2024-03-03 20:06:01,975 INFO    SenderThread:15821 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-03 20:06:02,353 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/wandb-summary.json
+2024-03-03 20:06:03,358 INFO    Thread-12 :15821 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_200344-ziddmly2/files/output.log

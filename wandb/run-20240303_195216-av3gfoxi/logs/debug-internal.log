@@ -1,0 +1,76 @@
+2024-03-03 19:52:24,951 INFO    StreamThr :14311 [internal.py:wandb_internal():86] W&B internal server running at pid: 14311, started at: 2024-03-03 19:52:24.949915
+2024-03-03 19:52:24,953 DEBUG   HandlerThread:14311 [handler.py:handle_request():146] handle_request: status
+2024-03-03 19:52:24,954 INFO    WriterThread:14311 [datastore.py:open_for_write():87] open: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_195216-av3gfoxi/run-av3gfoxi.wandb
+2024-03-03 19:52:24,955 DEBUG   SenderThread:14311 [sender.py:send():382] send: header
+2024-03-03 19:52:24,955 DEBUG   SenderThread:14311 [sender.py:send():382] send: run
+2024-03-03 19:52:25,306 INFO    SenderThread:14311 [dir_watcher.py:__init__():211] watching files in: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_195216-av3gfoxi/files
+2024-03-03 19:52:25,306 INFO    SenderThread:14311 [sender.py:_start_run_threads():1136] run started: av3gfoxi with start time 1709495544.024098
+2024-03-03 19:52:25,318 DEBUG   HandlerThread:14311 [handler.py:handle_request():146] handle_request: check_version
+2024-03-03 19:52:25,318 DEBUG   SenderThread:14311 [sender.py:send_request():409] send_request: check_version
+2024-03-03 19:52:25,393 DEBUG   HandlerThread:14311 [handler.py:handle_request():146] handle_request: run_start
+2024-03-03 19:52:25,395 DEBUG   HandlerThread:14311 [system_info.py:__init__():27] System info init
+2024-03-03 19:52:25,395 DEBUG   HandlerThread:14311 [system_info.py:__init__():42] System info init done
+2024-03-03 19:52:25,395 INFO    HandlerThread:14311 [system_monitor.py:start():194] Starting system monitor
+2024-03-03 19:52:25,395 INFO    SystemMonitor:14311 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-03-03 19:52:25,395 INFO    HandlerThread:14311 [system_monitor.py:probe():214] Collecting system info
+2024-03-03 19:52:25,396 DEBUG   HandlerThread:14311 [system_info.py:probe():151] Probing system
+2024-03-03 19:52:25,396 INFO    SystemMonitor:14311 [interfaces.py:start():190] Started cpu monitoring
+2024-03-03 19:52:25,398 INFO    SystemMonitor:14311 [interfaces.py:start():190] Started disk monitoring
+2024-03-03 19:52:25,399 INFO    SystemMonitor:14311 [interfaces.py:start():190] Started memory monitoring
+2024-03-03 19:52:25,400 INFO    SystemMonitor:14311 [interfaces.py:start():190] Started network monitoring
+2024-03-03 19:52:25,400 DEBUG   HandlerThread:14311 [system_info.py:_probe_git():136] Probing git
+2024-03-03 19:52:25,434 DEBUG   HandlerThread:14311 [system_info.py:_probe_git():144] Probing git done
+2024-03-03 19:52:25,434 DEBUG   HandlerThread:14311 [system_info.py:probe():199] Probing system done
+2024-03-03 19:52:25,434 DEBUG   HandlerThread:14311 [system_monitor.py:probe():223] {'os': 'macOS-10.16-x86_64-i386-64bit', 'python': '3.11.7', 'heartbeatAt': '2024-03-03T19:52:25.396127', 'startedAt': '2024-03-03T19:52:16.424643', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'GCN.ipynb', 'codePathLocal': 'GCN.ipynb', 'git': {'remote': 'https://github.com/mathilde-cros/Bachelor-Thesis-Alzheimers-HGNN.git', 'commit': 'b32ac0387839a5cda6d95b857ef1b96bb99d0c35'}, 'email': 'mathilde.cros02@gmail.com', 'root': '/Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN', 'host': 'Mathildes-MacBook-Air.local', 'username': 'mathilde', 'executable': '/Users/mathilde/anaconda3/envs/alzheimers-cl/bin/python', 'cpu_count': 8, 'cpu_count_logical': 8, 'cpu_freq': {'current': 2400, 'min': 2400, 'max': 2400}, 'cpu_freq_per_core': [{'current': 2400, 'min': 2400, 'max': 2400}], 'disk': {'/': {'total': 228.27386474609375, 'used': 217.91888046264648}}, 'memory': {'total': 8.0}}
+2024-03-03 19:52:25,434 INFO    HandlerThread:14311 [system_monitor.py:probe():224] Finished collecting system info
+2024-03-03 19:52:25,435 INFO    HandlerThread:14311 [system_monitor.py:probe():227] Publishing system info
+2024-03-03 19:52:25,435 DEBUG   HandlerThread:14311 [system_info.py:_save_conda():208] Saving list of conda packages installed into the current environment
+2024-03-03 19:52:26,310 INFO    Thread-26 :14311 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_195216-av3gfoxi/files/conda-environment.yaml
+2024-03-03 19:52:28,562 DEBUG   HandlerThread:14311 [system_info.py:_save_conda():220] Saving conda packages done
+2024-03-03 19:52:28,563 INFO    HandlerThread:14311 [system_monitor.py:probe():229] Finished publishing system info
+2024-03-03 19:52:28,563 DEBUG   SenderThread:14311 [sender.py:send():382] send: files
+2024-03-03 19:52:28,563 INFO    SenderThread:14311 [sender.py:_save_file():1403] saving file wandb-metadata.json with policy now
+2024-03-03 19:52:28,575 DEBUG   HandlerThread:14311 [handler.py:handle_request():146] handle_request: python_packages
+2024-03-03 19:52:28,575 DEBUG   SenderThread:14311 [sender.py:send_request():409] send_request: python_packages
+2024-03-03 19:52:28,576 DEBUG   SenderThread:14311 [sender.py:send():382] send: telemetry
+2024-03-03 19:52:28,577 DEBUG   HandlerThread:14311 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-03 19:52:28,581 DEBUG   HandlerThread:14311 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-03 19:52:28,581 DEBUG   SenderThread:14311 [sender.py:send_request():409] send_request: stop_status
+2024-03-03 19:52:29,069 INFO    wandb-upload_0:14311 [upload_job.py:push():131] Uploaded file /var/folders/wh/snjqmpvj7qv64q1ngy8zvqbh0000gn/T/tmpa6akl75gwandb/dpm1mnv4-wandb-metadata.json
+2024-03-03 19:52:29,322 INFO    Thread-26 :14311 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_195216-av3gfoxi/files/conda-environment.yaml
+2024-03-03 19:52:29,322 INFO    Thread-26 :14311 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_195216-av3gfoxi/files/requirements.txt
+2024-03-03 19:52:29,323 INFO    Thread-26 :14311 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_195216-av3gfoxi/files/wandb-metadata.json
+2024-03-03 19:52:30,832 DEBUG   HandlerThread:14311 [handler.py:handle_request():146] handle_request: status_report
+2024-03-03 19:52:35,850 DEBUG   HandlerThread:14311 [handler.py:handle_request():146] handle_request: status_report
+2024-03-03 19:52:40,868 DEBUG   HandlerThread:14311 [handler.py:handle_request():146] handle_request: status_report
+2024-03-03 19:52:43,583 DEBUG   HandlerThread:14311 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-03 19:52:43,584 DEBUG   HandlerThread:14311 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-03 19:52:43,584 DEBUG   SenderThread:14311 [sender.py:send_request():409] send_request: stop_status
+2024-03-03 19:52:46,825 DEBUG   HandlerThread:14311 [handler.py:handle_request():146] handle_request: status_report
+2024-03-03 19:52:51,840 DEBUG   HandlerThread:14311 [handler.py:handle_request():146] handle_request: status_report
+2024-03-03 19:52:56,860 DEBUG   HandlerThread:14311 [handler.py:handle_request():146] handle_request: status_report
+2024-03-03 19:52:57,446 INFO    Thread-26 :14311 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mathilde/Documents/Bachelor-Thesis-Alzheimers-HGNN/wandb/run-20240303_195216-av3gfoxi/files/config.yaml
+2024-03-03 19:52:58,586 DEBUG   HandlerThread:14311 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-03 19:52:58,587 DEBUG   HandlerThread:14311 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-03 19:52:58,588 DEBUG   SenderThread:14311 [sender.py:send_request():409] send_request: stop_status
+2024-03-03 19:53:02,884 DEBUG   HandlerThread:14311 [handler.py:handle_request():146] handle_request: status_report
+2024-03-03 19:53:07,898 DEBUG   HandlerThread:14311 [handler.py:handle_request():146] handle_request: status_report
+2024-03-03 19:53:12,912 DEBUG   HandlerThread:14311 [handler.py:handle_request():146] handle_request: status_report
+2024-03-03 19:53:13,589 DEBUG   HandlerThread:14311 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-03 19:53:13,589 DEBUG   HandlerThread:14311 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-03 19:53:13,590 DEBUG   SenderThread:14311 [sender.py:send_request():409] send_request: stop_status
+2024-03-03 19:53:18,685 DEBUG   HandlerThread:14311 [handler.py:handle_request():146] handle_request: status_report
+2024-03-03 19:53:23,696 DEBUG   HandlerThread:14311 [handler.py:handle_request():146] handle_request: status_report
+2024-03-03 19:53:25,405 DEBUG   SystemMonitor:14311 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-03-03 19:53:25,406 DEBUG   SenderThread:14311 [sender.py:send():382] send: stats
+2024-03-03 19:53:28,593 DEBUG   HandlerThread:14311 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-03 19:53:28,594 DEBUG   HandlerThread:14311 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-03 19:53:28,594 DEBUG   SenderThread:14311 [sender.py:send_request():409] send_request: stop_status
+2024-03-03 19:53:28,753 DEBUG   HandlerThread:14311 [handler.py:handle_request():146] handle_request: status_report
+2024-03-03 19:53:33,774 DEBUG   HandlerThread:14311 [handler.py:handle_request():146] handle_request: status_report
+2024-03-03 19:53:38,791 DEBUG   HandlerThread:14311 [handler.py:handle_request():146] handle_request: status_report
+2024-03-03 19:53:43,598 DEBUG   HandlerThread:14311 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-03 19:53:43,599 DEBUG   HandlerThread:14311 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-03 19:53:43,599 DEBUG   SenderThread:14311 [sender.py:send_request():409] send_request: stop_status
+2024-03-03 19:53:43,922 DEBUG   HandlerThread:14311 [handler.py:handle_request():146] handle_request: status_report
+2024-03-03 19:53:48,943 DEBUG   HandlerThread:14311 [handler.py:handle_request():146] handle_request: status_report

@@ -1,0 +1,11 @@
+GCN(
+  (convs): ModuleList(
+    (0): GCNConv(461, 32)
+    (1-2): 2 x GCNConv(32, 32)
+  )
+  (mlp): Sequential(
+    (0): Linear(in_features=32, out_features=32, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=32, out_features=4, bias=True)
+  )
+)
