@@ -1,0 +1,108 @@
+{
+    "os": "Linux-5.14.0-362.18.1.el9_3.x86_64-x86_64-with-glibc2.34",
+    "python": "3.9.18",
+    "heartbeatAt": "2024-03-04T03:08:11.830611",
+    "startedAt": "2024-03-04T03:08:10.256620",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/users/eleves-b/2021/mathilde.cros/Bachelor-Thesis-Alzheimers-HGNN/GCN.py",
+    "codePathLocal": "GCN.py",
+    "codePath": "GCN.py",
+    "git": {
+        "remote": "git@github.com:mathilde-cros/Bachelor-Thesis-Alzheimers-HGNN.git",
+        "commit": "cbefd83920849fd8c67ce088d31af7b8c99e1037"
+    },
+    "email": null,
+    "root": "/users/eleves-b/2021/mathilde.cros/Bachelor-Thesis-Alzheimers-HGNN",
+    "host": "ferrari.polytechnique.fr",
+    "username": "mathilde.cros",
+    "executable": "/usr/bin/python",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 4416.989,
+        "min": 800.0,
+        "max": 4800.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 4417.235,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4417.189,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4417.163,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4417.089,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4417.057,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4417.015,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4416.963,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4416.902,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4416.878,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4416.823,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4416.799,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4416.755,
+            "min": 800.0,
+            "max": 4800.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 3.990234375,
+            "used": 0.9619674682617188
+        }
+    },
+    "gpu": "Quadro P2200",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "Quadro P2200",
+            "memory_total": 5368709120
+        }
+    ],
+    "memory": {
+        "total": 62.366241455078125
+    }
+}

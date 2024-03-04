@@ -1,0 +1,57 @@
+wandb_version: 1
+
+architecture:
+  desc: null
+  value: GCN
+weights:
+  desc: null
+  value: false
+matrix profiling:
+  desc: null
+  value: true
+learning_rate:
+  desc: null
+  value: 1.0e-05
+hidden_channels:
+  desc: null
+  value: 64
+num_layers:
+  desc: null
+  value: 1
+dropout:
+  desc: null
+  value: 0.0
+epochs:
+  desc: null
+  value: 800
+_wandb:
+  desc: null
+  value:
+    python_version: 3.9.18
+    cli_version: 0.16.3
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1709510133.070882
+    t:
+      1:
+      - 1
+      - 5
+      - 53
+      - 55
+      - 77
+      2:
+      - 1
+      - 5
+      - 53
+      - 55
+      - 77
+      3:
+      - 2
+      - 16
+      - 23
+      4: 3.9.18
+      5: 0.16.3
+      8:
+      - 5
+      13: linux-x86_64
