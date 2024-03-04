@@ -1,7 +1,10 @@
 import torch
 import numpy as np
+import pandas as pd
 import pickle as pkl
 import os
+
+from nilearn import datasets
 
 from torch_geometric.data import DataLoader
 from sklearn.model_selection import train_test_split
@@ -12,6 +15,32 @@ from torch_geometric.utils import from_networkx
 
 import networkx as nx
 from networkx.convert_matrix import from_numpy_array
+
+# Generating the brain atlas
+def gen_atlas_labels():
+    atlas = datasets.fetch_atlas_aal()
+    atlas_filename = atlas.maps
+    atlas_labels = atlas.labels
+    n_ROIs = len(atlas_labels)
+    return atlas, atlas_filename, atlas_labels, n_ROIs
+
+# Loading the time series
+def load_time_series(root='ADNI_full/time_series'):
+    root = 'ADNI_full/time_series'
+    time_series_list = os.listdir(root)
+    time_series=[]
+    for i in time_series_list:
+        time_series_sub = np.loadtxt(os.path.join(root, i), delimiter=',')
+        time_series.append(time_series_sub)
+    return time_series_list
+
+# Make the list of time series into a list of df
+def list_of_df_of_time_series(time_series_list):
+    time_series_df_list = []
+    for ts in time_series_list:
+        df = pd.DataFrame(ts)
+        time_series_df_list.append(df)
+    return time_series_df_list
 
 # The function we are using to compute the accuracy of our model
 def quick_accuracy(y_hat, y):
