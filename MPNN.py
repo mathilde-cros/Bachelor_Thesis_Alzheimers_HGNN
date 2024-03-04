@@ -241,18 +241,18 @@ from sklearn.model_selection import ParameterGrid
 
 MP = True
 
-param_grid = {
-    'learning_rate': [0.01, 0.001, 0.0001, 0.00001],
-    'hidden_channels': [128, 64, 32],
-    'num_layers': [3, 2, 1],
-    'dropout_rate': [0.3, 0.2, 0.1, 0.0]
-}
 # param_grid = {
-#     'learning_rate': [0.00001, 0.0001, 0.001, 0.01],
-#     'hidden_channels': [32, 64, 128],
-#     'num_layers': [1, 2, 3],
-#     'dropout_rate': [0.0, 0.1, 0.2, 0.3]
+#     'learning_rate': [0.01, 0.001, 0.0001, 0.00001],
+#     'hidden_channels': [128, 64, 32],
+#     'num_layers': [3, 2, 1],
+#     'dropout_rate': [0.3, 0.2, 0.1, 0.0]
 # }
+param_grid = {
+    'learning_rate': [0.00001, 0.0001, 0.001, 0.01],
+    'hidden_channels': [32, 64, 128],
+    'num_layers': [1, 2, 3],
+    'dropout_rate': [0.0, 0.1, 0.2, 0.3]
+}
 
 # Create combinations of hyperparameters
 param_combinations = ParameterGrid(param_grid)

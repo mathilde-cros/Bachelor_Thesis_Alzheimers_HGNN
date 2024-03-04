@@ -1,0 +1,5 @@
+wandb/*
+logs_*
+logs/*
+sweeps/*
+hyperparameter_tuning/
