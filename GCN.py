@@ -32,12 +32,12 @@ class GCN(torch.nn.Module):
     def __init__(self, in_channels, hidden_channels, out_channels, num_layers, dropout, nbr_classes):
         super(GCN, self).__init__()
         self.nbr_classes = nbr_classes
-        self.convs = torch.nn.ModuleList()
+        self.convs = ModuleList()
         self.convs.append(GCNConv(in_channels, hidden_channels))
         for _ in range(num_layers - 1):
             self.convs.append(GCNConv(hidden_channels, hidden_channels))
-        # self.double_mlp = torch.nn.Sequential(torch.nn.Linear(hidden_channels * heads, hidden_channels), torch.nn.ReLU(), torch.nn.Linear(hidden_channels, hidden_channels))
-        self.mlp = torch.nn.Sequential(Linear(hidden_channels, hidden_channels), ReLU(), Linear(hidden_channels, out_channels))
+        # self.double_mlp = Sequential(Linear(hidden_channels * heads, hidden_channels), ReLU(), Linear(hidden_channels, hidden_channels))
+        self.mlp = Sequential(Linear(hidden_channels, hidden_channels), ReLU(), Linear(hidden_channels, out_channels))
         self.dropout = dropout
 
     def forward(self, x, edge_index, batch):
