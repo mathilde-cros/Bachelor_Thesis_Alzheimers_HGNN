@@ -157,10 +157,11 @@ def train(model, optimizer, criterion, train_loader, valid_loader, parameters, t
     hidden_channels = parameters[1]
     num_layers = parameters[2]
     dropout = parameters[3]
+    heads = parameters[4]
     if matrixprofile:
-        filename = f'GAT_Models_MP/lr{lr}_hc{hidden_channels}_nl{num_layers}_d{dropout}_epochs{n_epochs}.png'
+        filename = f'GAT_Models_MP/lr{lr}_hc{hidden_channels}_nl{num_layers}_d{dropout}_epochs{n_epochs}_heads{heads}.png'
     else:
-        filename = f'GAT_Models/lr{lr}_hc{hidden_channels}_nl{num_layers}_d{dropout}_epochs{n_epochs}.png'
+        filename = f'GAT_Models/lr{lr}_hc{hidden_channels}_nl{num_layers}_d{dropout}_epochs{n_epochs}_heads{heads}.png'
     plt.savefig(filename)
     plt.show()
 
