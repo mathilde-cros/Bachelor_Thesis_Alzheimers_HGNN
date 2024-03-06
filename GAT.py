@@ -34,12 +34,12 @@ class GAT(torch.nn.Module):
     def __init__(self, in_channels, hidden_channels, out_channels, num_layers, dropout, heads, nbr_classes):
         super(GAT, self).__init__()
         self.nbr_classes = nbr_classes
-        self.convs = torch.nn.ModuleList()
+        self.convs = ModuleList()
         self.convs.append(GATConv(in_channels, hidden_channels, heads=heads))
         for _ in range(num_layers - 1):
             self.convs.append(GATConv(hidden_channels * heads, hidden_channels, heads=heads))
-        # self.double_mlp = torch.nn.Sequential(torch.nn.Linear(hidden_channels * heads, hidden_channels), torch.nn.ReLU(), torch.nn.Linear(hidden_channels, hidden_channels))
-        self.mlp = torch.nn.Sequential(torch.nn.Linear(hidden_channels * heads, hidden_channels), torch.nn.ReLU(), torch.nn.Linear(hidden_channels, out_channels))
+        # self.double_mlp = Sequential(Linear(hidden_channels * heads, hidden_channels), ReLU(), Linear(hidden_channels, hidden_channels))
+        self.mlp = Sequential(Linear(hidden_channels * heads, hidden_channels), ReLU(), Linear(hidden_channels, out_channels))
         self.dropout = dropout
 
     def forward(self, x, edge_index, batch):

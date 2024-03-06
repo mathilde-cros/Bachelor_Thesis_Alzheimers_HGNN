@@ -3,3 +3,4 @@ logs_*
 logs/*
 sweeps/*
 hyperparameter_tuning/
+ADNI_full/full_data_dict.pkl
