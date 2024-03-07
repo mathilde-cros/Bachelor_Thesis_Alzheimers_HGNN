@@ -69,7 +69,7 @@ def create_train_test_valid(dataset):
     print(f'Number of classes: {nbr_classes}')
 
     train_loader = DataLoader(X_train, batch_size=16, shuffle=True)
-    valid_loader = DataLoader(X_valid, batch_size=len(X_valid), shuffle=True)
+    valid_loader = DataLoader(X_valid, batch_size=len(X_valid), shuffle=False)
     test_loader = DataLoader(X_test, batch_size=len(X_test), shuffle=False)
 
     return train_loader, valid_loader, test_loader, nbr_classes
@@ -459,7 +459,7 @@ class HypergraphConv(MessagePassing):
     
 
 # Training the models base function
-def epochs_training(model, optimizer, criterion, train_loader, valid_loader, test_loader, testing, train_losses, train_accuracies, valid_losses, valid_accuracies, test_losses=None, test_accuracies=None):
+def epochs_training(model, optimizer, criterion, train_loader, valid_loader, test_loader, testing, train_losses, train_accuracies, valid_losses, valid_accuracies, max_valid_accuracy,test_losses=None, test_accuracies=None):
 
     model.train()
     train_loss = 0
@@ -489,7 +489,9 @@ def epochs_training(model, optimizer, criterion, train_loader, valid_loader, tes
 
         valid_losses.append(valid_loss.detach().numpy()/len(valid_loader))
         valid_accuracies.append(valid_accuracy/len(valid_loader))
-
+        if valid_accuracies[-1] > max_valid_accuracy:
+            max_valid_accuracy = valid_accuracies[-1]
+            
         if testing:
             test_loss = 0
             test_accuracy = 0
@@ -501,6 +503,6 @@ def epochs_training(model, optimizer, criterion, train_loader, valid_loader, tes
 
             test_losses.append(test_loss.detach().numpy()/len(test_loader.dataset))
             test_accuracies.append(test_accuracy/len(test_loader.dataset))
-            return train_losses, train_accuracies, valid_losses, valid_accuracies, test_losses, test_accuracies
+            return train_losses, train_accuracies, valid_losses, valid_accuracies, max_valid_accuracy, test_losses, test_accuracies
         else:
-            return train_losses, train_accuracies, valid_losses, valid_accuracies
+            return train_losses, train_accuracies, valid_losses, valid_accuracies, max_valid_accuracy
