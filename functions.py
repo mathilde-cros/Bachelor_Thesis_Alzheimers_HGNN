@@ -3,6 +3,7 @@ import numpy as np
 import pandas as pd
 import pickle as pkl
 import os
+import matplotlib.pyplot as plt
 
 from nilearn import datasets
 
@@ -11,6 +12,7 @@ from sklearn.model_selection import train_test_split
 
 from torch_geometric.data import InMemoryDataset
 from torch_geometric.utils import from_networkx
+from torch_geometric.data import Data
 
 import networkx as nx
 from networkx.convert_matrix import from_numpy_array
@@ -40,6 +42,43 @@ def list_of_df_of_time_series(time_series_list):
         df = pd.DataFrame(ts)
         time_series_df_list.append(df)
     return time_series_df_list
+
+# Useful for loading the correlation matrices
+def load_matrix(path_list):
+    root = 'ADNI_full/corr_matrices/corr_matrix_pearson'
+    matrix_list = []
+    for path in path_list:
+        matrix = np.loadtxt(os.path.join(root, path), delimiter=',')
+        matrix_list.append(matrix)
+    return matrix_list
+
+# Useful for loading the hg_dicts
+def load_hg_dict(root):
+    dict_list = []
+    for filename in os.listdir(root):
+        path = os.path.join(root, filename)
+        hg_dict = pkl.load(open(path, 'rb'))
+        dict_list.append(hg_dict)
+    return dict_list
+
+# Creating a dictionary of lists of paths to the correlation matrices for each method. Each list in the dictionary represents a different method.
+def corr_matrix_paths():
+    methods = ['pearson', 'spearman', 'kendall', 'partial']
+    full_corr_path_lists = {}
+    for method in methods:
+        method_dir = f'ADNI_full/corr_matrices/corr_matrix_{method}/'
+        full_corr_path_lists[method] = []
+        for file in os.listdir(method_dir):
+            full_corr_path_lists[method].append(file)
+    return full_corr_path_lists
+
+# Creating a list of paths to the coskewness matrices
+def coskewness_matrix_paths():
+    method_dir = 'ADNI_full/coskewness_matrices/'
+    coskewness_path_list = []
+    for file in os.listdir(method_dir):
+        coskewness_path_list.append(file)
+    return coskewness_path_list
 
 # The function we are using to compute the accuracy of our model
 def quick_accuracy(y_hat, y):
@@ -111,17 +150,6 @@ def dataset_features_and_stats(dataset):
     print(f'Has self-loops: {data.has_self_loops()}')
     print(f'Is undirected: {data.is_undirected()}')
 
-# Creating a dictionary of lists of paths to the correlation matrices for each method. Each list in the dictionary represents a different method.
-def corr_matrix_paths():
-    methods = ['pearson', 'spearman', 'kendall', 'partial']
-    full_corr_path_lists = {}
-    for method in methods:
-        method_dir = f'ADNI_full/corr_matrices/corr_matrix_{method}/'
-        full_corr_path_lists[method] = []
-        for file in os.listdir(method_dir):
-            full_corr_path_lists[method].append(file)
-    return full_corr_path_lists
-
 # Generating the diagnostic file from the diagnostic_label.csv file
 diagnostic_label = np.loadtxt('ADNI_full/diagnostic_label.csv', dtype=str, delimiter=',')
 
@@ -139,6 +167,7 @@ def combine_diag_labels(diagnostic_label):
         else:
             print('Error: Diagnostic label not recognised')
             break
+    return diagnostic_label
 
 # Loading the age feature of patients to use as a node feature
 ages = np.loadtxt('ADNI_full/age.csv', delimiter=',')
@@ -271,6 +300,129 @@ class Raw_to_Graph(InMemoryDataset):
 
         data, slices = self.collate(graphs)
         torch.save((data, slices), self.processed_paths[0])
+
+# Defining a class to preprocess raw data into a format suitable for training Graph Neural Networks (GNNs).
+## With the possibility of assigning weight to edges, adding the age feature, sex feature, and matrixe profiling.
+
+class Raw_to_Hypergraph(InMemoryDataset):
+    def __init__(self, root, hg_data_path, method, weight, threshold, age=False, sex=False, transform=None, pre_transform=None):
+        self.method = method
+        self.weight = weight
+        self.threshold = threshold
+        self.age = age
+        self.sex = sex
+        self.hg_data_path = hg_data_path
+        super().__init__(root, transform, pre_transform)
+        self.data, self.slices = torch.load(self.processed_paths[0])
+
+    @property
+    def processed_file_names(self):
+        return ['data.pt']
+
+    # This function is used to process the raw data into a format suitable for GNNs, by constructing graphs out of the connectivity matrices.
+    def process(self):
+        # Loading the prebuilt hypergraphs and the correlation matrices
+        hg_dict_list = f.load_hg_dict(self.hg_data_path)
+        print(hg_dict_list)
+        full_corr_path_lists = f.corr_matrix_paths()
+        corr_matrix_list = full_corr_path_lists['pearson']
+
+        # Generating the diagnostic file from the diagnostic_label.csv file
+        diagnostic_label = np.loadtxt('ADNI_full/diagnostic_label.csv', dtype=str, delimiter=',')
+        # Combining the 'EMCI', 'LMCI' and 'MCI' diagnostics into a single 'MCI' label for simplicity, then one-hot encoding the diagnostics
+        diagnostic_label = f.combine_diag_labels(diagnostic_label)
+
+        graphs=[]
+        for patient_idx, patient_hg in enumerate(hg_dict_list):
+            print(patient_hg)
+            # Create a NetworkX graph from the hypergraph matrix
+            hypergraph = hnx.Hypergraph(patient_hg)
+
+            # Adding the matrix profiling features to the feature array
+            patient_matrix = corr_matrix_list[patient_idx]
+            path = f'ADNI_full/matrix_profiles/matrix_profile_pearson/{patient_matrix}'
+            with open(path, "rb") as fl:
+                patient_dict = pkl.load(fl)
+            # combine dimensions
+            features = np.array(patient_dict['mp']).reshape(len(patient_dict['mp']),-1)
+            features = features.astype(np.float32)
+
+            # Loading the atlas, atlas labels and nbr_ROIS
+            _, _, _, nbr_ROIs = f.gen_atlas_labels()    
+            if self.age:
+                # Loading the age feature of patients to use as a node feature
+                ages = np.loadtxt('ADNI_full/age.csv', delimiter=',')
+                min_age = np.min(ages)
+                max_age = np.max(ages)
+                # Extracting the age feature of the patient
+                patient_age = ages[patient_idx]
+                age_norm = (patient_age - min_age) / (max_age - min_age)
+                # Making the age array the same size as the other arrays
+                age_array = np.full((nbr_ROIs,), age_norm)
+                features = np.concatenate((features, age_array), axis=-1)
+            if self.sex:
+                # Prepocessing the sex feature of patients to use as a node feature. Here, 0 represents male patients and 1 represents female patients
+                sex = np.loadtxt('ADNI_full/sex.csv', dtype=str, delimiter=',')
+                for patient in range(len(sex)):
+                    if sex[patient] == 'M':
+                        sex[patient] = 0
+                    else:
+                        sex[patient] = 1
+                # Extracting the sex feature of the patient
+                patient_sex = int(sex[patient_idx])
+                # Making the sex array the same size as the other arrays
+                sex_array = np.full((nbr_ROIs,), patient_sex)
+                features = np.concatenate((features, sex_array), axis=-1)
+
+            # Concatenate the degree, participation coefficient, betweenness centrality, local efficiency, and ratio of local to global efficiency arrays to form a single feature vector
+            x = torch.tensor(features, dtype=torch.float)
+
+            # Create a Pytorch Geometric Data object
+            edge_index = []
+            for edge in hypergraph.edges:
+                edge_index.append([edge])
+            y = torch.tensor(float(diagnostic_label[patient_idx]))
+            hg_data = Data(x=x, edge_index=torch.tensor(edge_index, dtype=torch.long).t().contiguous(), y=y)
+            graphs.append(hg_data)
+
+        data, slices = self.collate(graphs)
+        torch.save((data, slices), self.processed_paths[0])
+
+# def graph_to_dict(raw_to_graph_instance):
+#     networkx_graph = r2g_to_nx(raw_to_graph_instance)
+#     # Create the dictionary representation of the graph
+#     graph_dict = {}
+#     for node in networkx_graph.nodes():
+#         neighbors = list(networkx_graph.neighbors(node))
+#         graph_dict[node] = neighbors
+#     return graph_dict
+
+def r2g_to_nx(raw_to_graph_instance):
+    # Creating a NetworkX graph manually from the sample graph data
+    networkx_graph = nx.Graph()
+    # Adding edges without weights
+    edge_index = raw_to_graph_instance.edge_index
+    for j in range(edge_index.shape[1]):
+        node1 = edge_index[0][j].item()
+        node2 = edge_index[1][j].item()
+        networkx_graph.add_edge(node1, node2)
+    return networkx_graph
+
+def plot_graph(raw_to_graph_instance):
+    networkx_graph = nx.Graph()
+
+    # Adding edges without weights
+    edge_index = raw_to_graph_instance.edge_index
+    for j in range(edge_index.shape[1]):
+        node1 = edge_index[0][j].item()
+        node2 = edge_index[1][j].item()
+        networkx_graph.add_edge(node1, node2)
+
+    # Plotting the sample graph
+    plt.figure(figsize=(10, 6))
+    nx.draw(networkx_graph, with_labels=True)
+    plt.title('Sample Graph Visualization')
+    plt.show()
 
 # Taken from https://github.com/pyg-team/pytorch_geometric/blob/af0f5f44d4dfa8accd898df3e8523d06b67940b0/torch_geometric/nn/conv/hypergraph_conv.py#L15     
 from typing import Optional
