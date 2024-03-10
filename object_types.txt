@@ -1,0 +1,69 @@
+# From Corr_and_df.ipynb and Graph_building.ipynb
+
+patient_info = <class 'pandas.core.frame.DataFrame'>
+patient_info['Subject_ID'] = <class 'pandas.core.series.Series'>
+For i in patient_info['Subject_ID'] = <class 'str'> (same for 'Sex', 'Research Group')
+For i in patient_info['Age'] = <class 'float'> BUT when loaded from age.csv, it becomes a <class 'str'>
+
+Diagnostic label (loaded from the csv file) = <class 'numpy.ndarray'>
+Age (loaded from the csv file) = <class 'numpy.ndarray'>
+Age[0] = <class 'numpy.float64'>
+Sex (loaded from the csv file) = <class 'numpy.ndarray'>
+Sex[0] = <class 'numpy.str_'>
+
+atlas, atlas_filename, labels, n_ROIS (from gen_atlas_labels()) = <class 'sklearn.utils._bunch.Bunch'> <class 'str'> <class 'list'> <class 'int'>
+
+time_series_list (from load_time_series()) = <class 'list'> and len(time_series_list) = 197 (i.e. the number of patients)
+time_series_list[0] (from load_time_series()) = <class 'numpy.ndarray'>
+
+time_series_df_list (from list_of_df_of_time_series(time_series_list)) = <class 'list'> and len(time_series_df_list) = 197 (i.e. the number of patients)
+time_series_df_list[0] (from list_of_df_of_time_series(time_series_list)) = <class 'pandas.core.frame.DataFrame'>
+
+corr_matrix_pearson (and for other methods) = <class 'list'> and len(corr_matrix_pearson) = 197 (i.e. the number of patients)
+corr_matrix_pearson[0] = <class 'numpy.ndarray'>
+
+full_corr_path_lists (from corr_matrix_paths()) = <class 'dict'>
+full_corr_path_lists['pearson'] = <class 'list'>
+full_corr_path_lists['pearson'][0] = <class 'str'> (ex: patient_136_S_4517.csv)
+
+diagnostic_label (from combine_diag_labels(diag_label)) = <class 'numpy.ndarray'>
+
+### From the Raw_to_Graph class
+dataset = <class '__main__.Raw_to_Graph'>
+data.weight = <class 'bool'>
+data.method = <class 'str'>
+data.num_features = <class 'int'>
+np.unique(diagnostic_label) = <class 'numpy.ndarray'>
+data = dataset[0] = <class 'torch_geometric.data.data.Data'>
+edge_index = tensor([[  0,   0,   0,  ..., 115, 115, 115],
+        [  0,   1,   2,  ..., 106, 107, 115]]) = <class 'torch.Tensor'>
+feature vector = <class 'torch.Tensor'>
+sample_networkx_graph = <class 'networkx.classes.graph.Graph'>
+
+# From HyperGraph_Building.ipynb
+
+(Using the functions in functions.py, so same as above)
+labels, n_ROIS (from gen_atlas_labels()) = <class 'list'>, <class 'int'>
+time_series_list (from load_time_series()) = <class 'list'> and len(time_series_list) = 197 (i.e. the number of patients)
+time_series_list[0] (from load_time_series()) = <class 'numpy.ndarray'>
+time_series_df_list (from list_of_df_of_time_series(time_series_list)) = <class 'list'> and len(time_series_df_list) = 197 (i.e. the number of patients)
+time_series_df_list[0] (from list_of_df_of_time_series(time_series_list)) = <class 'pandas.core.frame.DataFrame'>
+
+corr_matrix_list = f.corr_matrix_paths()['pearson'] (from the full_corr_path_lists dict) = <class 'list'>
+corr_matrix_list[0] = <class 'str'> (ex: patient_136_S_4517.csv)
+corr_matrix_patient = <class 'numpy.ndarray'>
+corr_matrix_patient[0] = <class 'numpy.ndarray'>
+corr_matrix_patient[0][0] = <class 'numpy.float64'>
+
+### Fourier Cluster
+hypergraph_dict, hypergraph = <class 'dict'>, <class 'hypernetx.classes.hypergraph.Hypergraph'>
+dissimilarity_matrix, dissimilarity_matrix[0], dissimilarity_matrix[0][0] = <class 'numpy.ndarray'>, <class 'numpy.ndarray'>, <class 'numpy.float64'>
+cluster_indices, cluster_indices[0] = <class 'numpy.ndarray'>, <class 'numpy.int32'>
+linkage_matrix, linkage_matrix[0], linkage_matrix[0][0] = <class 'numpy.ndarray'>, <class 'numpy.ndarray'>, <class 'numpy.float64'>
+adjacency, adjacency[0], adjacency[0][0] = <class 'numpy.ndarray'>, <class 'numpy.ndarray'>, <class 'numpy.float64'>
+
+### Maximal Cliques Method
+cliques, cliques[0], cliques[0][0] = <class 'list'>, <class 'list'>, <class 'int'>
+hypergraph_dict, hypergraph = <class 'dict'>, <class 'hypernetx.classes.hypergraph.Hypergraph'>
+graph (from r2g_to_nx from functions.py) = <class 'networkx.classes.graph.Graph'>
+
