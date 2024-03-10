@@ -67,3 +67,7 @@ cliques, cliques[0], cliques[0][0] = <class 'list'>, <class 'list'>, <class 'int
 hypergraph_dict, hypergraph = <class 'dict'>, <class 'hypernetx.classes.hypergraph.Hypergraph'>
 graph (from r2g_to_nx from functions.py) = <class 'networkx.classes.graph.Graph'>
 
+### Coskewness Cube
+
+
+###
