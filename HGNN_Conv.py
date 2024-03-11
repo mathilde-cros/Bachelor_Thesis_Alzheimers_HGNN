@@ -61,10 +61,12 @@ class HGConv(torch.nn.Module):
 
 
 # Testing the class Raw_to_Hypergraph with one example and saving it
-threshold = 0.4
+threshold = 0.5
 age = False
 sex = False
 method = 'fourier_cluster'
+# method = 'maximal_clique'
+# method = 'coskewness'
 if method == 'coskewness':
     weight = True
 else:
@@ -179,6 +181,8 @@ threshold = 0.5
 age = False
 sex = False
 method = 'fourier_cluster'
+# method = 'maximal_clique'
+# method = 'coskewness'
 if method == 'coskewness':
     weight = True
 else:
