@@ -17,6 +17,8 @@ from torch_geometric.data import Data
 import networkx as nx
 from networkx.convert_matrix import from_numpy_array
 
+import hypernetx as hnx
+
 # Generating the brain atlas
 def gen_atlas_labels():
     atlas = datasets.fetch_atlas_aal()
@@ -72,13 +74,13 @@ def corr_matrix_paths():
             full_corr_path_lists[method].append(file)
     return full_corr_path_lists
 
-# Creating a list of paths to the coskewness matrices
-def coskewness_matrix_paths():
-    method_dir = 'ADNI_full/coskewness_matrices/'
-    coskewness_path_list = []
-    for file in os.listdir(method_dir):
-        coskewness_path_list.append(file)
-    return coskewness_path_list
+# # Creating a list of paths to the coskewness matrices
+# def coskewness_matrix_paths():
+#     method_dir = 'ADNI_full/coskewness_matrices/'
+#     coskewness_path_list = []
+#     for file in os.listdir(method_dir):
+#         coskewness_path_list.append(file)
+#     return coskewness_path_list
 
 # The function we are using to compute the accuracy of our model
 def quick_accuracy(y_hat, y):
@@ -307,6 +309,9 @@ class Raw_to_Graph(InMemoryDataset):
 # Defining a class to preprocess raw data into a format suitable for training Graph Neural Networks (GNNs).
 ## With the possibility of assigning weight to edges, adding the age feature, sex feature, and matrixe profiling.
 
+# Defining a class to preprocess raw data into a format suitable for training Graph Neural Networks (GNNs).
+## With the possibility of assigning weight to edges, adding the age feature, sex feature, and matrixe profiling.
+
 class Raw_to_Hypergraph(InMemoryDataset):
     def __init__(self, root, hg_data_path, method, weight, threshold, age=False, sex=False, transform=None, pre_transform=None):
         self.method = method
@@ -325,14 +330,14 @@ class Raw_to_Hypergraph(InMemoryDataset):
     # This function is used to process the raw data into a format suitable for GNNs, by constructing graphs out of the connectivity matrices.
     def process(self):
         # Loading the prebuilt hypergraphs and the correlation matrices
-        hg_dict_list = f.load_hg_dict(self.hg_data_path)
-        full_corr_path_lists = f.corr_matrix_paths()
+        hg_dict_list = load_hg_dict(self.hg_data_path)
+        full_corr_path_lists = corr_matrix_paths()
         corr_matrix_list = full_corr_path_lists['pearson']
 
         # Generating the diagnostic file from the diagnostic_label.csv file
         diagnostic_label = np.loadtxt('ADNI_full/diagnostic_label.csv', dtype=str, delimiter=',')
         # Combining the 'EMCI', 'LMCI' and 'MCI' diagnostics into a single 'MCI' label for simplicity, then one-hot encoding the diagnostics
-        diagnostic_label = f.combine_diag_labels(diagnostic_label)
+        diagnostic_label = combine_diag_labels(diagnostic_label)
 
         graphs=[]
         for patient_idx, patient_hg in enumerate(hg_dict_list):
@@ -351,7 +356,7 @@ class Raw_to_Hypergraph(InMemoryDataset):
             features = features.astype(np.float32)
 
             # Loading the atlas, atlas labels and nbr_ROIS
-            _, _, _, nbr_ROIs = f.gen_atlas_labels()    
+            _, _, _, nbr_ROIs = gen_atlas_labels()    
             if self.age:
                 # Loading the age feature of patients to use as a node feature
                 ages = np.loadtxt('ADNI_full/age.csv', delimiter=',')
@@ -381,93 +386,17 @@ class Raw_to_Hypergraph(InMemoryDataset):
             x = torch.tensor(features, dtype=torch.float)
 
             # Create a Pytorch Geometric Data object
-            edge_index = []
-            for edge in hypergraph.edges:
-                edge_index.append([edge])
+            edge_index0 = []
+            edge_index1 = []
+            i = 0
+            for hyperedge, nodes in hypergraph.incidence_dict.items():
+                edge_index0 = np.concatenate((edge_index0, nodes), axis=0)
+                for j in range(len(nodes)):
+                    edge_index1.append(i)
+                i += 1
+            edge_index = np.stack([edge_index0.astype(int), edge_index1], axis=0)
             y = torch.tensor(float(diagnostic_label[patient_idx]))
-            hg_data = Data(x=x, edge_index=torch.tensor(edge_index, dtype=torch.long).t().contiguous(), y=y)
-            graphs.append(hg_data)
-
-        data, slices = self.collate(graphs)
-        torch.save((data, slices), self.processed_paths[0])
-    def __init__(self, root, hg_data_path, method, weight, threshold, age=False, sex=False, transform=None, pre_transform=None):
-        self.method = method
-        self.weight = weight
-        self.threshold = threshold
-        self.age = age
-        self.sex = sex
-        self.hg_data_path = hg_data_path
-        super().__init__(root, transform, pre_transform)
-        self.data, self.slices = torch.load(self.processed_paths[0])
-
-    @property
-    def processed_file_names(self):
-        return ['data.pt']
-
-    # This function is used to process the raw data into a format suitable for GNNs, by constructing graphs out of the connectivity matrices.
-    def process(self):
-        # Loading the prebuilt hypergraphs and the correlation matrices
-        hg_dict_list = f.load_hg_dict(self.hg_data_path)
-        print(hg_dict_list)
-        full_corr_path_lists = f.corr_matrix_paths()
-        corr_matrix_list = full_corr_path_lists['pearson']
-
-        # Generating the diagnostic file from the diagnostic_label.csv file
-        diagnostic_label = np.loadtxt('ADNI_full/diagnostic_label.csv', dtype=str, delimiter=',')
-        # Combining the 'EMCI', 'LMCI' and 'MCI' diagnostics into a single 'MCI' label for simplicity, then one-hot encoding the diagnostics
-        diagnostic_label = f.combine_diag_labels(diagnostic_label)
-
-        graphs=[]
-        for patient_idx, patient_hg in enumerate(hg_dict_list):
-            print(patient_hg)
-            # Create a NetworkX graph from the hypergraph matrix
-            hypergraph = hnx.Hypergraph(patient_hg)
-
-            # Adding the matrix profiling features to the feature array
-            patient_matrix = corr_matrix_list[patient_idx]
-            path = f'ADNI_full/matrix_profiles/matrix_profile_pearson/{patient_matrix}'
-            with open(path, "rb") as fl:
-                patient_dict = pkl.load(fl)
-            # combine dimensions
-            features = np.array(patient_dict['mp']).reshape(len(patient_dict['mp']),-1)
-            features = features.astype(np.float32)
-
-            # Loading the atlas, atlas labels and nbr_ROIS
-            _, _, _, nbr_ROIs = f.gen_atlas_labels()    
-            if self.age:
-                # Loading the age feature of patients to use as a node feature
-                ages = np.loadtxt('ADNI_full/age.csv', delimiter=',')
-                min_age = np.min(ages)
-                max_age = np.max(ages)
-                # Extracting the age feature of the patient
-                patient_age = ages[patient_idx]
-                age_norm = (patient_age - min_age) / (max_age - min_age)
-                # Making the age array the same size as the other arrays
-                age_array = np.full((nbr_ROIs,), age_norm)
-                features = np.concatenate((features, age_array), axis=-1)
-            if self.sex:
-                # Prepocessing the sex feature of patients to use as a node feature. Here, 0 represents male patients and 1 represents female patients
-                sex = np.loadtxt('ADNI_full/sex.csv', dtype=str, delimiter=',')
-                for patient in range(len(sex)):
-                    if sex[patient] == 'M':
-                        sex[patient] = 0
-                    else:
-                        sex[patient] = 1
-                # Extracting the sex feature of the patient
-                patient_sex = int(sex[patient_idx])
-                # Making the sex array the same size as the other arrays
-                sex_array = np.full((nbr_ROIs,), patient_sex)
-                features = np.concatenate((features, sex_array), axis=-1)
-
-            # Concatenate the degree, participation coefficient, betweenness centrality, local efficiency, and ratio of local to global efficiency arrays to form a single feature vector
-            x = torch.tensor(features, dtype=torch.float)
-
-            # Create a Pytorch Geometric Data object
-            edge_index = []
-            for edge in hypergraph.edges:
-                edge_index.append([edge])
-            y = torch.tensor(float(diagnostic_label[patient_idx]))
-            hg_data = Data(x=x, edge_index=torch.tensor(edge_index, dtype=torch.long).t().contiguous(), y=y)
+            hg_data = Data(x=x, edge_index=torch.tensor(edge_index, dtype=torch.long), y=y)
             graphs.append(hg_data)
 
         data, slices = self.collate(graphs)
@@ -637,9 +566,6 @@ class HypergraphConv(MessagePassing):
                 :obj:`use_attention=True`. (default: :obj:`None`)
         """
         num_nodes, num_edges = x.size(0), 0
-        hyperedge_index = torch.stack([hyperedge_index[0], torch.zeros_like(hyperedge_index[0])], dim=0)
-        # print(hyperedge_index)
-        # print(hyperedge_index.numel())
         if hyperedge_index.numel() > 0:
             num_edges = int(hyperedge_index[1].max()) + 1
 
