@@ -64,8 +64,8 @@ class HGConv(torch.nn.Module):
 threshold = 0.5
 age = False
 sex = False
-# method = 'fourier_cluster'
-method = 'maximal_clique'
+method = 'fourier_cluster'
+# method = 'maximal_clique'
 # method = 'coskewness'
 if method == 'coskewness':
     weight = True
