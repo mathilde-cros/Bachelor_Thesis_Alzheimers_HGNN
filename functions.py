@@ -263,7 +263,6 @@ class Raw_to_Graph(InMemoryDataset):
             # Initializing an array for the graph features
             x_array = np.stack([degree_array_norm, between_central_array_norm, local_eff_array_norm, cluster_coeff_array_norm, ratio_local_global_array_norm], axis=-1)
             x_array = x_array.astype(np.float32)
-            print(x_array.shape)
 
             if self.age:
                 # Extracting the age feature of the patient
@@ -290,7 +289,6 @@ class Raw_to_Graph(InMemoryDataset):
 
             # Concatenate the degree, participation coefficient, betweenness centrality, local efficiency, and ratio of local to global efficiency arrays to form a single feature vector
             x = torch.tensor(x_array, dtype=torch.float)
-            print(x.shape)
 
             # Create a Pytorch Geometric Data object from the NetworkX
             graph_data = from_networkx(NetworkX_graph)
@@ -302,12 +300,6 @@ class Raw_to_Graph(InMemoryDataset):
 
         data, slices = self.collate(graphs)
         torch.save((data, slices), self.processed_paths[0])
-
-# Defining a class to preprocess raw data into a format suitable for training Graph Neural Networks (GNNs).
-## With the possibility of assigning weight to edges, adding the age feature, sex feature, and matrixe profiling.
-
-# Defining a class to preprocess raw data into a format suitable for training Graph Neural Networks (GNNs).
-## With the possibility of assigning weight to edges, adding the age feature, sex feature, and matrixe profiling.
 
 # Defining a class to preprocess raw data into a format suitable for training Graph Neural Networks (GNNs).
 ## With the possibility of assigning weight to edges, adding the age feature, sex feature, and matrixe profiling.
@@ -394,7 +386,7 @@ class Raw_to_Hypergraph(InMemoryDataset):
                 for j in range(len(nodes)):
                     edge_index1.append(i)
                 i += 1
-            edge_index = np.stack([edge_index0.astype(int), edge_index1], axis=0)
+            edge_index = np.stack([[int(x) for x in edge_index0], edge_index1], axis=0)
             y = torch.tensor(float(diagnostic_label[patient_idx]))
             hg_data = Data(x=x, edge_index=torch.tensor(edge_index, dtype=torch.long), y=y)
             graphs.append(hg_data)

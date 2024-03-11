@@ -61,7 +61,7 @@ class HGConv(torch.nn.Module):
 
 
 # Testing the class Raw_to_Hypergraph with one example and saving it
-threshold = 0.5
+threshold = 0.4
 age = False
 sex = False
 # method = 'fourier_cluster'
@@ -76,7 +76,6 @@ hg_data_path = f'Hypergraphs/{method}/thresh_{threshold}'
 
 root = f'Raw_to_hypergraph/ADNI_T_{threshold}_M_{method}_W{weight}_A{age}_S{sex}_MPTrue'
 dataset = f.Raw_to_Hypergraph(root=root, hg_data_path=hg_data_path, method=method, weight=weight, threshold=threshold, age=age, sex=sex)
-
 
 # In[5]:
 
