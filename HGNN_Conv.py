@@ -89,7 +89,7 @@ train_loader, valid_loader, test_loader, nbr_classes = f.create_train_test_valid
 
 
 # Training the model
-def train(model, optimizer, criterion, w_decay, threshold, train_loader, valid_loader, parameters, test_loader=False, testing=False, n_epochs=100):
+def train(model, optimizer, criterion, w_decay, threshold, method, train_loader, valid_loader, parameters, test_loader=False, testing=False, n_epochs=100):
     test_loader = test_loader
     testing = testing
     n_epochs = n_epochs
@@ -109,6 +109,7 @@ def train(model, optimizer, criterion, w_decay, threshold, train_loader, valid_l
         # track hyperparameters and run metadata
         config = {
         "architecture": "HGConv",
+        "method": method,
         "weights": weight,
         "weight_decay": w_decay,
         "threshold": threshold,
@@ -162,7 +163,7 @@ def train(model, optimizer, criterion, w_decay, threshold, train_loader, valid_l
     hidden_channels = parameters[1]
     num_layers = parameters[2]
     dropout = parameters[3]
-    filename = f'HGConv_Models_MP/threshold_{threshold}/lr{lr}_hc{hidden_channels}_nl{num_layers}_d{dropout}_epochs{n_epochs}_wdecay{w_decay}_w{weight}.png'
+    filename = f'HGConv_Models_MP/threshold_{threshold}/method_{method}/lr{lr}_hc{hidden_channels}_nl{num_layers}_d{dropout}_epochs{n_epochs}_wdecay{w_decay}_w{weight}.png'
     plt.savefig(filename)
     plt.show()
 
@@ -211,7 +212,7 @@ criterion = torch.nn.CrossEntropyLoss()
 print(model)
 
 # Running the training
-train_losses, train_accuracies, valid_losses, valid_accuracies, max_valid_accuracy = train(model, optimizer, criterion, w_decay, threshold, train_loader, valid_loader, parameters, n_epochs=1200)
+train_losses, train_accuracies, valid_losses, valid_accuracies, max_valid_accuracy = train(model, optimizer, criterion, w_decay, threshold, method, train_loader, valid_loader, parameters, n_epochs=1200)
 
 
 # In[12]:
@@ -225,6 +226,8 @@ threshold = 0.5
 age = False
 sex = False
 method = 'fourier_cluster'
+# method = 'maximal_clique'
+# method = 'coskewness'
 if method == 'coskewness':
     weight = True
 else:
@@ -258,7 +261,7 @@ n_epochs = 800
 in_channels = dataset.num_features
 # Train using each combination
 for params in param_combinations:
-    filename = f'HGConv_Models_MP/threshold_{threshold}/lr{params["learning_rate"]}_hc{params["hidden_channels"]}_nl{params["num_layers"]}_d{params["dropout_rate"]}_epochs{n_epochs}_wdecay{params["weight_decay"]}_w{weight}.png'
+    filename = f'HGConv_Models_MP/threshold_{threshold}/method_{method}/lr{params["learning_rate"]}_hc{params["hidden_channels"]}_nl{params["num_layers"]}_d{params["dropout_rate"]}_epochs{n_epochs}_wdecay{params["weight_decay"]}_w{weight}.png'
     if os.path.exists(filename):
         pass
     else:
@@ -270,5 +273,5 @@ for params in param_combinations:
         else:
             w_decay = params['weight_decay']
         optimizer = torch.optim.Adam(model.parameters(), lr=parameters[0], weight_decay=w_decay)
-        train_losses, train_accuracies, valid_losses, valid_accuracies, max_valid_accuracy = train(model, optimizer, criterion, w_decay, threshold, train_loader, valid_loader, parameters, n_epochs=800)
+        train_losses, train_accuracies, valid_losses, valid_accuracies, max_valid_accuracy = train(model, optimizer, criterion, w_decay, threshold, method, train_loader, valid_loader, parameters, n_epochs=800)
 
