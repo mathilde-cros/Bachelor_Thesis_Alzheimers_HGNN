@@ -1,8 +1,9 @@
+import os
 import torch
 import numpy as np
 import pandas as pd
 import pickle as pkl
-import os
+import pdb
 import matplotlib.pyplot as plt
 
 from nilearn import datasets
@@ -618,7 +619,7 @@ class HypergraphConv(MessagePassing):
 
 
 # Training the models base function
-def epochs_training(model, optimizer, criterion, train_loader, valid_loader, test_loader, testing, train_losses, train_accuracies, valid_losses, valid_accuracies, max_valid_accuracy):
+def epochs_training(model, optimizer, criterion, train_loader, valid_loader, test_loader, testing, test_accuracy, train_losses, train_accuracies, valid_losses, valid_accuracies, max_valid_accuracy):
 
     model.train()
     train_loss = 0
@@ -656,7 +657,7 @@ def epochs_training(model, optimizer, criterion, train_loader, valid_loader, tes
                     target = data.y.clone().detach().long()
                     out = model(data.x, data.edge_index, data.batch)
                     test_accuracy += quick_accuracy(out, target)
-                test_accuracy = test_accuracy/len(test_loader.dataset)
+                test_accuracy = test_accuracy/len(test_loader) 
                 
     if testing:
         return train_losses, train_accuracies, valid_losses, valid_accuracies, max_valid_accuracy, test_accuracy

@@ -97,8 +97,6 @@ def train(model, optimizer, criterion, w_decay, threshold, train_loader, valid_l
     train_accuracies = []
     valid_losses = []
     valid_accuracies = []
-    test_losses = []
-    test_accuracies = []
     max_valid_accuracy = 0
     test_accuracy = 0
 
@@ -122,10 +120,10 @@ def train(model, optimizer, criterion, w_decay, threshold, train_loader, valid_l
 
     for epoch in range(n_epochs):
         if testing:
-            train_losses, train_accuracies, valid_losses, valid_accuracies, max_valid_accuracy, test_accuracy = f.epochs_training(model, optimizer, criterion, train_loader, valid_loader, test_loader, testing, train_losses, train_accuracies, valid_losses, valid_accuracies, max_valid_accuracy, test_losses, test_accuracies)
+            train_losses, train_accuracies, valid_losses, valid_accuracies, max_valid_accuracy, test_accuracy = f.epochs_training(model, optimizer, criterion, train_loader, valid_loader, test_loader, testing, test_accuracy, train_losses, train_accuracies, valid_losses, valid_accuracies, max_valid_accuracy)
             wandb.log({"Train Loss": train_losses[-1], "Train Accuracy": train_accuracies[-1], "Validation Loss": valid_losses[-1], "Validation Accuracy": valid_accuracies[-1], "Max Valid Accuracy": max_valid_accuracy, "Test Accuracy": test_accuracy})
         else:
-            train_losses, train_accuracies, valid_losses, valid_accuracies, max_valid_accuracy = f.epochs_training(model, optimizer, criterion, train_loader, valid_loader, test_loader, testing, train_losses, train_accuracies, valid_losses, valid_accuracies, max_valid_accuracy)
+            train_losses, train_accuracies, valid_losses, valid_accuracies, max_valid_accuracy = f.epochs_training(model, optimizer, criterion, train_loader, valid_loader, test_loader, testing, test_accuracy, train_losses, train_accuracies, valid_losses, valid_accuracies, max_valid_accuracy)
             wandb.log({"Train Loss": train_losses[-1], "Train Accuracy": train_accuracies[-1], "Validation Loss": valid_losses[-1], "Validation Accuracy": valid_accuracies[-1], "Max Valid Accuracy": max_valid_accuracy})
         print(f'Epoch {epoch+1}/{n_epochs}')
         print(f'Train Loss: {train_losses[-1]:.4f}, Validation Loss: {valid_losses[-1]:.4f}')
@@ -247,14 +245,16 @@ train_loader, valid_loader, test_loader, nbr_classes = f.create_train_test_valid
 #     'hidden_channels': [128, 64, 32],
 #     'num_layers': [3, 2, 1],
 #     'dropout_rate': [0.2, 0.1, 0.0],
-#     'weight_decay': [0.001, 0.0001]
+#     'weight_decay': [0.001, 0.0001],
+#     'heads': [4, 3]
 # }
 param_grid = {
     'learning_rate': [0.0001, 0.001],
     'hidden_channels': [64, 128],
     'num_layers': [1, 2, 3],
     'dropout_rate': [0.0, 0.1, 0.2],
-    'weight_decay': [0.0001, 0.001]
+    'weight_decay': [0.0001, 0.001],
+    'heads': [3, 4]
 }
 
 # Create combinations of hyperparameters
@@ -277,6 +277,6 @@ for params in param_combinations:
         else:
             w_decay = params['weight_decay']
         optimizer = torch.optim.Adam(model.parameters(), lr=parameters[0], weight_decay=w_decay)
-        train_losses, train_accuracies, valid_losses, valid_accuracies, max_valid_accuracy, test_accuracy = train(model, optimizer, criterion, w_decay, threshold, method, train_loader, valid_loader, parameters, test_loader, testing=True, n_epochs=800)
+        train_losses, train_accuracies, valid_losses, valid_accuracies, max_valid_accuracy, test_accuracy = train(model, optimizer, criterion, w_decay, threshold, train_loader, valid_loader, parameters, test_loader, testing=True, n_epochs=800)
 
 
