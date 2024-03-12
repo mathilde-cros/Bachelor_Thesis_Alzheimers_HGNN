@@ -64,13 +64,8 @@ class HGConv(torch.nn.Module):
 threshold = 0.5
 age = False
 sex = False
-# method = 'fourier_cluster'
 method = 'maximal_clique'
-# method = 'coskewness'
-if method == 'coskewness':
-    weight = True
-else:
-    weight = False
+weight = False
 
 hg_data_path = f'Hypergraphs/{method}/thresh_{threshold}'
 
@@ -98,8 +93,6 @@ def train(model, optimizer, criterion, w_decay, threshold, method, train_loader,
     train_accuracies = []
     valid_losses = []
     valid_accuracies = []
-    test_losses = []
-    test_accuracies = []
     max_valid_accuracy = 0
     test_accuracy = 0
 
@@ -123,10 +116,10 @@ def train(model, optimizer, criterion, w_decay, threshold, method, train_loader,
 
     for epoch in range(n_epochs):
         if testing:
-            train_losses, train_accuracies, valid_losses, valid_accuracies, max_valid_accuracy, test_accuracy = f.epochs_training(model, optimizer, criterion, train_loader, valid_loader, test_loader, testing, train_losses, train_accuracies, valid_losses, valid_accuracies, max_valid_accuracy)
+            train_losses, train_accuracies, valid_losses, valid_accuracies, max_valid_accuracy, test_accuracy = f.epochs_training(model, optimizer, criterion, train_loader, valid_loader, test_loader, testing, test_accuracy, train_losses, train_accuracies, valid_losses, valid_accuracies, max_valid_accuracy)
             wandb.log({"Train Loss": train_losses[-1], "Train Accuracy": train_accuracies[-1], "Validation Loss": valid_losses[-1], "Validation Accuracy": valid_accuracies[-1], "Max Valid Accuracy": max_valid_accuracy, "Test Accuracy": test_accuracy})
         else:
-            train_losses, train_accuracies, valid_losses, valid_accuracies, max_valid_accuracy = f.epochs_training(model, optimizer, criterion, train_loader, valid_loader, test_loader, testing, train_losses, train_accuracies, valid_losses, valid_accuracies, max_valid_accuracy)
+            train_losses, train_accuracies, valid_losses, valid_accuracies, max_valid_accuracy = f.epochs_training(model, optimizer, criterion, train_loader, valid_loader, test_loader, testing, test_accuracy, train_losses, train_accuracies, valid_losses, valid_accuracies, max_valid_accuracy)
             wandb.log({"Train Loss": train_losses[-1], "Train Accuracy": train_accuracies[-1], "Validation Loss": valid_losses[-1], "Validation Accuracy": valid_accuracies[-1], "Max Valid Accuracy": max_valid_accuracy})
         print(f'Epoch {epoch+1}/{n_epochs}')
         print(f'Train Loss: {train_losses[-1]:.4f}, Validation Loss: {valid_losses[-1]:.4f}')
@@ -180,13 +173,8 @@ def train(model, optimizer, criterion, w_decay, threshold, method, train_loader,
 # threshold = 0.5
 # age = False
 # sex = False
-# # method = 'fourier_cluster'
 # method = 'maximal_clique'
-# # method = 'coskewness'
-# # if method == 'coskewness':
-# #     weight = True
-# # else:
-#     weight = False
+# weight = False
 
 # hg_data_path = f'Hypergraphs/{method}/thresh_{threshold}'
 # root = f'Raw_to_hypergraph/ADNI_T_{threshold}_M_{method}_W{weight}_A{age}_S{sex}_MPTrue'
@@ -224,12 +212,7 @@ from sklearn.model_selection import ParameterGrid
 threshold = 0.5
 age = False
 sex = False
-# method = 'fourier_cluster'
 method = 'maximal_clique'
-# method = 'coskewness'
-# if method == 'coskewness':
-#     weight = True
-# else:
 weight = False
 
 hg_data_path = f'Hypergraphs/{method}/thresh_{threshold}'

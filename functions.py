@@ -126,6 +126,9 @@ def normalize_array(array):
     norm_array = (array - np.mean(array)) / np.std(array)
     return norm_array
 
+# Generating the diagnostic file from the diagnostic_label.csv file
+diagnostic_label = np.loadtxt('ADNI_full/diagnostic_label.csv', dtype=str, delimiter=',')
+    
 # printing a few features and statistics about the dataset
 def dataset_features_and_stats(dataset):
     print()
@@ -152,9 +155,6 @@ def dataset_features_and_stats(dataset):
     print(f'Has isolated nodes: {data.has_isolated_nodes()}')
     print(f'Has self-loops: {data.has_self_loops()}')
     print(f'Is undirected: {data.is_undirected()}')
-
-# Generating the diagnostic file from the diagnostic_label.csv file
-diagnostic_label = np.loadtxt('ADNI_full/diagnostic_label.csv', dtype=str, delimiter=',')
 
 # Combining the 'EMCI', 'LMCI' and 'MCI' diagnostics into a single 'MCI' label for simplicity, then one-hot encoding the diagnostics
 def combine_diag_labels(diagnostic_label):
@@ -207,11 +207,13 @@ class Raw_to_Graph(InMemoryDataset):
     def process(self):
         graphs=[]
         full_corr_path_lists = corr_matrix_paths()
+        # Generating the diagnostic file from the diagnostic_label.csv file
+        diagnostic_label = np.loadtxt('ADNI_full/diagnostic_label.csv', dtype=str, delimiter=',')
         diagnostic_label = combine_diag_labels(diagnostic_label)
         corr_matrices = full_corr_path_lists[self.method]
         for patient_idx, patient_matrix in enumerate(corr_matrices):
             path = f'ADNI_full/corr_matrices/corr_matrix_{self.method}/{patient_matrix}'
-            corr_matrix = pd.read_csv(path, header=None).values
+            corr_matrix = np.loadtxt(path, delimiter=',')
             # Here ROIs stands for Regions of Interest
             nbr_ROIs = corr_matrix.shape[0]
             edge_matrix = np.zeros((nbr_ROIs,nbr_ROIs))
