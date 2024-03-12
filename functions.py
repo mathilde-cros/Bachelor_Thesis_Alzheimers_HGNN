@@ -618,7 +618,7 @@ class HypergraphConv(MessagePassing):
 
 
 # Training the models base function
-def epochs_training(model, optimizer, criterion, train_loader, valid_loader, test_loader, testing, train_losses, train_accuracies, valid_losses, valid_accuracies, max_valid_accuracy,test_losses=None, test_accuracies=None):
+def epochs_training(model, optimizer, criterion, train_loader, valid_loader, test_loader, testing, train_losses, train_accuracies, valid_losses, valid_accuracies, max_valid_accuracy):
 
     model.train()
     train_loss = 0
@@ -650,18 +650,15 @@ def epochs_training(model, optimizer, criterion, train_loader, valid_loader, tes
         valid_accuracies.append(valid_accuracy/len(valid_loader))
         if valid_accuracies[-1] > max_valid_accuracy:
             max_valid_accuracy = valid_accuracies[-1]
-            
-        if testing:
-            test_loss = 0
-            test_accuracy = 0
-            for data in test_loader:
-                target = data.y.clone().detach().long()
-                out = model(data.x, data.edge_index, data.batch)
-                test_loss += criterion(out, target)
-                test_accuracy += quick_accuracy(out, target)
-
-            test_losses.append(test_loss.detach().numpy()/len(test_loader.dataset))
-            test_accuracies.append(test_accuracy/len(test_loader.dataset))
-            return train_losses, train_accuracies, valid_losses, valid_accuracies, max_valid_accuracy, test_losses, test_accuracies
-        else:
-            return train_losses, train_accuracies, valid_losses, valid_accuracies, max_valid_accuracy
+            if testing:
+                test_accuracy = 0
+                for data in test_loader:
+                    target = data.y.clone().detach().long()
+                    out = model(data.x, data.edge_index, data.batch)
+                    test_accuracy += quick_accuracy(out, target)
+                test_accuracy = test_accuracy/len(test_loader.dataset)
+                
+    if testing:
+        return train_losses, train_accuracies, valid_losses, valid_accuracies, max_valid_accuracy, test_accuracy
+    else:
+        return train_losses, train_accuracies, valid_losses, valid_accuracies, max_valid_accuracy
