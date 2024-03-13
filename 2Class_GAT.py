@@ -60,7 +60,7 @@ diagnostic_label_all = np.loadtxt('ADNI_full/diagnostic_label.csv', dtype=str, d
 
 
 def filter_group(group):
-    df = pd.read_csv('ADNI_FULL/patient_info.csv')
+    df = pd.read_csv('ADNI_full/patient_info.csv')
     labels = df['Research Group']
     label_idx_list = [i for i in range(len(labels)) if labels[i] == group]
     return label_idx_list
