@@ -239,7 +239,7 @@ train_loader, valid_loader, test_loader, nbr_classes = f.create_train_test_valid
 
 param_grid = {
     'learning_rate': [0.001, 0.0001],
-    'hidden_channels': [128, 64, 32],
+    'hidden_channels': [128, 64],
     'num_layers': [3, 2, 1],
     'dropout_rate': [0.2, 0.1, 0.0],
     'weight_decay': [0.001, 0.0001]

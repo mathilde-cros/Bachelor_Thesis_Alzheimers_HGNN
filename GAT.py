@@ -240,22 +240,22 @@ f.dataset_features_and_stats(dataset)
 # Creating the train, validation and test sets
 train_loader, valid_loader, test_loader, nbr_classes = f.create_train_test_valid(dataset)
 
-param_grid = {
-    'learning_rate': [0.001, 0.0001],
-    'hidden_channels': [128, 64, 32],
-    'num_layers': [3, 2, 1],
-    'dropout_rate': [0.2, 0.1, 0.0],
-    'weight_decay': [0.001, 0.0001],
-    'heads': [4, 3]
-}
 # param_grid = {
-#     'learning_rate': [0.0001, 0.001],
-#     'hidden_channels': [64, 128],
-#     'num_layers': [1, 2, 3],
-#     'dropout_rate': [0.0, 0.1, 0.2],
-#     'weight_decay': [0.0001, 0.001],
-#     'heads': [3, 4]
+#     'learning_rate': [0.001, 0.0001],
+#     'hidden_channels': [128, 64],
+#     'num_layers': [3, 2, 1],
+#     'dropout_rate': [0.2, 0.1, 0.0],
+#     'weight_decay': [0.001, 0.0001],
+#     'heads': [4, 3]
 # }
+param_grid = {
+    'learning_rate': [0.0001, 0.001],
+    'hidden_channels': [64, 128],
+    'num_layers': [1, 2, 3],
+    'dropout_rate': [0.0, 0.1, 0.2],
+    'weight_decay': [0.0001, 0.001],
+    'heads': [3, 4]
+}
 
 # Create combinations of hyperparameters
 param_combinations = ParameterGrid(param_grid)
