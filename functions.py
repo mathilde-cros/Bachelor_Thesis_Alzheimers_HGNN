@@ -130,7 +130,7 @@ def normalize_array(array):
 diagnostic_label = np.loadtxt('ADNI_full/diagnostic_label.csv', dtype=str, delimiter=',')
     
 # printing a few features and statistics about the dataset
-def dataset_features_and_stats(dataset):
+def dataset_features_and_stats(dataset, diagnostic_label=diagnostic_label):
     print()
     print(f'Dataset: {dataset}:')
     print('====================')
