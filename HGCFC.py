@@ -82,7 +82,7 @@ train_loader, valid_loader, test_loader, nbr_classes = f.create_train_test_valid
 
 # In[6]:
 
-
+stratify = True
 # Training the model
 def train(model, optimizer, criterion, w_decay, threshold, method, train_loader, valid_loader, parameters, test_loader=False, testing=False, n_epochs=100):
     test_loader = test_loader
@@ -104,6 +104,7 @@ def train(model, optimizer, criterion, w_decay, threshold, method, train_loader,
         config = {
         "architecture": "HGConv",
         "method": method,
+        "strat + w loss": stratify,
         "weights": weight,
         "weight_decay": w_decay,
         "threshold": threshold,
@@ -220,7 +221,7 @@ root = f'Raw_to_hypergraph/ADNI_T_{threshold}_M_{method}_W{weight}_A{age}_S{sex}
 dataset = f.Raw_to_Hypergraph(root=root, hg_data_path=hg_data_path, method=method, weight=weight, threshold=threshold, age=age, sex=sex)
 
 # Creating the train, validation and test sets
-train_loader, valid_loader, test_loader, nbr_classes = f.create_train_test_valid(dataset)
+train_loader, valid_loader, test_loader, nbr_classes, y_train = f.create_train_test_valid(dataset, stratify)
 
 # param_grid = {
 #     'learning_rate': [0.001, 0.0001],
@@ -249,7 +250,17 @@ for params in param_combinations:
     else:
         parameters = [params['learning_rate'], params['hidden_channels'], params['num_layers'], params['dropout_rate']]
         model = HGConv(in_channels=in_channels, hidden_channels=parameters[1], out_channels=nbr_classes, num_layers=parameters[2], dropout=parameters[3], nbr_classes=nbr_classes)
-        criterion = torch.nn.CrossEntropyLoss() 
+        if stratify:
+            diag_lab = [0 , 1 , 2, 3]
+            class_freq = []
+            for i in diag_lab:
+                class_freq.append(np.count_nonzero(torch.Tensor(y_train) == i))
+            class_freq = torch.FloatTensor(class_freq)
+            class_weights = 1 / class_freq
+            class_weights /= class_weights.sum()
+            criterion = torch.nn.CrossEntropyLoss(weight=class_weights)
+        else:
+            criterion = torch.nn.CrossEntropyLoss() 
         if 'weight_decay' not in params.keys():
             w_decay = 0
         else:

@@ -159,6 +159,7 @@ class GCN(torch.nn.Module):
         x = self.mlp(x)
         return x
     
+stratify = False
 # Training the GCN model
 def train_GCN(model, optimizer, criterion, w_decay, threshold, train_loader, valid_loader, parameters, test_loader=False, testing=False, n_epochs=100):
     test_loader = test_loader
@@ -179,6 +180,7 @@ def train_GCN(model, optimizer, criterion, w_decay, threshold, train_loader, val
         # track hyperparameters and run metadata
         config = {
         "architecture": "GCN_2Class",
+        "strat + w loss": stratify,
         "weights": weight,
         "weight_decay": w_decay,
         "threshold": threshold,
@@ -270,6 +272,8 @@ class GAT(torch.nn.Module):
         x = self.mlp(x)
         return x
     
+
+stratify = False
 # Training the GAT model
 def train_GAT(model, optimizer, criterion, w_decay, threshold, train_loader, valid_loader, parameters, test_loader=False, testing=False, n_epochs=100):
     test_loader = test_loader
@@ -290,6 +294,7 @@ def train_GAT(model, optimizer, criterion, w_decay, threshold, train_loader, val
         # track hyperparameters and run metadata
         config = {
         "architecture": "GAT_2Class",
+        "strat + w loss": stratify,
         "weights": weight,
         "weight_decay": w_decay,
         "threshold": threshold,
@@ -415,6 +420,7 @@ class MPNNLayer(MessagePassing):
         # Step 5: Return new node embeddings.
         return aggr_out
     
+stratify = False
 # Training the MPNN model
 def train_MPNN(model, optimizer, criterion, w_decay, threshold, train_loader, valid_loader, parameters, test_loader=False, testing=False, n_epochs=100):
     test_loader = test_loader
@@ -435,6 +441,7 @@ def train_MPNN(model, optimizer, criterion, w_decay, threshold, train_loader, va
         # track hyperparameters and run metadata
         config = {
         "architecture": "MPNN_2Class",
+        "strat + w loss": stratify,
         "weights": weight,
         "weight_decay": w_decay,
         "threshold": threshold,
@@ -524,6 +531,7 @@ class HGConv(torch.nn.Module):
         x = self.mlp(x)
         return x
 
+stratify = False
 # Training the HGCN model
 def train_HGConv(model, optimizer, criterion, w_decay, threshold, train_loader, valid_loader, parameters, architecture, test_loader=False, testing=False, n_epochs=100):
     test_loader = test_loader
@@ -546,6 +554,7 @@ def train_HGConv(model, optimizer, criterion, w_decay, threshold, train_loader, 
         # track hyperparameters and run metadata
         config = {
         "architecture": architecture,
+        "strat + w loss": stratify,
         "weights": weight,
         "weight_decay": w_decay,
         "threshold": threshold,

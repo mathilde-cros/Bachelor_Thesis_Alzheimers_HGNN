@@ -98,11 +98,11 @@ def quick_accuracy(y_hat, y):
   return accuracy/n
 
 # Creating the train, validation and test sets
-def create_train_test_valid(dataset):
+def create_train_test_valid(dataset, stratify=False):
     X = dataset
     y = dataset.data.y
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-    X_train, X_valid, y_train, y_valid = train_test_split(X_train, y_train, test_size=0.125, random_state=42)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42, stratify=y)
+    X_train, X_valid, y_train, y_valid = train_test_split(X_train, y_train, test_size=0.125, random_state=42, stratify=y_train)
     nbr_classes = len(np.unique(y))
 
     print(f'Number of training graphs: {len(X_train)}')
@@ -114,7 +114,10 @@ def create_train_test_valid(dataset):
     valid_loader = DataLoader(X_valid, batch_size=len(X_valid), shuffle=False)
     test_loader = DataLoader(X_test, batch_size=len(X_test), shuffle=False)
 
-    return train_loader, valid_loader, test_loader, nbr_classes
+    if stratify:
+        return train_loader, valid_loader, test_loader, nbr_classes, y_train
+    else:
+        return train_loader, valid_loader, test_loader, nbr_classes, None
 
 # To convert a dictionnary into a numpy array
 def dict_to_array(dict):
