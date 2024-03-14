@@ -533,7 +533,7 @@ class HGConv(torch.nn.Module):
 
 stratify = True
 # Training the HGCN model
-def train_HGConv(model, optimizer, criterion, w_decay, threshold, train_loader, valid_loader, parameters, architecture, test_loader=False, testing=False, n_epochs=100):
+def train_HGConv(model, optimizer, criterion, w_decay, threshold, train_loader, valid_loader, parameters, architecture, method, test_loader=False, testing=False, n_epochs=100):
     test_loader = test_loader
     testing = testing
     n_epochs = n_epochs
@@ -607,7 +607,7 @@ def train_HGConv(model, optimizer, criterion, w_decay, threshold, train_loader, 
     hidden_channels = parameters[1]
     num_layers = parameters[2]
     dropout = parameters[3]
-    filename = f'2Class_Models/HGConv_Models_MP/threshold_{threshold}/method{architecture}/lr{lr}_hc{hidden_channels}_nl{num_layers}_d{dropout}_epochs{n_epochs}_wdecay{w_decay}_w{weight}.png'
+    filename = f'2Class_Models/HGConv_Models_MP/threshold_{threshold}/method_{method}/lr{lr}_hc{hidden_channels}_nl{num_layers}_d{dropout}_epochs{n_epochs}_wdecay{w_decay}_w{weight}.png'
     plt.savefig(filename)
     plt.show()
 

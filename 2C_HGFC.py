@@ -270,5 +270,5 @@ for params in param_combinations:
         else:
             w_decay = params['weight_decay']
         optimizer = torch.optim.Adam(model.parameters(), lr=parameters[0], weight_decay=w_decay)
-        train_losses, train_accuracies, valid_losses, valid_accuracies, max_valid_accuracy, test_accuracy = m.train_HGConv(model, optimizer, criterion, w_decay, threshold, train_loader, valid_loader, parameters, architecture, test_loader, testing=True, n_epochs=800)
+        train_losses, train_accuracies, valid_losses, valid_accuracies, max_valid_accuracy, test_accuracy = m.train_HGConv(model, optimizer, criterion, w_decay, threshold, train_loader, valid_loader, parameters, architecture, method, test_loader, testing=True, n_epochs=800)
 
