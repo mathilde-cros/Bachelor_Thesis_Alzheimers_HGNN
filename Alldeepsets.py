@@ -15,11 +15,10 @@ from torch.nn import Linear
 from torch.nn import Parameter
 from torch_geometric.nn.conv import MessagePassing
 from torch_geometric.utils import softmax
-from torch_scatter import scatter_add, scatter
+from torch_scatter import scatter_add, scatter,  scatter_mean
 from torch_geometric.typing import Adj, Size, OptTensor
 from typing import Optional
 import pdb
-from torch_scatter import scatter, scatter_mean
 
 
 # In[ ]:
@@ -191,7 +190,7 @@ class PMA(MessagePassing):
         # type: (Union[Tensor, OptPairTensor], SparseTensor, Size, NoneType) -> Tensor  # noqa
         # type: (Union[Tensor, OptPairTensor], Tensor, Size, bool) -> Tuple[Tensor, Tuple[Tensor, Tensor]]  # noqa
         # type: (Union[Tensor, OptPairTensor], SparseTensor, Size, bool) -> Tuple[Tensor, SparseTensor]  # noqa
-        r"""
+        """
         Args:
             return_attention_weights (bool, optional): If set to :obj:`True`,
                 will additionally return the tuple
@@ -528,7 +527,7 @@ class SetGNN(nn.Module):
 # In[ ]:
 
 
-num_features = 10 #number of features in the input
+num_features = 461 #number of features in the input
 num_classes = 4 #number of classes in the output
 Classifier_hidden = 64 #hidden dim in the last classification layer
 Classifier_num_layers = 2 #number of layers in the last classification layer
@@ -538,7 +537,7 @@ All_num_layers = 2 #number of All*Sets layers in the model
 dropout = 0.0 #dropout
 aggregate = 'mean' #type of aggregation (might be ignored, not sure)
 normalization = 'ln' #type og normalisation it can be ln, bn or none
-deepset_input_norm = True #if you norm the input or not
+deepset_input_norm = False #if you norm the input or not
 GPR = True #when set to True, the classification is made from all the intermendiate representations concatenated
 use_PMA = False #when True, the model is AllSetTransformer, when False the model is AllDeepSets
 heads = 1 #number of heads in Transformer

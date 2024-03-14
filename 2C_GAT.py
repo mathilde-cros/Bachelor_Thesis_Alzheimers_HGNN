@@ -246,26 +246,26 @@ for params in param_combinations:
         filename = f'2Class_Models/GAT_Models_MP/threshold_{threshold}/lr{params["learning_rate"]}_hc{params["hidden_channels"]}_nl{params["num_layers"]}_d{params["dropout_rate"]}_epochs{n_epochs}_heads{params["heads"]}_wdecay{params["weight_decay"]}_w{weight}.png'
     else:
         filename = f'2Class_Models/GAT_Models/threshold_{threshold}/lr{params["learning_rate"]}_hc{params["hidden_channels"]}_nl{params["num_layers"]}_d{params["dropout_rate"]}_epochs{n_epochs}_heads{params["heads"]}_wdecay{params["weight_decay"]}_w{weight}.png'
-    if os.path.exists(filename):
-        pass
+    # if os.path.exists(filename):
+    #     pass
+    # else:
+    parameters = [params['learning_rate'], params['hidden_channels'], params['num_layers'], params['dropout_rate'], params['heads']]
+    model = m.GAT(in_channels=in_channels, hidden_channels=parameters[1], out_channels=nbr_classes, num_layers=parameters[2], dropout=parameters[3], heads=parameters[4], nbr_classes=nbr_classes)
+    if stratify:
+        diag_lab = [0 , 1]
+        class_freq = []
+        for i in diag_lab:
+            class_freq.append(np.count_nonzero(torch.Tensor(y_train) == i))
+        class_freq = torch.FloatTensor(class_freq)
+        class_weights = 1 / class_freq
+        class_weights /= class_weights.sum()
+        criterion = torch.nn.CrossEntropyLoss(weight=class_weights)
     else:
-        parameters = [params['learning_rate'], params['hidden_channels'], params['num_layers'], params['dropout_rate'], params['heads']]
-        model = m.GAT(in_channels=in_channels, hidden_channels=parameters[1], out_channels=nbr_classes, num_layers=parameters[2], dropout=parameters[3], heads=parameters[4], nbr_classes=nbr_classes)
-        if stratify:
-            diag_lab = [0 , 1]
-            class_freq = []
-            for i in diag_lab:
-                class_freq.append(np.count_nonzero(torch.Tensor(y_train) == i))
-            class_freq = torch.FloatTensor(class_freq)
-            class_weights = 1 / class_freq
-            class_weights /= class_weights.sum()
-            criterion = torch.nn.CrossEntropyLoss(weight=class_weights)
-        else:
-            criterion = torch.nn.CrossEntropyLoss() 
-        if 'weight_decay' not in params.keys():
-            w_decay = 0
-        else:
-            w_decay = params['weight_decay']
-        optimizer = torch.optim.Adam(model.parameters(), lr=parameters[0], weight_decay=w_decay)
-        train_losses, train_accuracies, valid_losses, valid_accuracies, max_valid_accuracy, test_accuracy = m.train_GAT(model, optimizer, criterion, w_decay, threshold, train_loader, valid_loader, parameters, test_loader, testing=True, n_epochs=800)
+        criterion = torch.nn.CrossEntropyLoss() 
+    if 'weight_decay' not in params.keys():
+        w_decay = 0
+    else:
+        w_decay = params['weight_decay']
+    optimizer = torch.optim.Adam(model.parameters(), lr=parameters[0], weight_decay=w_decay)
+    train_losses, train_accuracies, valid_losses, valid_accuracies, max_valid_accuracy, test_accuracy = m.train_GAT(model, optimizer, criterion, w_decay, threshold, train_loader, valid_loader, parameters, test_loader, testing=True, n_epochs=800)
 
