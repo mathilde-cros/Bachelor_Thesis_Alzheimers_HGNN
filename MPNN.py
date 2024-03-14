@@ -197,9 +197,9 @@ def train(model, optimizer, criterion, w_decay, threshold, train_loader, valid_l
     num_layers = parameters[2]
     dropout = parameters[3]
     if matrixprofile:
-        filename = f'MPNN_Models_MP/threshold_{threshold}/lr{lr}_hc{hidden_channels}_nl{num_layers}_d{dropout}_epochs{n_epochs}_w{weight}.png'
+        filename = f'MPNN_Models_MP/threshold_{threshold}/lr{lr}_hc{hidden_channels}_nl{num_layers}_d{dropout}_epochs{n_epochs}_wdecay{w_decay}_w{weight}.png'
     else:
-        filename = f'MPNN_Models/threshold_{threshold}/lr{lr}_hc{hidden_channels}_nl{num_layers}_d{dropout}_epochs{n_epochs}_w{weight}.png'
+        filename = f'MPNN_Models/threshold_{threshold}/lr{lr}_hc{hidden_channels}_nl{num_layers}_d{dropout}_epochs{n_epochs}_wdecay{w_decay}_w{weight}.png'
     plt.savefig(filename)
     if testing:
         plt.title(f'Test Accuracy: {test_accuracy}')

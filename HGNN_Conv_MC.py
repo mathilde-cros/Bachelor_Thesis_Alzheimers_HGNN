@@ -61,7 +61,7 @@ class HGConv(torch.nn.Module):
 
 
 # Testing the class Raw_to_Hypergraph with one example and saving it
-threshold = 0.5
+threshold = 0.7
 age = False
 sex = False
 method = 'maximal_clique'
@@ -209,7 +209,7 @@ def train(model, optimizer, criterion, w_decay, threshold, method, train_loader,
 from sklearn.model_selection import ParameterGrid
 
 # Building the graphs
-threshold = 0.5
+threshold = 0.7
 age = False
 sex = False
 method = 'maximal_clique'
@@ -222,20 +222,20 @@ dataset = f.Raw_to_Hypergraph(root=root, hg_data_path=hg_data_path, method=metho
 # Creating the train, validation and test sets
 train_loader, valid_loader, test_loader, nbr_classes = f.create_train_test_valid(dataset)
 
-# param_grid = {
-#     'learning_rate': [0.001, 0.0001],
-#     'hidden_channels': [128, 64],
-#     'num_layers': [3, 2, 1],
-#     'dropout_rate': [0.2, 0.1, 0.0],
-#     'weight_decay': [0.001, 0.0001]
-# }
 param_grid = {
-    'learning_rate': [0.0001, 0.001],
-    'hidden_channels': [64, 128],
-    'num_layers': [1, 2, 3],
-    'dropout_rate': [0.0, 0.1, 0.2],
-    'weight_decay': [0.0001, 0.001]
+    'learning_rate': [0.001, 0.0001],
+    'hidden_channels': [128, 64],
+    'num_layers': [3, 2, 1],
+    'dropout_rate': [0.2, 0.1, 0.0],
+    'weight_decay': [0.001, 0.0001]
 }
+# param_grid = {
+#     'learning_rate': [0.0001, 0.001],
+#     'hidden_channels': [64, 128],
+#     'num_layers': [1, 2, 3],
+#     'dropout_rate': [0.0, 0.1, 0.2],
+#     'weight_decay': [0.0001, 0.001]
+# }
 
 # Create combinations of hyperparameters
 param_combinations = ParameterGrid(param_grid)
