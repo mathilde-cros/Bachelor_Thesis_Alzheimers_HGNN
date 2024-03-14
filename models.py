@@ -605,7 +605,7 @@ def train_HGConv(model, optimizer, criterion, w_decay, threshold, train_loader, 
     wandb.finish()
 
     if testing:
-        return train_losses, train_accuracies, valid_losses, valid_accuracies, max_valid_accuracy, test_losses, test_accuracies
+        return train_losses, train_accuracies, valid_losses, valid_accuracies, max_valid_accuracy, test_accuracy
     else:
         return train_losses, train_accuracies, valid_losses, valid_accuracies, max_valid_accuracy
 

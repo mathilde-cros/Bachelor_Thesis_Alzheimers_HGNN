@@ -62,7 +62,7 @@ time_series_folder = 'ADNI_full/time_series'
 
 
 def filter_group(group):
-    df = pd.read_csv('ADNI_FULL/patient_info.csv')
+    df = pd.read_csv('ADNI_full/patient_info.csv')
     labels = df['Research Group']
     label_idx_list = [i for i in range(len(labels)) if labels[i] == group]
     return label_idx_list

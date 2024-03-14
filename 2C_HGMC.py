@@ -62,7 +62,7 @@ time_series_folder = 'ADNI_full/time_series'
 
 
 def filter_group(group):
-    df = pd.read_csv('ADNI_FULL/patient_info.csv')
+    df = pd.read_csv('ADNI_full/patient_info.csv')
     labels = df['Research Group']
     label_idx_list = [i for i in range(len(labels)) if labels[i] == group]
     return label_idx_list
@@ -209,7 +209,7 @@ m.save_all_hypergraphs(method_list, time_series_folder_binary, corr_matrices, di
 from sklearn.model_selection import ParameterGrid
 
 # Building the graphs
-threshold = 0.5
+threshold = 0.7
 k_neighbors = 3
 age = False
 sex = False
