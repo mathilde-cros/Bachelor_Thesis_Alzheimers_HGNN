@@ -34,13 +34,15 @@ matrixprofile = True
 
 # Raw_to_graph class but for 2-class classification
 class Raw_to_Graph_2Class(InMemoryDataset):
-    def __init__(self, root, threshold, method, weight=False, age=False, sex=False, matrixprofile=False, transform=None, pre_transform=None):
+    def __init__(self, root, threshold, method, corr_matrices, diagnostic_label, weight=False, age=False, sex=False, matrixprofile=False, transform=None, pre_transform=None):
         self.threshold = threshold
         self.method = method
         self.weight = weight
         self.age = age
         self.sex = sex
         self.matrixprofile = matrixprofile
+        self.corr_matrices = corr_matrices
+        self.diagnostic_label = diagnostic_label
         super().__init__(root, transform, pre_transform)
         self.data, self.slices = torch.load(self.processed_paths[0])
 
@@ -51,7 +53,7 @@ class Raw_to_Graph_2Class(InMemoryDataset):
     # This function is used to process the raw data into a format suitable for GNNs, by constructing graphs out of the connectivity matrices.
     def process(self):
         graphs=[]
-        for patient_idx, patient_matrix in enumerate(corr_matrices):
+        for patient_idx, patient_matrix in enumerate(self.corr_matrices):
             path = f'ADNI_full/corr_matrices/corr_matrix_{self.method}/{patient_matrix}'
             corr_matrix = np.loadtxt(path, delimiter=',')
             # Here ROIs stands for Regions of Interest
@@ -124,7 +126,7 @@ class Raw_to_Graph_2Class(InMemoryDataset):
             ## The feature matrix of the graph is the degree, betweenness centrality, local efficiency, clustering coefficient and ratio of local to global efficiency of each node
             graph_data.x = x
             ## The target/output variable that we want to predict is the diagnostic label of the patient
-            graph_data.y = float(diagnostic_label[patient_idx])
+            graph_data.y = float(self.diagnostic_label[patient_idx])
             graphs.append(graph_data)
 
         data, slices = self.collate(graphs)
@@ -338,10 +340,7 @@ def train_GAT(model, optimizer, criterion, w_decay, threshold, train_loader, val
     num_layers = parameters[2]
     dropout = parameters[3]
     heads = parameters[4]
-    if matrixprofile:
-        filename = f'2Class_Models/GAT_Models_MP/threshold_{threshold}/lr{lr}_hc{hidden_channels}_nl{num_layers}_d{dropout}_epochs{n_epochs}_heads{heads}_wdecay{w_decay}_w{weight}.png'
-    else:
-        filename = f'2Class_Models/GAT_Models/threshold_{threshold}/lr{lr}_hc{hidden_channels}_nl{num_layers}_d{dropout}_epochs{n_epochs}_heads{heads}_wdecay{w_decay}_w{weight}.png'
+    filename = f'2Class_Models/GAT_Models_MP/threshold_{threshold}/lr{lr}_hc{hidden_channels}_nl{num_layers}_d{dropout}_epochs{n_epochs}_heads{heads}_wdecay{w_decay}_w{weight}.png'
     plt.savefig(filename)
     if testing:
         plt.title(f'Test Accuracy: {test_accuracy}')
@@ -484,10 +483,7 @@ def train_MPNN(model, optimizer, criterion, w_decay, threshold, train_loader, va
     hidden_channels = parameters[1]
     num_layers = parameters[2]
     dropout = parameters[3]
-    if matrixprofile:
-        filename = f'2Class_Models/MPNN_Models_MP/threshold_{threshold}/lr{lr}_hc{hidden_channels}_nl{num_layers}_d{dropout}_epochs{n_epochs}_wdecay{w_decay}_w{weight}.png'
-    else:
-        filename = f'2Class_Models/MPNN_Models/threshold_{threshold}/lr{lr}_hc{hidden_channels}_nl{num_layers}_d{dropout}_epochs{n_epochs}_wdecay{w_decay}_w{weight}.png'
+    filename = f'2Class_Models/MPNN_Models_MP/threshold_{threshold}/lr{lr}_hc{hidden_channels}_nl{num_layers}_d{dropout}_epochs{n_epochs}_wdecay{w_decay}_w{weight}.png'
     plt.savefig(filename)
     if testing:
         plt.title(f'Test Accuracy: {test_accuracy}')
@@ -541,6 +537,7 @@ def train_HGConv(model, optimizer, criterion, w_decay, threshold, train_loader, 
     test_losses = []
     test_accuracies = []
     max_valid_accuracy = 0
+    test_accuracy = 0
 
     # start a new wandb run to track this script
     run = wandb.init(
@@ -561,19 +558,18 @@ def train_HGConv(model, optimizer, criterion, w_decay, threshold, train_loader, 
 
     for epoch in range(n_epochs):
         if testing:
-            train_losses, train_accuracies, valid_losses, valid_accuracies, max_valid_accuracy, test_losses, test_accuracies = f.epochs_training(model, optimizer, criterion, train_loader, valid_loader, test_loader, testing, train_losses, train_accuracies, valid_losses, valid_accuracies, max_valid_accuracy, test_losses, test_accuracies)
-            print(f'Epoch {epoch+1}/{n_epochs}')
-            print(f'Train Loss: {train_losses[-1]:.4f}, Validation Loss: {valid_losses[-1]:.4f}, Test Loss: {test_losses[-1]:.4f}')
-            print(f'Train Accuracy: {train_accuracies[-1]:.4f}, Validation Accuracy: {valid_accuracies[-1]:.4f}, Test Accuracy: {test_accuracies[-1]:.4f}')
-            print(f'Max Validation Accuracy: {max_valid_accuracy:.4f}')
-            wandb.log({"Train Loss": train_losses[-1], "Train Accuracy": train_accuracies[-1], "Validation Loss": valid_losses[-1], "Validation Accuracy": valid_accuracies[-1], "Max Valid Accuracy": max_valid_accuracy, "Test Loss": test_losses[-1], "Test Accuracy": test_accuracies[-1]})
+            train_losses, train_accuracies, valid_losses, valid_accuracies, max_valid_accuracy, test_accuracy = f.epochs_training(model, optimizer, criterion, train_loader, valid_loader, test_loader, testing, test_accuracy, train_losses, train_accuracies, valid_losses, valid_accuracies, max_valid_accuracy)
+            wandb.log({"Train Loss": train_losses[-1], "Train Accuracy": train_accuracies[-1], "Validation Loss": valid_losses[-1], "Validation Accuracy": valid_accuracies[-1], "Max Valid Accuracy": max_valid_accuracy, "Test Accuracy": test_accuracy})
         else:
-            train_losses, train_accuracies, valid_losses, valid_accuracies, max_valid_accuracy = f.epochs_training(model, optimizer, criterion, train_loader, valid_loader, test_loader, testing, train_losses, train_accuracies, valid_losses, valid_accuracies, max_valid_accuracy)
-            print(f'Epoch {epoch+1}/{n_epochs}')
-            print(f'Train Loss: {train_losses[-1]:.4f}, Validation Loss: {valid_losses[-1]:.4f}')
-            print(f'Train Accuracy: {train_accuracies[-1]:.4f}, Validation Accuracy: {valid_accuracies[-1]:.4f}')
-            print(f'Max Validation Accuracy: {max_valid_accuracy:.4f}')
+            train_losses, train_accuracies, valid_losses, valid_accuracies, max_valid_accuracy = f.epochs_training(model, optimizer, criterion, train_loader, valid_loader, test_loader, testing, test_accuracy, train_losses, train_accuracies, valid_losses, valid_accuracies, max_valid_accuracy)
             wandb.log({"Train Loss": train_losses[-1], "Train Accuracy": train_accuracies[-1], "Validation Loss": valid_losses[-1], "Validation Accuracy": valid_accuracies[-1], "Max Valid Accuracy": max_valid_accuracy})
+        print(f'Epoch {epoch+1}/{n_epochs}')
+        print(f'Train Loss: {train_losses[-1]:.4f}, Validation Loss: {valid_losses[-1]:.4f}')
+        print(f'Train Accuracy: {train_accuracies[-1]:.4f}, Validation Accuracy: {valid_accuracies[-1]:.4f}')
+        print(f'Max Validation Accuracy: {max_valid_accuracy:.4f}')
+
+    if testing:
+        print('Test Accuracy:', test_accuracy)
 
     plt.figure(figsize=(12, 5))
 
@@ -768,18 +764,21 @@ def save_hypergraph(hg_dict, directory, method, threshold, id):
     return
 
 # Saving all the built hypergraphs
-def save_all_hypergraphs(method_list, time_series_folder, corr_matrix_list):
-    for i, file_name in enumerate(os.listdir(time_series_folder)):
-        patient_id = file_name[3:13]
+def save_all_hypergraphs(method_list, time_series_folder, corr_matrix_list, diagnostic_label):
+    threshold = 0.5
+    for i, file_name in enumerate(time_series_folder):
+        patient_id = file_name[25:35]
         print(f'Processing patient {patient_id}')
         for method in method_list:
             if method == 'fourier_cluster':
-                patient_matrix = corr_matrix_list[i]
+                path = f'ADNI_full/corr_matrices/corr_matrix_pearson/{corr_matrix_list[i]}'
+                patient_matrix = np.loadtxt(path, delimiter=',')
                 _, hg_dict = generate_hypergraph_from_cluster(patient_matrix, threshold=threshold)
             elif method == 'maximal_clique':
+                threshold = 0.7
                 method_corr = 'pearson'
                 root = f'Raw_to_graph_2Class/ADNI_T_{threshold}_M_{method_corr}_WFalse_AFalse_SFalse_MPTrue'
-                dataset = Raw_to_Graph_2Class(root=root, threshold=threshold, method=method_corr, weight=False, age=False, sex=False, matrixprofile=True)
+                dataset = Raw_to_Graph_2Class(root, threshold, method_corr, corr_matrix_list, diagnostic_label, weight=False, age=False, sex=False, matrixprofile=True)
                 graph = f.r2g_to_nx(dataset[i])
                 _, hg_dict = graph_to_hypergraph_max_cliques(graph)
             elif method == 'coskewness':
@@ -788,7 +787,8 @@ def save_all_hypergraphs(method_list, time_series_folder, corr_matrix_list):
                 _, hg_dict = coskewness_cube_to_hypergraph(coskew_cube, threshold=threshold)
             elif method == 'knn':
                 k_neighbors = 3
-                patient_matrix = corr_matrix_list[i]
+                path = f'ADNI_full/corr_matrices/corr_matrix_pearson/{corr_matrix_list[i]}'
+                patient_matrix = np.loadtxt(path, delimiter=',')
                 _, hg_dict = generate_hypergraph_from_knn(patient_matrix, k_neighbors)
                 threshold = f'{k_neighbors}neighbors'
             save_hypergraph(hg_dict, 'Hypergraphs', method, threshold, patient_id)
