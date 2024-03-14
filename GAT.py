@@ -60,28 +60,28 @@ class GAT(torch.nn.Module):
 # In[4]:
 
 
-# Testing the class Raw_to_Graph with one example and saving it
-threshold = 0.5
-weight = False
-age = False
-sex = False
-matrixprofile = True
-if matrixprofile:
-    in_channels = 461 + int(age) + int(sex)
-else:
-    in_channels = 5 + int(age) + int(sex)
-method = 'pearson'
+# # Testing the class Raw_to_Graph with one example and saving it
+# threshold = 0.5
+# weight = False
+# age = False
+# sex = False
+# matrixprofile = True
+# if matrixprofile:
+#     in_channels = 461 + int(age) + int(sex)
+# else:
+#     in_channels = 5 + int(age) + int(sex)
+# method = 'pearson'
 
-root = f'Raw_to_graph/ADNI_T_{threshold}_M_{method}_W{weight}_A{age}_S{sex}_MP{matrixprofile}'
-dataset = f.Raw_to_Graph(root=root, threshold=threshold, method=method, weight=weight, sex=sex, age=age, matrixprofile=matrixprofile)
-f.dataset_features_and_stats(dataset)
-
-
-# In[5]:
+# root = f'Raw_to_graph/ADNI_T_{threshold}_M_{method}_W{weight}_A{age}_S{sex}_MP{matrixprofile}'
+# dataset = f.Raw_to_Graph(root=root, threshold=threshold, method=method, weight=weight, sex=sex, age=age, matrixprofile=matrixprofile)
+# f.dataset_features_and_stats(dataset)
 
 
-# Creating the train, validation and test sets
-train_loader, valid_loader, test_loader, nbr_classes = f.create_train_test_valid(dataset)
+# # In[5]:
+
+
+# # Creating the train, validation and test sets
+# train_loader, valid_loader, test_loader, nbr_classes = f.create_train_test_valid(dataset)
 
 
 # In[6]:
