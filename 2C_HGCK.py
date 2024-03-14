@@ -223,7 +223,7 @@ root = f'Raw_to_hypergraph_2Class/ADNI_T_{threshold}_M_{method}_W{weight}_A{age}
 dataset = Raw_to_Hypergraph_2Class(root=root, hg_data_path=hg_data_path, method=method, weight=weight, threshold=threshold, age=age, sex=sex)
 
 # Creating the train, validation and test sets
-stratify = False
+stratify = True
 train_loader, valid_loader, test_loader, nbr_classes, y_train = f.create_train_test_valid(dataset, stratify)
 
 # param_grid = {

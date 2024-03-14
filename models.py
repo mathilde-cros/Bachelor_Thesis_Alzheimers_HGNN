@@ -159,7 +159,7 @@ class GCN(torch.nn.Module):
         x = self.mlp(x)
         return x
     
-stratify = False
+stratify = True
 # Training the GCN model
 def train_GCN(model, optimizer, criterion, w_decay, threshold, train_loader, valid_loader, parameters, test_loader=False, testing=False, n_epochs=100):
     test_loader = test_loader
@@ -238,7 +238,7 @@ def train_GCN(model, optimizer, criterion, w_decay, threshold, train_loader, val
         plt.title(f'Test Accuracy: {test_accuracy}')
     plt.show()
 
-    # wandb.finish()
+    wandb.finish()
 
     if testing:
         return train_losses, train_accuracies, valid_losses, valid_accuracies, max_valid_accuracy, test_accuracy
@@ -273,7 +273,7 @@ class GAT(torch.nn.Module):
         return x
     
 
-stratify = False
+stratify = True
 # Training the GAT model
 def train_GAT(model, optimizer, criterion, w_decay, threshold, train_loader, valid_loader, parameters, test_loader=False, testing=False, n_epochs=100):
     test_loader = test_loader
@@ -420,7 +420,7 @@ class MPNNLayer(MessagePassing):
         # Step 5: Return new node embeddings.
         return aggr_out
     
-stratify = False
+stratify = True
 # Training the MPNN model
 def train_MPNN(model, optimizer, criterion, w_decay, threshold, train_loader, valid_loader, parameters, test_loader=False, testing=False, n_epochs=100):
     test_loader = test_loader
@@ -531,7 +531,7 @@ class HGConv(torch.nn.Module):
         x = self.mlp(x)
         return x
 
-stratify = False
+stratify = True
 # Training the HGCN model
 def train_HGConv(model, optimizer, criterion, w_decay, threshold, train_loader, valid_loader, parameters, architecture, test_loader=False, testing=False, n_epochs=100):
     test_loader = test_loader
@@ -607,7 +607,7 @@ def train_HGConv(model, optimizer, criterion, w_decay, threshold, train_loader, 
     hidden_channels = parameters[1]
     num_layers = parameters[2]
     dropout = parameters[3]
-    filename = f'2Class_Models/HGConv_Models_MP/threshold_{threshold}/lr{lr}_hc{hidden_channels}_nl{num_layers}_d{dropout}_epochs{n_epochs}_wdecay{w_decay}_w{weight}.png'
+    filename = f'2Class_Models/HGConv_Models_MP/threshold_{threshold}/method{architecture}/lr{lr}_hc{hidden_channels}_nl{num_layers}_d{dropout}_epochs{n_epochs}_wdecay{w_decay}_w{weight}.png'
     plt.savefig(filename)
     plt.show()
 

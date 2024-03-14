@@ -98,7 +98,7 @@ def quick_accuracy(y_hat, y):
   return accuracy/n
 
 # Creating the train, validation and test sets
-def create_train_test_valid(dataset, stratify=False):
+def create_train_test_valid(dataset, stratify=True):
     X = dataset
     y = dataset.data.y
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42, stratify=y)

@@ -217,7 +217,7 @@ dataset = Raw_to_Graph_2Class(root=root, threshold=threshold, method=method, wei
 f.dataset_features_and_stats(dataset, diagnostic_label)
 
 # Creating the train, validation and test sets
-stratify = False
+stratify = True
 train_loader, valid_loader, test_loader, nbr_classes, y_train = f.create_train_test_valid(dataset, stratify)
 
 # param_grid = {
