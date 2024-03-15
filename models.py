@@ -542,8 +542,6 @@ def train_HGConv(model, optimizer, criterion, w_decay, threshold, train_loader, 
     train_accuracies = []
     valid_losses = []
     valid_accuracies = []
-    test_losses = []
-    test_accuracies = []
     max_valid_accuracy = 0
     test_accuracy = 0
 
@@ -556,6 +554,7 @@ def train_HGConv(model, optimizer, criterion, w_decay, threshold, train_loader, 
         "architecture": architecture,
         "strat + w loss": stratify,
         "weights": weight,
+        "corr_m node feature": True,
         "weight_decay": w_decay,
         "threshold": threshold,
         "matrix profiling": True,

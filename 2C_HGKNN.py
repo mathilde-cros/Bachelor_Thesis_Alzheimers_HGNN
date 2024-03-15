@@ -160,8 +160,13 @@ class Raw_to_Hypergraph_2Class(InMemoryDataset):
             features = np.array(patient_dict['mp']).reshape(len(patient_dict['mp']),-1)
             features = features.astype(np.float32)
 
-            # Concatenate the degree, participation coefficient, betweenness centrality, local efficiency, and ratio of local to global efficiency arrays to form a single feature vector
-            x = torch.tensor(features, dtype=torch.float)
+            path_corr = f'ADNI_full/corr_matrices/corr_matrix_pearson/{patient_matrix}'
+            corr_array = np.loadtxt(path_corr, delimiter=',')  
+            
+            # Concatenate the matrix profiling features to the feature array
+            x_array = np.concatenate((corr_array, features), axis=-1)
+            x_array = x_array.astype(np.float32)
+            x = torch.tensor(x_array, dtype=torch.float)
 
             # Create a Pytorch Geometric Data object
             edge_index0 = []
