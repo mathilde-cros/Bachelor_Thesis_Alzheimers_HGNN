@@ -586,8 +586,6 @@ def train_HGConv(model, optimizer, criterion, w_decay, threshold, train_loader, 
     plt.subplot(1, 2, 1)
     plt.plot(train_losses, label=f'Train Loss')
     plt.plot(valid_losses, label=f'Validation Loss')
-    if testing:
-        plt.plot(test_losses, label='Test Loss')
     plt.xlabel('Epoch')
     plt.ylabel('Loss')
     plt.legend()
@@ -596,8 +594,6 @@ def train_HGConv(model, optimizer, criterion, w_decay, threshold, train_loader, 
     plt.subplot(1, 2, 2)
     plt.plot(train_accuracies, label=f'Train Accuracy')
     plt.plot(valid_accuracies, label=f'Validation Accuracy')
-    if testing:
-        plt.plot(test_accuracies, label='Test Accuracy')
     plt.xlabel('Epoch')
     plt.ylabel('Accuracy')
     plt.legend()

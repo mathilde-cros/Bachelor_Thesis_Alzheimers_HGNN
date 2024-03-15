@@ -98,7 +98,7 @@ def quick_accuracy(y_hat, y):
   return accuracy/n
 
 # Creating the train, validation and test sets
-def create_train_test_valid(dataset, stratify=True):
+def create_train_test_valid(dataset, stratify=True, batch_size=16):
     X = dataset
     y = dataset.data.y
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42, stratify=y)
@@ -110,7 +110,7 @@ def create_train_test_valid(dataset, stratify=True):
     print(f'Number of test graphs: {len(X_test)}')
     print(f'Number of classes: {nbr_classes}')
 
-    train_loader = DataLoader(X_train, batch_size=16, shuffle=True)
+    train_loader = DataLoader(X_train, batch_size=batch_size, shuffle=True)
     valid_loader = DataLoader(X_valid, batch_size=len(X_valid), shuffle=False)
     test_loader = DataLoader(X_test, batch_size=len(X_test), shuffle=False)
 
