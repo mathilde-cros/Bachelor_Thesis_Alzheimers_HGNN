@@ -5,3 +5,16 @@ sweeps/*
 hyperparameter_tuning/
 ADNI_full/full_data_dict.pkl
 Fake4C_Raw_to_graph/*
+Fake2C_Models/*
+Fake4C_Models/*
+GAT_Models/*
+GAT_Models_MP/*
+GCN_Models/*
+GCN_Models_MP/*
+MPNN_Models/*
+MPNN_Models_MP/*
+HGConv_Models_MP/*
+Raw_to_hypergraph/*
+Fake_hypergraphs/*
+Fake_hypergraphs_4C/*
+2Class_Models/*
