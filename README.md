@@ -29,5 +29,6 @@ NOTE: Such folders and the saved raw_to_hypergraph/graph data from the ran code 
 ## The Fake_Data and Fake_Data4C notebooks
 Such notebooks contain the information in the discussion part of the report where we built a new fake dataset for both 2-way and 4-way classification of Alzheimer's disease. After running our models, they were again saved in their respective names' folder with the prefixe "Fake" in order to distinguish our results.
 
-## The functions.py and models.py files
+## The functions.py, models.py and object_types.txt files
 These files gather commonly used functions accross all notebooks and python files (functions.py), as well as training, display and definition functions for the models (models.py).
+object_types.txt file is just a file that resumes the types of the most important objects defined and used through out the notebooks and the project.
