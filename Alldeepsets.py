@@ -106,7 +106,7 @@ class MLP(nn.Module):
         for lin in self.lins:
             lin.reset_parameters()
         for normalization in self.normalizations:
-            if not (normalization.__class__.__name__ is 'Identity'):
+            if normalization.__class__.__name__ != 'Identity':
                 normalization.reset_parameters()
 
     def forward(self, x):
@@ -302,9 +302,9 @@ class HalfNLHconv(MessagePassing):
         if self.attention:
             self.prop.reset_parameters()
         else:
-            if not (self.f_enc.__class__.__name__ is 'Identity'):
+            if self.f_enc.__class__.__name__ != 'Identity':
                 self.f_enc.reset_parameters()
-            if not (self.f_dec.__class__.__name__ is 'Identity'):
+            if self.f_dec.__class__.__name__ != 'Identity':
                 self.f_dec.reset_parameters()
 #         self.bn.reset_parameters()
 
