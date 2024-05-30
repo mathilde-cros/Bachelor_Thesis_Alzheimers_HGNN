@@ -331,98 +331,108 @@ class Raw_to_Graph(InMemoryDataset):
         data, slices = self.collate(graphs)
         torch.save((data, slices), self.processed_paths[0])
 
-# # Defining a class to preprocess raw data into a format suitable for training Graph Neural Networks (GNNs).
-# ## With the possibility of assigning weight to edges, adding the age feature, sex feature, and matrixe profiling.
+# Raw_to_Graph class but for our work with reduced regions!
+class Raw_to_Graph_reduced_reg(InMemoryDataset):
+    def __init__(self, root, threshold, method, weight=False, age=False, sex=False, matrixprofile=False, transform=None, pre_transform=None):
+        self.threshold = threshold
+        self.method = method
+        self.weight = weight
+        self.age = age
+        self.sex = sex
+        self.matrixprofile = matrixprofile
+        super().__init__(root, transform, pre_transform)
+        self.data, self.slices = torch.load(self.processed_paths[0])
 
-# class Raw_to_Hypergraph(InMemoryDataset):
-#     def __init__(self, root, hg_data_path, method, weight, threshold, age=False, sex=False, transform=None, pre_transform=None):
-#         self.method = method
-#         self.weight = weight
-#         self.threshold = threshold
-#         self.age = age
-#         self.sex = sex
-#         self.hg_data_path = hg_data_path
-#         super().__init__(root, transform, pre_transform)
-#         self.data, self.slices = torch.load(self.processed_paths[0])
+    @property
+    def processed_file_names(self):
+        return ['data.pt']
 
-#     @property
-#     def processed_file_names(self):
-#         return ['data.pt']
+    # This function is used to process the raw data into a format suitable for GNNs, by constructing graphs out of the connectivity matrices.
+    def process(self):
+        graphs=[]
+        full_corr_path_lists = corr_matrix_paths()
+        # Generating the diagnostic file from the diagnostic_label.csv file
+        diagnostic_label = np.loadtxt('ADNI_full/diagnostic_label.csv', dtype=str, delimiter=',')
+        diagnostic_label = combine_diag_labels(diagnostic_label)
+        corr_matrices = full_corr_path_lists[self.method]
+        for patient_idx, patient_matrix in enumerate(corr_matrices):
+            path = f'ADNI_full/corr_matrices_selected_regions/corr_matrix_{self.method}/{patient_matrix}'
+            corr_matrix = np.loadtxt(path, delimiter=',')
+            # Here ROIs stands for Regions of Interest
+            nbr_ROIs = corr_matrix.shape[0]
+            edge_matrix = np.zeros((nbr_ROIs,nbr_ROIs))
+            for j in range(nbr_ROIs):
+                for k in range(nbr_ROIs):
+                    # Here we are using the absolute value of each element of the correlation matrix, as the corr coeff is in the range [-1,1].
+                    if np.abs(corr_matrix[j,k]) < self.threshold:
+                        edge_matrix[j,k] = 0
+                    else:
+                        if self.weight:
+                            # Here we assign the absolute value of the correlation coefficient as the edge weight.
+                            edge_matrix[j,k] = corr_matrix[j,k]
+                        else:
+                            # Here we assign 1 as the edge weight, i.e. regardless of the the absolute value of the correlation coefficient.
+                            edge_matrix[j,k] = 1
 
-#     # This function is used to process the raw data into a format suitable for GNNs, by constructing graphs out of the connectivity matrices.
-#     def process(self):
-#         # Loading the prebuilt hypergraphs and the correlation matrices
-#         hg_dict_list = load_hg_dict(self.hg_data_path)
-#         full_corr_path_lists = corr_matrix_paths()
-#         corr_matrix_list = full_corr_path_lists['pearson']
+            # Create a NetworkX graph from the edge matrix
+            NetworkX_graph = from_numpy_array(edge_matrix)
 
-#         # Generating the diagnostic file from the diagnostic_label.csv file
-#         diagnostic_label = np.loadtxt('ADNI_full/diagnostic_label.csv', dtype=str, delimiter=',')
-#         # Combining the 'EMCI', 'LMCI' and 'MCI' diagnostics into a single 'MCI' label for simplicity, then one-hot encoding the diagnostics
-#         diagnostic_label = combine_diag_labels(diagnostic_label)
+            # Compute the degree, betweenness centrality, clustering coefficient, local efficiency for each node of the graph and the global efficiency of the graph
+            degree_dict = dict(NetworkX_graph.degree())
+            between_central_dict = nx.betweenness_centrality(NetworkX_graph)
+            cluster_coeff_dict = nx.clustering(NetworkX_graph)
+            global_eff = nx.global_efficiency(NetworkX_graph)
+            local_eff_dict = {}
+            for node in NetworkX_graph.nodes():
+                subgraph_neighb = NetworkX_graph.subgraph(NetworkX_graph.neighbors(node))
+                if subgraph_neighb.number_of_nodes() > 1:
+                    efficiency = nx.global_efficiency(subgraph_neighb)
+                else:
+                    efficiency = 0.0
+                local_eff_dict[node] = efficiency
 
-#         graphs=[]
-#         for patient_idx, patient_hg in enumerate(hg_dict_list):
-#             # Create a NetworkX graph from the hypergraph matrix
-#             hypergraph = hnx.Hypergraph(patient_hg)
+            # Convert the degree, betweenness centrality, local efficiency, clustering coefficient and ratio of local to global efficiency dictionaries to NumPy arrays then normalize them
+            degree_array = dict_to_array(degree_dict)
+            degree_array_norm = normalize_array(degree_array)
 
-#             # Adding the matrix profiling features to the feature array
-#             patient_matrix = corr_matrix_list[patient_idx]
-#             path = f'ADNI_full/matrix_profiles/matrix_profile_pearson/{patient_matrix}'
-#             if patient_matrix.endswith('.DS_Store'):
-#                 continue  # Skip hidden system files like .DS_Store
-#             with open(path, "rb") as fl:
-#                 patient_dict = pkl.load(fl)
-#             # combine dimensions
-#             features = np.array(patient_dict['mp']).reshape(len(patient_dict['mp']),-1)
-#             features = features.astype(np.float32)
+            between_central_array = dict_to_array(between_central_dict)
+            between_central_array_norm = normalize_array(between_central_array)
 
-#             # Loading the atlas, atlas labels and nbr_ROIS
-#             _, _, _, nbr_ROIs = gen_atlas_labels()    
-#             if self.age:
-#                 # Loading the age feature of patients to use as a node feature
-#                 ages = np.loadtxt('ADNI_full/age.csv', delimiter=',')
-#                 min_age = np.min(ages)
-#                 max_age = np.max(ages)
-#                 # Extracting the age feature of the patient
-#                 patient_age = ages[patient_idx]
-#                 age_norm = (patient_age - min_age) / (max_age - min_age)
-#                 # Making the age array the same size as the other arrays
-#                 age_array = np.full((nbr_ROIs,), age_norm)
-#                 features = np.concatenate((features, age_array), axis=-1)
-#             if self.sex:
-#                 # Prepocessing the sex feature of patients to use as a node feature. Here, 0 represents male patients and 1 represents female patients
-#                 sex = np.loadtxt('ADNI_full/sex.csv', dtype=str, delimiter=',')
-#                 for patient in range(len(sex)):
-#                     if sex[patient] == 'M':
-#                         sex[patient] = 0
-#                     else:
-#                         sex[patient] = 1
-#                 # Extracting the sex feature of the patient
-#                 patient_sex = int(sex[patient_idx])
-#                 # Making the sex array the same size as the other arrays
-#                 sex_array = np.full((nbr_ROIs,), patient_sex)
-#                 features = np.concatenate((features, sex_array), axis=-1)
+            local_efficiency_array = dict_to_array(local_eff_dict)
+            local_eff_array_norm = normalize_array(local_efficiency_array)
 
-#             # Concatenate the degree, participation coefficient, betweenness centrality, local efficiency, and ratio of local to global efficiency arrays to form a single feature vector
-#             x = torch.tensor(features, dtype=torch.float)
+            ratio_local_global_array = dict_to_array(local_eff_dict) / global_eff
+            ratio_local_global_array_norm = normalize_array(ratio_local_global_array)
 
-#             # Create a Pytorch Geometric Data object
-#             edge_index0 = []
-#             edge_index1 = []
-#             i = 0
-#             for hyperedge, nodes in hypergraph.incidence_dict.items():
-#                 edge_index0 = np.concatenate((edge_index0, nodes), axis=0)
-#                 for j in range(len(nodes)):
-#                     edge_index1.append(i)
-#                 i += 1
-#             edge_index = np.stack([[int(x) for x in edge_index0], edge_index1], axis=0)
-#             y = torch.tensor(float(diagnostic_label[patient_idx]))
-#             hg_data = Data(x=x, edge_index=torch.tensor(edge_index, dtype=torch.long), y=y)
-#             graphs.append(hg_data)
+            cluster_coeff_array = dict_to_array(cluster_coeff_dict)
+            cluster_coeff_array_norm = normalize_array(cluster_coeff_array)
 
-#         data, slices = self.collate(graphs)
-#         torch.save((data, slices), self.processed_paths[0])
+            # Initializing an array for the graph features
+            x_array = np.stack([degree_array_norm, between_central_array_norm, local_eff_array_norm, cluster_coeff_array_norm, ratio_local_global_array_norm], axis=-1)
+            x_array = x_array.astype(np.float32)
+            
+            if self.matrixprofile:
+                path = f'ADNI_full/matrix_profiles_selected_regions/matrix_profile_{self.method}/{patient_matrix}'
+                with open(path, "rb") as fl:
+                  patient_dict = pkl.load(fl)
+                # combine dimensions
+                features = np.array(patient_dict['mp']).reshape(len(patient_dict['mp']),-1)
+                features = features.astype(np.float32)
+                x_array = np.concatenate((x_array, features), axis=-1)
+
+            # Concatenate the degree, participation coefficient, betweenness centrality, local efficiency, and ratio of local to global efficiency arrays to form a single feature vector
+            x = torch.tensor(x_array, dtype=torch.float)
+
+            # Create a Pytorch Geometric Data object from the NetworkX
+            graph_data = from_networkx(NetworkX_graph)
+            ## The feature matrix of the graph is the degree, betweenness centrality, local efficiency, clustering coefficient and ratio of local to global efficiency of each node
+            graph_data.x = x
+            ## The target/output variable that we want to predict is the diagnostic label of the patient
+            graph_data.y = float(diagnostic_label[patient_idx])
+            graphs.append(graph_data)
+
+        data, slices = self.collate(graphs)
+        torch.save((data, slices), self.processed_paths[0])
 
 # Defining a class to preprocess raw data into a format suitable for training Graph Neural Networks (GNNs).
 ## With the possibility of assigning weight to edges, adding the age feature, sex feature, and matrixe profiling.

@@ -23,7 +23,7 @@ import functions as f
 # In[2]:
 
 
-os.environ['WANDB_NOTEBOOK_NAME']="GCN.ipynb"
+os.environ['WANDB_NOTEBOOK_NAME']="GCN_fewer_reg.ipynb"
 
 
 # In[3]:
@@ -60,28 +60,28 @@ class GCN(torch.nn.Module):
 # In[4]:
 
 
-# # Testing the class Raw_to_Graph with one example and saving it
-# threshold = 0.5
-# weight = False
-# age = False
-# sex = False
-# matrixprofile = True
-# if matrixprofile:
-#     in_channels = 461 + int(age) + int(sex)
-# else:
-#     in_channels = 5 + int(age) + int(sex)
-# method = 'pearson'
+# Testing the class Raw_to_Graph_reduced_reg with one example and saving it
+threshold = 0.5
+weight = False
+age = False
+sex = False
+matrixprofile = True
+if matrixprofile:
+    in_channels = 461 + int(age) + int(sex)
+else:
+    in_channels = 5 + int(age) + int(sex)
+method = 'pearson'
 
-# root = f'Raw_to_graph/ADNI_T_{threshold}_M_{method}_W{weight}_A{age}_S{sex}_MP{matrixprofile}'
-# dataset = f.Raw_to_Graph(root=root, threshold=threshold, method=method, weight=weight, sex=sex, age=age, matrixprofile=matrixprofile)
-# f.dataset_features_and_stats(dataset)
+root = f'Raw_to_graph_reduced_reg/ADNI_T_{threshold}_M_{method}_W{weight}_A{age}_S{sex}_MP{matrixprofile}'
+dataset = f.Raw_to_Graph_reduced_reg(root=root, threshold=threshold, method=method, weight=weight, sex=sex, age=age, matrixprofile=matrixprofile)
+f.dataset_features_and_stats(dataset)
 
 
 # # In[5]:
 
 
-# # Creating the train, validation and test sets
-# train_loader, valid_loader, test_loader, nbr_classes = f.create_train_test_valid(dataset)
+# Creating the train, validation and test sets
+train_loader, valid_loader, test_loader, nbr_classes, y_train = f.create_train_test_valid(dataset)
 
 
 # In[6]:
@@ -106,7 +106,7 @@ def train(model, optimizer, criterion, w_decay, threshold, train_loader, valid_l
         project = "Alzheimers_GNN",
         # track hyperparameters and run metadata
         config = {
-        "architecture": "GCN",
+        "architecture": "GCN_fewer_reg",
         "strat + w loss": stratify,
         "weights": weight,
         "weight_decay": w_decay,
@@ -157,9 +157,9 @@ def train(model, optimizer, criterion, w_decay, threshold, train_loader, valid_l
     num_layers = parameters[2]
     dropout = parameters[3]
     if matrixprofile:
-        filename = f'GCN_Models_MP/threshold_{threshold}/lr{lr}_hc{hidden_channels}_nl{num_layers}_d{dropout}_epochs{n_epochs}_wdecay{w_decay}_w{weight}.png'
+        filename = f'Reduced_reg_models/GCN_Models_MP/threshold_{threshold}/lr{lr}_hc{hidden_channels}_nl{num_layers}_d{dropout}_epochs{n_epochs}_wdecay{w_decay}_w{weight}.png'
     else:
-        filename = f'GCN_Models/threshold_{threshold}/lr{lr}_hc{hidden_channels}_nl{num_layers}_d{dropout}_epochs{n_epochs}_wdecay{w_decay}_w{weight}.png'
+        filename = f'Reduced_reg_models/GCN_Models/threshold_{threshold}/lr{lr}_hc{hidden_channels}_nl{num_layers}_d{dropout}_epochs{n_epochs}_wdecay{w_decay}_w{weight}.png'
     plt.savefig(filename)
     if testing:
         plt.title(f'Test Accuracy: {test_accuracy}')
@@ -177,40 +177,40 @@ def train(model, optimizer, criterion, w_decay, threshold, train_loader, valid_l
 
 ## Example Model
 
-# threshold = 0.6
-# age = False
-# sex = False
-# matrixprofile = True
-# weight = False
-# if matrixprofile:
-#     in_channels = 461 + int(age) + int(sex)
-# else:
-#     in_channels = 5 + int(age) + int(sex)
-# method = 'pearson'
+threshold = 0.6
+age = False
+sex = False
+matrixprofile = True
+weight = False
+if matrixprofile:
+    in_channels = 461 + int(age) + int(sex)
+else:
+    in_channels = 5 + int(age) + int(sex)
+method = 'pearson'
 
-# root = f'Raw_to_graph/ADNI_T_{threshold}_M_{method}_W{weight}_A{age}_S{sex}_MP{matrixprofile}'
-# dataset = f.Raw_to_Graph(root=root, threshold=threshold, method=method, weight=weight, sex=sex, age=age, matrixprofile=matrixprofile)
-# f.dataset_features_and_stats(dataset)
-# # Creating the train, validation and test sets
-# train_loader, valid_loader, test_loader, nbr_classes = f.create_train_test_valid(dataset)
+root = f'Raw_to_graph_reduced_reg/ADNI_T_{threshold}_M_{method}_W{weight}_A{age}_S{sex}_MP{matrixprofile}'
+dataset = f.Raw_to_Graph_reduced_reg(root=root, threshold=threshold, method=method, weight=weight, sex=sex, age=age, matrixprofile=matrixprofile)
+f.dataset_features_and_stats(dataset)
+# Creating the train, validation and test sets
+train_loader, valid_loader, test_loader, nbr_classes, y_train = f.create_train_test_valid(dataset)
 
-# # Defining the model, optimizer and loss function
-# lr=0.00001
-# hidden_channels=32
-# num_layers=3
-# dropout=0.2
-# w_decay=0
-# parameters = [lr, hidden_channels, num_layers, dropout]
+# Defining the model, optimizer and loss function
+lr=0.00001
+hidden_channels=32
+num_layers=3
+dropout=0.2
+w_decay=0
+parameters = [lr, hidden_channels, num_layers, dropout]
 
-# model = GCN(in_channels=in_channels, hidden_channels=parameters[1], out_channels=nbr_classes, num_layers=parameters[2], dropout=parameters[3], nbr_classes=nbr_classes)
-# optimizer = torch.optim.Adam(model.parameters(), lr=parameters[0], weight_decay=w_decay)
-# criterion = torch.nn.CrossEntropyLoss()
+model = GCN(in_channels=in_channels, hidden_channels=parameters[1], out_channels=nbr_classes, num_layers=parameters[2], dropout=parameters[3], nbr_classes=nbr_classes)
+optimizer = torch.optim.Adam(model.parameters(), lr=parameters[0], weight_decay=w_decay)
+criterion = torch.nn.CrossEntropyLoss()
 
-# # Printing the model architecture
-# print(model)
+# Printing the model architecture
+print(model)
 
-# # Running the training
-# train_losses, train_accuracies, valid_losses, valid_accuracies, max_valid_accuracy = train(model, optimizer, criterion, w_decay, threshold, train_loader, valid_loader, parameters, n_epochs=1200)
+# Running the training
+train_losses, train_accuracies, valid_losses, valid_accuracies, max_valid_accuracy = train(model, optimizer, criterion, w_decay, threshold, train_loader, valid_loader, parameters, n_epochs=1200)
 
 
 # In[8]:
@@ -231,8 +231,8 @@ else:
     in_channels = 5 + int(age) + int(sex)
 method = 'pearson'
 
-root = f'Raw_to_graph/ADNI_T_{threshold}_M_{method}_W{weight}_A{age}_S{sex}_MP{matrixprofile}'
-dataset = f.Raw_to_Graph(root=root, threshold=threshold, method=method, weight=weight, sex=sex, age=age, matrixprofile=matrixprofile)
+root = f'Raw_to_graph_reduced_reg/ADNI_T_{threshold}_M_{method}_W{weight}_A{age}_S{sex}_MP{matrixprofile}'
+dataset = f.Raw_to_Graph_reduced_reg(root=root, threshold=threshold, method=method, weight=weight, sex=sex, age=age, matrixprofile=matrixprofile)
 f.dataset_features_and_stats(dataset)
 
 # Creating the train, validation and test sets
@@ -260,9 +260,9 @@ n_epochs = 800
 # Train using each combination
 for params in param_combinations:
     if matrixprofile:
-        filename = f'GCN_Models_MP/threshold_{threshold}/lr{params["learning_rate"]}_hc{params["hidden_channels"]}_nl{params["num_layers"]}_d{params["dropout_rate"]}_epochs{n_epochs}_wdecay{params["weight_decay"]}_w{weight}.png'
+        filename = f'Reduced_reg_models/GCN_Models_MP/threshold_{threshold}/lr{params["learning_rate"]}_hc{params["hidden_channels"]}_nl{params["num_layers"]}_d{params["dropout_rate"]}_epochs{n_epochs}_wdecay{params["weight_decay"]}_w{weight}.png'
     else:
-        filename = f'GCN_Models/threshold_{threshold}/lr{params["learning_rate"]}_hc{params["hidden_channels"]}_nl{params["num_layers"]}_d{params["dropout_rate"]}_epochs{n_epochs}_wdecay{params["weight_decay"]}_w{weight}.png'
+        filename = f'Reduced_reg_models/GCN_Models/threshold_{threshold}/lr{params["learning_rate"]}_hc{params["hidden_channels"]}_nl{params["num_layers"]}_d{params["dropout_rate"]}_epochs{n_epochs}_wdecay{params["weight_decay"]}_w{weight}.png'
     if os.path.exists(filename):
         pass
     else:
