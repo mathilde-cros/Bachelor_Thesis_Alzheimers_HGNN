@@ -586,6 +586,8 @@ def plot_graph(raw_to_graph_instance):
 from typing import Optional
 import torch
 import torch.nn.functional as F
+import torch_scatter
+from torch_scatter import scatter_mean
 from torch import Tensor
 from torch.nn import Parameter
 from torch_geometric.experimental import disable_dynamic_shapes
@@ -709,6 +711,9 @@ class HypergraphConv(MessagePassing):
                 These features only need to get passed in case
                 :obj:`use_attention=True`. (default: :obj:`None`)
         """
+        if (hyperedge_attr == None and self.use_attention):
+            hyperedge_attr = scatter_mean(x, hyperedge_index[0], dim=0)
+            
         num_nodes, num_edges = x.size(0), 0
         if hyperedge_index.numel() > 0:
             num_edges = int(hyperedge_index[1].max()) + 1
@@ -720,6 +725,8 @@ class HypergraphConv(MessagePassing):
 
         alpha = None
         if self.use_attention:
+            if hyperedge_attr == None:
+                hyperedge_attr = scatter_mean(x, hyperedge_index[0], dim=0)
             assert hyperedge_attr is not None
             x = x.view(-1, self.heads, self.out_channels)
             hyperedge_attr = self.lin(hyperedge_attr)
