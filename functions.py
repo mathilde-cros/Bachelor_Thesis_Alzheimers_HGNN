@@ -586,8 +586,8 @@ def plot_graph(raw_to_graph_instance):
 from typing import Optional
 import torch
 import torch.nn.functional as F
-import torch_scatter
-from torch_scatter import scatter_mean
+# import torch_scatter
+# from torch_scatter import scatter_mean
 from torch import Tensor
 from torch.nn import Parameter
 from torch_geometric.experimental import disable_dynamic_shapes
@@ -595,6 +595,8 @@ from torch_geometric.nn.conv import MessagePassing
 from torch_geometric.nn.dense.linear import Linear
 from torch_geometric.nn.inits import glorot, zeros
 from torch_geometric.utils import scatter, softmax
+
+import pdb
 
 class HypergraphConv(MessagePassing):
     """The hypergraph convolutional operator from the `"Hypergraph Convolution
@@ -711,12 +713,17 @@ class HypergraphConv(MessagePassing):
                 These features only need to get passed in case
                 :obj:`use_attention=True`. (default: :obj:`None`)
         """
-        if (hyperedge_attr == None and self.use_attention):
-            hyperedge_attr = scatter_mean(x, hyperedge_index[0], dim=0)
-            
+        # pdb.set_trace()
         num_nodes, num_edges = x.size(0), 0
         if hyperedge_index.numel() > 0:
             num_edges = int(hyperedge_index[1].max()) + 1
+        
+        if (hyperedge_attr == None and self.use_attention):
+
+            H = torch.sparse.LongTensor(hyperedge_index, torch.ones((hyperedge_index.shape[1])), torch.Size((num_nodes, num_edges))).to_dense()
+            # hyperedge_attr = scatter_mean(x, hyperedge_index[0], dim=0)
+            D = torch.nan_to_num(torch.pow(torch.diag(torch.sum(H, dim=0)), -1.0), nan=0, posinf=0, neginf=0).to(torch.float32)
+            hyperedge_attr = D @ torch.transpose(H, 0, 1) @ x
 
         if hyperedge_weight is None:
             hyperedge_weight = x.new_ones(num_edges)
@@ -726,7 +733,10 @@ class HypergraphConv(MessagePassing):
         alpha = None
         if self.use_attention:
             if hyperedge_attr == None:
-                hyperedge_attr = scatter_mean(x, hyperedge_index[0], dim=0)
+                H = torch.sparse.LongTensor(hyperedge_index, torch.ones((hyperedge_index.shape[1])), torch.Size((num_nodes, num_edges))).to_dense()
+                # hyperedge_attr = scatter_mean(x, hyperedge_index[0], dim=0)
+                D = torch.nan_to_num(torch.pow(torch.diag(torch.sum(H, dim=0)), -1.0), nan=0, posinf=0, neginf=0).to(torch.float32)
+                hyperedge_attr = D @ torch.transpose(H, 0, 1) @ x
             assert hyperedge_attr is not None
             x = x.view(-1, self.heads, self.out_channels)
             hyperedge_attr = self.lin(hyperedge_attr)
