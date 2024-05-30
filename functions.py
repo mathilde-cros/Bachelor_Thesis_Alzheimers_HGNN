@@ -38,6 +38,21 @@ def load_time_series():
         time_series.append(time_series_sub)
     return time_series
 
+# Loading the time series
+def load_time_series_reduced_reg():
+    root = 'ADNI_full/time_series'
+    time_series_list = os.listdir(root)
+    time_series=[]
+    for i in time_series_list:
+        time_series_sub = np.loadtxt(os.path.join(root, i), delimiter=',')
+        time_series.append(time_series_sub)
+    indexes = [40, 41, 42, 43, 30, 31, 32, 33, 34, 35, 0, 1, 62, 63, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115]
+    indexes.sort()
+    selected_time_series_data = []
+    for i in range(len(time_series_list)):
+        selected_time_series_data.append(time_series_list[i][:, indexes])
+    return selected_time_series_data
+
 # Make the list of time series into a list of df
 def list_of_df_of_time_series(time_series_list):
     time_series_df_list = []
@@ -49,6 +64,15 @@ def list_of_df_of_time_series(time_series_list):
 # Useful for loading the correlation matrices
 def load_matrix(path_list):
     root = 'ADNI_full/corr_matrices/corr_matrix_pearson'
+    matrix_list = []
+    for path in path_list:
+        matrix = np.loadtxt(os.path.join(root, path), delimiter=',')
+        matrix_list.append(matrix)
+    return matrix_list
+
+# Useful for loading the correlation matrices
+def load_matrix_reduced_reg(path_list):
+    root = 'ADNI_full/corr_matrices_selected_regions/corr_matrix_pearson'
     matrix_list = []
     for path in path_list:
         matrix = np.loadtxt(os.path.join(root, path), delimiter=',')
